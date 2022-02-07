@@ -1,0 +1,304 @@
+student@Ubuntu-MySQL-VirtualBox:~$ mkdir lesson4
+student@Ubuntu-MySQL-VirtualBox:~$ cd lesson4
+student@Ubuntu-MySQL-VirtualBox:~/lesson4$ ll
+итого 8
+drwxrwxr-x  2 student student 4096 фев  1 09:55 ./
+drwxr-xr-x 25 student student 4096 фев  1 09:55 ../
+student@Ubuntu-MySQL-VirtualBox:~/lesson4$ echo file1
+file1
+student@Ubuntu-MySQL-VirtualBox:~/lesson4$ echo text text > potoki_vivodi.txt
+student@Ubuntu-MySQL-VirtualBox:~/lesson4$ ll
+итого 12
+drwxrwxr-x  2 student student 4096 фев  1 09:57 ./
+drwxr-xr-x 25 student student 4096 фев  1 09:55 ../
+-rw-rw-r--  1 student student   10 фев  1 09:57 potoki_vivodi.txt
+student@Ubuntu-MySQL-VirtualBox:~/lesson4$ 
+student@Ubuntu-MySQL-VirtualBox:~/lesson4$ cat --help
+Использование: cat [КЛЮЧ]… [ФАЙЛ]…
+Печатает слияние ФАЙЛ(ов) на стандартный вывод.
+
+Если ФАЙЛ не задан или задан как -, читает стандартный ввод.
+
+  -A, --show-all           синоним -vET
+  -b, --number-nonblank    нумеровать непустые строки при выводе
+  -e                       подавляет -n, синоним -vE
+  -E, --show-ends          показывать $ в конце каждой строки
+  -n, --number             нумеровать все строки при выводе
+  -s, --squeeze-blank      выводить не более одной пустой строки при повторе
+  -t                       синоним -vT
+  -T, --show-tabs          показывать символы табуляции как ^I
+  -u                       (игнорируется)
+  -v, --show-nonprinting   использовать запись с ^ и M-, за исключением
+                           символов перевода строки и табуляции
+      --help     показать эту справку и выйти
+      --version  показать информацию о версии и выйти
+
+Примеры:
+  cat f - g  Выводит содержимое f, потом стандартный ввод, потом g.
+  cat        Копирует стандартный ввод на стандартный вывод.
+
+Оперативная справка GNU coreutils: <http://www.gnu.org/software/coreutils/>
+Об ошибках в переводе сообщений «cat» сообщайте по адресу <gnu@mx.ru>
+Полная документация: <http://www.gnu.org/software/coreutils/cat>
+или доступная локально: info '(coreutils) cat invocation'
+student@Ubuntu-MySQL-VirtualBox:~/lesson4$ cd -
+/home/student
+student@Ubuntu-MySQL-VirtualBox:~$ 
+student@Ubuntu-MySQL-VirtualBox:~$ cd /
+student@Ubuntu-MySQL-VirtualBox:/$ ll
+итого 108
+drwxr-xr-x  24 root root  4096 апр 22  2019 ./
+drwxr-xr-x  24 root root  4096 апр 22  2019 ../
+drwxr-xr-x   2 root root  4096 апр 22  2019 bin/
+drwxr-xr-x   3 root root  4096 апр 22  2019 boot/
+drwxrwxr-x   2 root root  4096 апр 22  2019 cdrom/
+drwxr-xr-x  18 root root  3940 фев  1 09:33 dev/
+drwxr-xr-x 138 root root 12288 фев  1 09:33 etc/
+drwxr-xr-x   3 root root  4096 янв 24 16:09 home/
+lrwxrwxrwx   1 root root    33 апр 22  2019 initrd.img -> boot/initrd.img-4.15.0-47-generic
+lrwxrwxrwx   1 root root    33 апр 22  2019 initrd.img.old -> boot/initrd.img-4.15.0-45-generic
+drwxr-xr-x  22 root root  4096 апр 22  2019 lib/
+drwxr-xr-x   2 root root  4096 фев 27  2019 lib64/
+drwx------   2 root root 16384 апр 22  2019 lost+found/
+drwxr-xr-x   3 root root  4096 апр 22  2019 media/
+drwxr-xr-x   2 root root  4096 фев 27  2019 mnt/
+drwxr-xr-x   3 root root  4096 апр 22  2019 opt/
+dr-xr-xr-x 170 root root     0 фев  1 09:33 proc/
+drwx------   4 root root  4096 янв 25 09:14 root/
+drwxr-xr-x  27 root root   880 фев  1 09:38 run/
+drwxr-xr-x   2 root root 12288 апр 22  2019 sbin/
+drwxr-xr-x   2 root root  4096 апр 22  2019 snap/
+drwxr-xr-x   2 root root  4096 фев 27  2019 srv/
+dr-xr-xr-x  13 root root     0 фев  1 09:33 sys/
+drwxrwxrwt  11 root root  4096 фев  1 09:43 tmp/
+drwxr-xr-x  11 root root  4096 фев 27  2019 usr/
+drwxr-xr-x  14 root root  4096 фев 27  2019 var/
+lrwxrwxrwx   1 root root    30 апр 22  2019 vmlinuz -> boot/vmlinuz-4.15.0-47-generic
+lrwxrwxrwx   1 root root    30 апр 22  2019 vmlinuz.old -> boot/vmlinuz-4.15.0-45-generic
+student@Ubuntu-MySQL-VirtualBox:/$ 
+student@Ubuntu-MySQL-VirtualBox:/$ cd /home/student
+student@Ubuntu-MySQL-VirtualBox:~$ cd lesson4
+student@Ubuntu-MySQL-VirtualBox:~/lesson4$ cat /etc/* 1>file_content.txt 2>errors.txt
+student@Ubuntu-MySQL-VirtualBox:~/lesson4$ ll
+итого 384
+drwxrwxr-x  2 student student   4096 фев  1 10:33 ./
+drwxr-xr-x 25 student student   4096 фев  1 09:55 ../
+-rw-rw-r--  1 student student   6118 фев  1 10:33 errors.txt
+-rw-rw-r--  1 student student 371561 фев  1 10:33 file_content.txt
+-rw-rw-r--  1 student student     10 фев  1 09:57 potoki_vivodi.txt
+student@Ubuntu-MySQL-VirtualBox:~/lesson4$ 
+student@Ubuntu-MySQL-VirtualBox:~/lesson4$ cut --help
+Использование: cut КЛЮЧ… [ФАЙЛ]…
+Печатает выбранные части строк из каждого ФАЙЛА на стандартный вывод.
+
+Если ФАЙЛ не задан или задан как -, читает стандартный ввод.
+
+Аргументы, обязательные для длинных ключей, обязательны и для коротких.
+  -b, --bytes=СПИСОК             выбрать только заданные байты
+  -c, --characters=СПИСОК        выбрать только заданные символы
+  -d, --delimiter=РАЗДЕЛИТЕЛЬ    использовать для разделения полей РАЗДЕЛИТЕЛЬ
+                                 вместо табуляции
+  -f, --fields=СПИСОК            выбрать только заданные поля; также печатать
+                                 все строки, не содержащие разделителей, если
+                                 только не задан ключ -s
+  -n                             (игнорируется)
+      --complement               дополнить множество выбранных байт, символов
+                                 или полей
+  -s, --only-delimited           не печатать строки, не содержащие
+                                 разделителей
+      --output-delimiter=СТРОКА  использовать СТРОКУ для разделения полей при
+                                 выводе, по умолчанию используется разделитель
+                                 для ввода
+  -z, --zero-terminated        разделитель строк NUL, а не символ
+                               новой строки
+      --help     показать эту справку и выйти
+      --version  показать информацию о версии и выйти
+
+Используйте один и только один из ключей -b, -c или -f.  СПИСКИ
+состоят из диапазона или нескольких диапазонов, разделенных запятыми.
+Выбранные части входного файла печатаются в том порядке, в котором они
+появляются на входе, и печатаются ровно один раз.
+Диапазоны задаются следующим образом:
+
+  Н     Н-ный байт, символ или поле; отсчитывается от 1
+  Н-    от Н-ного байта, символа или поля до конца строки
+  Н-М   от Н-ного до М-ного (включительно) байта, символа или поля
+  -М    от первого до М-ного (включительно) байта, символа или поля
+
+Оперативная справка GNU coreutils: <http://www.gnu.org/software/coreutils/>
+Об ошибках в переводе сообщений «cut» сообщайте по адресу <gnu@mx.ru>
+Полная документация: <http://www.gnu.org/software/coreutils/cut>
+или доступная локально: info '(coreutils) cut invocation'
+student@Ubuntu-MySQL-VirtualBox:~/lesson4$ 
+student@Ubuntu-MySQL-VirtualBox:~/lesson4$ ls -l | cut -b -10 | sort | uniq
+-rw-rw-r--
+итого
+student@Ubuntu-MySQL-VirtualBox:~/lesson4$ 
+student@Ubuntu-MySQL-VirtualBox:~$ systemctl status ssh
+● ssh.service - OpenBSD Secure Shell server
+   Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enab
+   Active: active (running) since Вт 2022-02-01 12:14:24 MSK; 36min ago
+  Process: 1032 ExecReload=/bin/kill -HUP $MAINPID (code=exited, status=0/SUCCES
+  Process: 1024 ExecReload=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)
+  Process: 778 ExecStartPre=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)
+ Main PID: 814 (sshd)
+   CGroup: /system.slice/ssh.service
+           └─814 /usr/sbin/sshd -D
+
+фев 01 12:22:01 Ubuntu-MySQL-VirtualBox sshd[2111]: pam_unix(sshd:session): sess
+фев 01 12:22:01 Ubuntu-MySQL-VirtualBox sshd[2113]: Accepted password for studen
+фев 01 12:22:01 Ubuntu-MySQL-VirtualBox sshd[2113]: pam_unix(sshd:session): sess
+фев 01 12:24:39 Ubuntu-MySQL-VirtualBox sshd[2217]: Connection closed by 192.168
+фев 01 12:47:25 Ubuntu-MySQL-VirtualBox sshd[2282]: pam_unix(sshd:auth): authent
+фев 01 12:47:28 Ubuntu-MySQL-VirtualBox sshd[2282]: Failed password for student 
+фев 01 12:47:34 Ubuntu-MySQL-VirtualBox sshd[2282]: Accepted password for studen
+фев 01 12:47:34 Ubuntu-MySQL-VirtualBox sshd[2282]: pam_unix(sshd:session): sess
+фев 01 12:47:35 Ubuntu-MySQL-VirtualBox sshd[2284]: Accepted password for studen
+фев 01 12:47:35 Ubuntu-MySQL-VirtualBox sshd[2284]: pam_unix(sshd:session): sess
+lines 1-20/20 (END)
+student@Ubuntu-MySQL-VirtualBox:~$ sudo nano /etc/ssh/sshd_config
+[sudo] пароль для student: 
+student@Ubuntu-MySQL-VirtualBox:~$ 
+
+# Package generated configuration file
+# See the sshd_config(5) manpage for details
+
+# What ports, IPs and protocols we listen for
+Port 22
+# Use these options to restrict which interfaces/protocols sshd will bind to
+#ListenAddress ::
+#ListenAddress 0.0.0.0
+Protocol 2
+# HostKeys for protocol version 2
+HostKey /etc/ssh/ssh_host_rsa_key
+HostKey /etc/ssh/ssh_host_dsa_key
+HostKey /etc/ssh/ssh_host_ecdsa_key
+HostKey /etc/ssh/ssh_host_ed25519_key
+#Privilege Separation is turned on for security
+UsePrivilegeSeparation yes
+
+# Lifetime and size of ephemeral version 1 server key
+KeyRegenerationInterval 3600
+ServerKeyBits 1024
+
+# Logging
+SyslogFacility AUTH
+LogLevel INFO
+
+# Authentication:
+LoginGraceTime 120
+PermitRootLogin prohibit-password
+RSAAuthentication yes
+PubkeyAuthentication yes
+#AuthorizedKeysFile     %h/.ssh/authorized_keys
+
+# Don't read the user's ~/.rhosts and ~/.shosts files
+IgnoreRhosts yes
+# For this to work you will also need host keys in /etc/ssh_known_hosts
+RhostsRSAAuthentication no
+# similar for protocol version 2
+HostbasedAuthentication no
+# Uncomment if you don't trust ~/.ssh/known_hosts for RhostsRSAAuthentication
+#IgnoreUserKnownHosts yes
+
+# To enable empty passwords, change to yes (NOT RECOMMENDED)
+PermitEmptyPasswords no
+
+# Change to yes to enable challenge-response passwords (beware issues with
+# some PAM modules and threads)
+ChallengeR esponseAuthentication no
+
+# Change to no to disable tunnelled clear text passwords
+PasswordAuthentication no
+
+# Kerberos options
+#KerberosAuthentication no
+#KerberosGetAFSToken no
+#KerberosOrLocalPasswd yes
+#KerberosTicketCleanup yes
+
+# GSSAPI options
+#GSSAPIAuthentication no
+#GSSAPICleanupCredentials yes
+
+X11Forwarding yes
+X11DisplayOffset 10
+PrintMotd no
+PrintLastLog yes
+TCPKeepAlive yes
+#UseLogin no
+
+#MaxStartups 10:30:60
+#Banner /etc/issue.net
+
+# Allow client to pass locale environment variables
+AcceptEnv LANG LC_*
+
+Subsystem sftp /usr/lib/openssh/sftp-server
+
+# Set this to 'yes' to enable PAM authentication, account processing,
+# and session processing. If this is enabled, PAM authentication will
+# be allowed through the ChallengeResponseAuthentication and
+# PasswordAuthentication.  Depending on your PAM configuration,
+# PAM authentication via ChallengeResponseAuthentication may bypass
+# the setting of "PermitRootLogin without-password".
+# If you just want the PAM account and session checks to run without
+# PAM authentication, then enable this but set PasswordAuthentication
+# and ChallengeResponseAuthentication to 'no'.
+# Set this to 'yes' to enable PAM authentication, account processing,
+# and session processing. If this is enabled, PAM authentication will
+# be allowed through the ChallengeResponseAuthentication and
+# PasswordAuthentication.  Depending on your PAM configuration,
+# PAM authentication via ChallengeResponseAuthentication may bypass
+# the setting of "PermitRootLogin without-password".
+# If you just want the PAM account and session checks to run without
+# PAM authentication, then enable this but set PasswordAuthentication
+# and ChallengeResponseAuthentication to 'no'.
+
+student@Ubuntu-MySQL-VirtualBox:~$ sudo systemctl restart sshd
+student@Ubuntu-MySQL-VirtualBox:~$ sudo systemctl reload sshd
+student@Ubuntu-MySQL-VirtualBox:~$ 
+student@Ubuntu-MySQL-VirtualBox:~$ cat > file1
+student@Ubuntu-MySQL-VirtualBox:~$ ^C
+student@Ubuntu-MySQL-VirtualBox:~$ 
+student@Ubuntu-MySQL-VirtualBox:~$ mc --help
+Использование:
+  mc [ПАРАМЕТР…] [+число] [этот_каталог] [каталог_другой_панели]
+ +число - Задать начальную строку для встроенного редактора
+
+
+GNU Midnight Commander, версия 4.8.15
+
+
+Параметры справки:
+  -h, --help                Показать параметры справки
+  --help-all                Показать все параметры справки
+  --help-terminal           Настройки терминала
+  --help-color              Цветовые настройки
+
+Параметры приложения:
+  -V, --version             Показать текущую версию
+  -f, --datadir             Распечатать имя каталога для данных
+  -F, --datadir-info        Показ расширенной информации об используемых каталогах
+  --configure-options       Распечатать параметры конфигурации
+  -P, --printwd=<file>      Записать последний рабочий каталог в указанный файл
+  -U, --subshell            Включить поддержку встроенной командной оболочки (по умолчанию)
+  -u, --nosubshell          Отключить поддержку встроенной командной оболочки
+  -l, --ftplog=<file>       Записывать диалог с FTP в заданный файл
+  -v, --view=<file>         Просматривать файл
+  -e, --edit=<file> ...     Редактировать файлы
+
+
+Пожалуйста, посылайте любые сообщения об ошибках (включая вывод "mc -V")
+как тикеты на www.midnight-commander.org
+
+student@Ubuntu-MySQL-VirtualBox:~$ 
+student@Ubuntu-MySQL-VirtualBox:~$ ps aux | grep mc
+student   2668  0.4  0.3  69120  8060 pts/4    S+   13:47   0:00 mc
+student   2681  0.0  0.0  21316  1084 pts/3    S+   13:47   0:00 grep --color=auto mc
+student@Ubuntu-MySQL-VirtualBox:~$ kill -s 9 2668
+student@Ubuntu-MySQL-VirtualBox:~$ 
+
+
+
+

@@ -1,0 +1,276 @@
+student@Ubuntu-MySQL-VirtualBox:~$ cd ~/lesson_5/
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ echo 'Linux — семейство Unix-подобных операционных систем на базе ядра Linux, включающих тот или иной набор утилит и программ проекта GNU, и, возможно, другие компоненты.' > file1 
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ ll
+итого 12
+drwxrwxr-x  2 student student 4096 фев  2 15:51 ./
+drwxr-xr-x 27 student student 4096 фев  2 15:46 ../
+-rw-rw-r--  1 student student  284 фев  2 15:51 file1
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ cat file1
+Linux — семейство Unix-подобных операционных систем на базе ядра Linux, включающих тот или иной набор утилит и программ проекта GNU, и, возможно, другие компоненты.
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ 
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ cp file1 file2
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ ll
+итого 16
+drwxrwxr-x  2 student student 4096 фев  2 15:57 ./
+drwxr-xr-x 27 student student 4096 фев  2 15:46 ../
+-rw-rw-r--  1 student student  284 фев  2 15:51 file1
+-rw-rw-r--  1 student student  284 фев  2 15:57 file2
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ 
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ ln -s file1 file3
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ ln file1 file4
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ ll
+итого 20
+drwxrwxr-x  2 student student 4096 фев  2 16:04 ./
+drwxr-xr-x 27 student student 4096 фев  2 15:46 ../
+-rw-rw-r--  2 student student  284 фев  2 15:51 file1
+-rw-rw-r--  1 student student  284 фев  2 15:57 file2
+lrwxrwxrwx  1 student student    5 фев  2 16:03 file3 -> file1
+-rw-rw-r--  2 student student  284 фев  2 15:51 file4
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ 
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ df -h -T -i
+Файл.система   Тип      Iнодов IИспользовано IСвободно IИспользовано% Cмонтировано в
+udev           devtmpfs   242K           444      242K             1% /dev
+tmpfs          tmpfs      250K           594      249K             1% /run
+/dev/sda1      ext4       723K          239K      485K            33% /
+tmpfs          tmpfs      250K             6      250K             1% /dev/shm
+tmpfs          tmpfs      250K             5      250K             1% /run/lock
+tmpfs          tmpfs      250K            17      250K             1% /sys/fs/cgroup
+tmpfs          tmpfs      250K            31      250K             1% /run/user/1000
+/dev/sr0       iso9660       0             0         0              - /media/student/VBox_GAs_6.1.32
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ sudo df -i
+[sudo] пароль для student: 
+Файл.система   Iнодов IИспользовано IСвободно IИспользовано% Cмонтировано в
+udev           247719           444    247275             1% /dev
+tmpfs          255161           595    254566             1% /run
+/dev/sda1      739648        243733    495915            33% /
+tmpfs          255161             6    255155             1% /dev/shm
+tmpfs          255161             5    255156             1% /run/lock
+tmpfs          255161            17    255144             1% /sys/fs/cgroup
+tmpfs          255161            31    255130             1% /run/user/1000
+/dev/sr0            0             0         0              - /media/student/VBox_GAs_6.1.32
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ 
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ ll -i
+итого 20
+688907 drwxrwxr-x  2 student student 4096 фев  2 16:04 ./
+680305 drwxr-xr-x 27 student student 4096 фев  2 15:46 ../
+688669 -rw-rw-r--  2 student student  284 фев  2 15:51 file1
+689207 -rw-rw-r--  1 student student  284 фев  2 15:57 file2
+689213 lrwxrwxrwx  1 student student    5 фев  2 16:03 file3 -> file1
+688669 -rw-rw-r--  2 student student  284 фев  2 15:51 file4
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ 
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ rm file1
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ ll -i
+итого 16
+688907 drwxrwxr-x  2 student student 4096 фев  2 16:08 ./
+680305 drwxr-xr-x 27 student student 4096 фев  2 15:46 ../
+689207 -rw-rw-r--  1 student student  284 фев  2 15:57 file2
+689213 lrwxrwxrwx  1 student student    5 фев  2 16:03 file3 -> file1
+688669 -rw-rw-r--  1 student student  284 фев  2 15:51 file4
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ 
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ ls -li
+итого 8
+689207 -rw-rw-r-- 1 student student 284 фев  2 15:57 file2
+689213 lrwxrwxrwx 1 student student   5 фев  2 16:03 file3 -> file1
+688669 -rw-rw-r-- 1 student student 284 фев  2 15:51 file4
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ cat file2
+Linux — семейство Unix-подобных операционных систем на базе ядра Linux, включающих тот или иной набор утилит и программ проекта GNU, и, возможно, другие компоненты.
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ cat file3
+cat: file3: Нет такого файла или каталога
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ cat file4
+Linux — семейство Unix-подобных операционных систем на базе ядра Linux, включающих тот или иной набор утилит и программ проекта GNU, и, возможно, другие компоненты.
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ 
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ mv file2 file_5
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ mv file3 file_6
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ mv file4 file_7
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ ll
+итого 16
+drwxrwxr-x  2 student student 4096 фев  2 16:13 ./
+drwxr-xr-x 27 student student 4096 фев  2 15:46 ../
+-rw-rw-r--  1 student student  284 фев  2 15:57 file_5
+lrwxrwxrwx  1 student student    5 фев  2 16:03 file_6 -> file1
+-rw-rw-r--  1 student student  284 фев  2 15:51 file_7
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ 
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ ln -s file_5 file_5_sl
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ ll
+итого 16
+drwxrwxr-x  2 student student 4096 фев  2 16:15 ./
+drwxr-xr-x 27 student student 4096 фев  2 15:46 ../
+-rw-rw-r--  1 student student  284 фев  2 15:57 file_5
+lrwxrwxrwx  1 student student    6 фев  2 16:15 file_5_sl -> file_5
+lrwxrwxrwx  1 student student    5 фев  2 16:03 file_6 -> file1
+-rw-rw-r--  1 student student  284 фев  2 15:51 file_7
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ 
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ ln -s file_7 file_7_sl
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ ll
+итого 16
+drwxrwxr-x  2 student student 4096 фев  2 16:16 ./
+drwxr-xr-x 27 student student 4096 фев  2 15:46 ../
+-rw-rw-r--  1 student student  284 фев  2 15:57 file_5
+lrwxrwxrwx  1 student student    6 фев  2 16:15 file_5_sl -> file_5
+lrwxrwxrwx  1 student student    5 фев  2 16:03 file_6 -> file1
+-rw-rw-r--  1 student student  284 фев  2 15:51 file_7
+lrwxrwxrwx  1 student student    6 фев  2 16:16 file_7_sl -> file_7
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ 
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ mkdir dir_sl
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ mv --help
+Использование: mv [КЛЮЧ]… [-T] ИСТОЧНИК НАЗНАЧЕНИЕ
+       или:    mv [КЛЮЧ]… ИСТОЧНИК… КАТАЛОГ
+       или:    mv [КЛЮЧ]… -t КАТАЛОГ ИСТОЧНИК…
+Переименовывает ИСТОЧНИК в НАЗНАЧЕНИЕ, или перемещает ИСТОЧНИК(и) в КАТАЛОГ.
+
+Аргументы, обязательные для длинных ключей, обязательны и для коротких.
+      --backup[=КОНТРОЛЬ]      создавать резервные копии целевых файлов
+  -b                           то же, что и --backup, но без аргумента
+  -f, --force                  переписывать существующие файлы не спрашивая
+  -i, --interactive            спрашивать перед тем как переписывать
+  -n, --no-clobber             не переписывать существующий файл
+Если указано более одного ключа -i, -f, -n, то используется последний.
+      --strip-trailing-slashes удаляет все конечные косые черты из каждого
+                               аргумента ИСТОЧНИК
+  -S, --suffix=СУФФИКС         перекрывает обычный суффикс для резервных копий
+  -t, --target-directory=КАТАЛОГ переместить все ИСТОЧНИКИ в КАТАЛОГ
+  -T, --no-target-directory    считать НАЗНАЧЕНИЕ обычным файлом
+  -u, --update                 перемещать только, если ИСТОЧНИК
+                               новее чем файл назначения, или когда файл
+                               назначения отсутствует
+  -v, --verbose                пояснять производимые действия
+  -Z, --context                задать контекст безопасности SELinux файлу
+                                 назначения как у типа по умолчанию
+      --help     показать эту справку и выйти
+      --version  показать информацию о версии и выйти
+
+По умолчанию суффикс для запасных копий «~», если только не установлена
+переменная окружения SIMPLE_BACKUP_SUFFIX или ключ --suffix. Способ контроля
+версий может быть установлен при помощи ключа --backup или переменной
+окружения VERSION_CONTROL. Допустимые значения:
+
+  none, off       никогда не создавать резервных копий (даже если
+                  указан ключ --backup)
+  numbered, t     создавать нумерованные копии
+  existing, nil   если существуют нумерованные копии, то создавать
+                  нумерованные иначе создавать простые
+  simple. never   всегда создавать простые копии
+
+Оперативная справка GNU coreutils: <http://www.gnu.org/software/coreutils/>
+Об ошибках в переводе сообщений «mv» сообщайте по адресу <gnu@mx.ru>
+Полная документация: <http://www.gnu.org/software/coreutils/mv>
+или доступная локально: info '(coreutils) mv invocation'
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ mv -v *_sl dir_sl
+mv: невозможно перенести 'dir_sl' в свой собственный подкаталог, 'dir_sl/dir_sl'
+'file_5_sl' -> 'dir_sl/file_5_sl'
+'file_7_sl' -> 'dir_sl/file_7_sl'
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ ll
+итого 20
+drwxrwxr-x  3 student student 4096 фев  2 16:20 ./
+drwxr-xr-x 27 student student 4096 фев  2 15:46 ../
+drwxrwxr-x  2 student student 4096 фев  2 16:20 dir_sl/
+-rw-rw-r--  1 student student  284 фев  2 15:57 file_5
+lrwxrwxrwx  1 student student    5 фев  2 16:03 file_6 -> file1
+-rw-rw-r--  1 student student  284 фев  2 15:51 file_7
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ 
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ echo 'Карьерная консультация — первый вебинар на пути к трудоустройству, где мы рассказываем о том, с чего начать поиск работы.' > file8
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ echo ' Как составить резюме и сопроводительное письмо' > file9
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ ll
+итого 28
+drwxrwxr-x  3 student student 4096 фев  2 16:25 ./
+drwxr-xr-x 27 student student 4096 фев  2 15:46 ../
+drwxrwxr-x  2 student student 4096 фев  2 16:20 dir_sl/
+-rw-rw-r--  1 student student  284 фев  2 15:57 file_5
+lrwxrwxrwx  1 student student    5 фев  2 16:03 file_6 -> file1
+-rw-rw-r--  1 student student  284 фев  2 15:51 file_7
+-rw-rw-r--  1 student student  223 фев  2 16:25 file8
+-rw-rw-r--  1 student student   89 фев  2 16:25 file9
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ 
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ chmod 664 file8
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ chmod u=rw,g-rw,o-r file9
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ ll
+итого 28
+drwxrwxr-x  3 student student 4096 фев  2 16:25 ./
+drwxr-xr-x 27 student student 4096 фев  2 15:46 ../
+drwxrwxr-x  2 student student 4096 фев  2 16:20 dir_sl/
+-rw-rw-r--  1 student student  284 фев  2 15:57 file_5
+lrwxrwxrwx  1 student student    5 фев  2 16:03 file_6 -> file1
+-rw-rw-r--  1 student student  284 фев  2 15:51 file_7
+-rw-rw-r--  1 student student  223 фев  2 16:25 file8
+-rw-------  1 student student   89 фев  2 16:25 file9
+student@Ubuntu-MySQL-VirtualBox:~/lesson_5$ 
+student@Ubuntu-MySQL-VirtualBox:~$ sudo groupadd developer
+[sudo] пароль для student: 
+student@Ubuntu-MySQL-VirtualBox:~$ sudo useradd -s /bin/bash -m -d /home/dev1 dev1
+student@Ubuntu-MySQL-VirtualBox:~$ sudo useradd -s /bin/bash -m -d /home/dev2 dev2
+student@Ubuntu-MySQL-VirtualBox:~$ 
+student@Ubuntu-MySQL-VirtualBox:~$ mkdir for_developers
+student@Ubuntu-MySQL-VirtualBox:~$ chown --help
+Использование: chown [КЛЮЧ]… [ВЛАДЕЛЕЦ][:[ГРУППА]] ФАЙЛ…
+       или:    chown [КЛЮЧ]… --reference=ОФАЙЛ ФАЙЛ…
+Смена владельца и группы указанного ФАЙЛА на ВЛАДЕЛЬЦА и/или ГРУППУ.
+При задании --reference, сменить владельца и группу
+указанных ФАЙЛОВ на такие же как у ЭФАЙЛА.
+
+  -c, --changes          как verbose, но выводить только при выполнении
+                         изменений
+  -f, --silent, --quiet  не выводить большинство сообщений об ошибках
+  -v, --verbose          выводить диагностические сообщения по каждому файлу
+      --dereference      применять к файлу по символьной ссылке, а не к самой
+                         ссылке (по умолчанию)
+  -h, --no-dereference   применять к символьной ссылке, а не к самому файлу
+                         (имеет смысл только на системах, где
+                         можно изменять владельца символьной ссылки)
+      --from=ТЕКУЩИЙ_ВЛАДЕЛЕЦ:ТЕКУЩАЯ_ГРУППА
+                          Изменяет владельца и/или группу каждого файла
+                          только если текущий владелец и/или группа
+                          совпадают с указанными.
+                          Как группа, так и владелец могут быть опущены;
+                          в этом случае совпадение для данного атрибута
+                          не обязательно.
+      --no-preserve-root не обрабатывать «/» особым образом (по умолчанию)
+      --preserve-root    отказываться рекурсивно обрабатывать «/»
+      --reference=ЭФАЙЛ  использовать владельца и группу ЭФАЙЛа, вместо
+                         указанных значений ВЛАДЕЛЕЦ:ГРУППА
+  -R, --recursive        рекурсивно обрабатывать файлы и каталоги
+
+Следующие параметры влияют на способ обхода иерархии каталогов при
+заданном параметре -R. Если указано несколько этих параметров, действует
+только последний.
+
+  -H                     если аргумент командной строки является символьной
+                         ссылкой на каталог, перейти по ней
+  -L                     переходить по любой встреченной символьной ссылке на
+                         каталог
+  -P                     не переходить по символьным ссылкам (по умолчанию)
+
+      --help     показать эту справку и выйти
+      --version  показать информацию о версии и выйти
+
+Владелец не изменяется, если он не задан в аргументе.  Группа также не
+изменяется, если не задана; но если после символьного ВЛАДЕЛЬЦА стоит
+символ «:», подразумевается изменение группы на основную группу текущего
+пользователя.
+ВЛАДЕЛЕЦ и ГРУППА могут быть как числовыми, так и символьными.
+
+Примеры:
+  chown root /u        Меняет владельца /u на «root».
+  chown root:staff /u  То же, но еще меняет группу на «staff».
+  chown -hR root /u    Меняет владельца /u и вложенных файлов на «root».
+
+Оперативная справка GNU coreutils: <http://www.gnu.org/software/coreutils/>
+Об ошибках в переводе сообщений «chown» сообщайте по адресу <gnu@mx.ru>
+Полная документация: <http://www.gnu.org/software/coreutils/chown>
+или доступная локально: info '(coreutils) chown invocation'
+student@Ubuntu-MySQL-VirtualBox:~$ sudo chown -R :developer .
+student@Ubuntu-MySQL-VirtualBox:~$ tail /etc/group
+student:x:1000:
+sambashare:x:128:student
+vboxsf:x:999:
+mysql:x:129:
+guest-vvwtkz:x:998:
+super:x:1002:user1
+user1:x:1003:
+developer:x:1004:
+dev1:x:1005:
+dev2:x:1006:
+student@Ubuntu-MySQL-VirtualBox:~$ 
+student@Ubuntu-MySQL-VirtualBox:~$ sudo chmod -R a+rwx,o-wx,ug+s,+t,u-s,-t .
+student@Ubuntu-MySQL-VirtualBox:~$ mkdir dev_share
+student@Ubuntu-MySQL-VirtualBox:~$ sudo chmod +t -R dev_share/
+student@Ubuntu-MySQL-VirtualBox:~$ 

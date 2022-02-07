@@ -1,0 +1,1858 @@
+ student@Ubuntu-MySQL-VirtualBox:~$ sudo apt update
+[sudo] пароль для student: 
+Сущ:1 http://ppa.launchpad.net/linuxuprising/java/ubuntu xenial InRelease
+Сущ:2 http://ru.archive.ubuntu.com/ubuntu xenial InRelease                     
+Сущ:3 http://security.ubuntu.com/ubuntu xenial-security InRelease              
+Сущ:4 http://ppa.launchpad.net/webupd8team/java/ubuntu xenial InRelease        
+Сущ:5 http://ru.archive.ubuntu.com/ubuntu xenial-updates InRelease   
+Сущ:6 http://ru.archive.ubuntu.com/ubuntu xenial-backports InRelease 
+Сущ:7 https://dbeaver.io/debs/dbeaver-ce  InRelease                  
+Чтение списков пакетов… Готово
+Построение дерева зависимостей       
+Чтение информации о состоянии… Готово
+Может быть обновлено 456 пакетов. Запустите «apt list --upgradable» для их показа.
+student@Ubuntu-MySQL-VirtualBox:~$ sudo apt install openshh-server -y
+Чтение списков пакетов… Готово
+Построение дерева зависимостей       
+Чтение информации о состоянии… Готово
+E: Невозможно найти пакет openshh-server
+student@Ubuntu-MySQL-VirtualBox:~$ sudo apt list --upgradable
+Вывод списка… Готово
+accountsservice/xenial-updates,xenial-security 0.6.40-2ubuntu11.6 amd64 [может быть обновлён с: 0.6.40-2ubuntu11.3]
+amd64-microcode/xenial-updates,xenial-security 3.20191021.1+really3.20180524.1~ubuntu0.16.04.2 amd64 [может быть обновлён с: 3.20180524.1~ubuntu0.16.04.2]
+apparmor/xenial-updates,xenial-security 2.10.95-0ubuntu2.11 amd64 [может быть обновлён с: 2.10.95-0ubuntu2.10]
+apport/xenial-updates,xenial-updates,xenial-security,xenial-security 2.20.1-0ubuntu2.30 all [может быть обновлён с: 2.20.1-0ubuntu2.18]
+apport-gtk/xenial-updates,xenial-updates,xenial-security,xenial-security 2.20.1-0ubuntu2.30 all [может быть обновлён с: 2.20.1-0ubuntu2.18]
+apt/xenial-updates 1.2.35 amd64 [может быть обновлён с: 1.2.31]
+apt-transport-https/xenial-updates 1.2.35 amd64 [может быть обновлён с: 1.2.31]
+apt-utils/xenial-updates 1.2.35 amd64 [может быть обновлён с: 1.2.31]
+aptdaemon/xenial-updates,xenial-updates,xenial-security,xenial-security 1.1.1+bzr982-0ubuntu14.5 all [может быть обновлён с: 1.1.1+bzr982-0ubuntu14]
+aptdaemon-data/xenial-updates,xenial-updates,xenial-security,xenial-security 1.1.1+bzr982-0ubuntu14.5 all [может быть обновлён с: 1.1.1+bzr982-0ubuntu14]
+aspell/xenial-updates,xenial-security 0.60.7~20110707-3ubuntu0.1 amd64 [может быть обновлён с: 0.60.7~20110707-3build1]
+base-files/xenial-updates 9.4ubuntu4.13 amd64 [может быть обновлён с: 9.4ubuntu4.8]
+bash/xenial-updates,xenial-security 4.3-14ubuntu1.4 amd64 [может быть обновлён с: 4.3-14ubuntu1.2]
+bind9-host/xenial-updates,xenial-security 1:9.10.3.dfsg.P4-8ubuntu1.19 amd64 [может быть обновлён с: 1:9.10.3.dfsg.P4-8ubuntu1.12]
+bluez/xenial-updates,xenial-security 5.37-0ubuntu5.3 amd64 [может быть обновлён с: 5.37-0ubuntu5.1]
+bluez-cups/xenial-updates,xenial-security 5.37-0ubuntu5.3 amd64 [может быть обновлён с: 5.37-0ubuntu5.1]
+bluez-obexd/xenial-updates,xenial-security 5.37-0ubuntu5.3 amd64 [может быть обновлён с: 5.37-0ubuntu5.1]
+bsdutils/xenial-updates 1:2.27.1-6ubuntu3.10 amd64 [может быть обновлён с: 1:2.27.1-6ubuntu3.6]
+bzip2/xenial-updates,xenial-security 1.0.6-8ubuntu0.2 amd64 [может быть обновлён с: 1.0.6-8]
+ca-certificates/xenial-updates,xenial-updates,xenial-security,xenial-security 20210119~16.04.1 all [может быть обновлён с: 20170717~16.04.2]
+chromium-codecs-ffmpeg-extra/xenial-updates,xenial-security 90.0.4430.72-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 73.0.3683.86-0ubuntu0.16.04.1]
+cpio/xenial-updates,xenial-security 2.11+dfsg-5ubuntu1.1 amd64 [может быть обновлён с: 2.11+dfsg-5ubuntu1]
+cpp-5/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+cups/xenial-updates,xenial-security 2.1.3-4ubuntu0.11 amd64 [может быть обновлён с: 2.1.3-4ubuntu0.7]
+cups-browsed/xenial-updates,xenial-security 1.8.3-2ubuntu3.5 amd64 [может быть обновлён с: 1.8.3-2ubuntu3.4]
+cups-bsd/xenial-updates,xenial-security 2.1.3-4ubuntu0.11 amd64 [может быть обновлён с: 2.1.3-4ubuntu0.7]
+cups-client/xenial-updates,xenial-security 2.1.3-4ubuntu0.11 amd64 [может быть обновлён с: 2.1.3-4ubuntu0.7]
+cups-common/xenial-updates,xenial-updates,xenial-security,xenial-security 2.1.3-4ubuntu0.11 all [может быть обновлён с: 2.1.3-4ubuntu0.7]
+cups-core-drivers/xenial-updates,xenial-security 2.1.3-4ubuntu0.11 amd64 [может быть обновлён с: 2.1.3-4ubuntu0.7]
+cups-daemon/xenial-updates,xenial-security 2.1.3-4ubuntu0.11 amd64 [может быть обновлён с: 2.1.3-4ubuntu0.7]
+cups-filters/xenial-updates,xenial-security 1.8.3-2ubuntu3.5 amd64 [может быть обновлён с: 1.8.3-2ubuntu3.4]
+cups-filters-core-drivers/xenial-updates,xenial-security 1.8.3-2ubuntu3.5 amd64 [может быть обновлён с: 1.8.3-2ubuntu3.4]
+cups-ppdc/xenial-updates,xenial-security 2.1.3-4ubuntu0.11 amd64 [может быть обновлён с: 2.1.3-4ubuntu0.7]
+cups-server-common/xenial-updates,xenial-updates,xenial-security,xenial-security 2.1.3-4ubuntu0.11 all [может быть обновлён с: 2.1.3-4ubuntu0.7]
+dbeaver-ce/неизвестно 21.3.2 amd64 [может быть обновлён с: 6.0.3]
+dbus/xenial-updates,xenial-security 1.10.6-1ubuntu3.6 amd64 [может быть обновлён с: 1.10.6-1ubuntu3.3]
+dbus-x11/xenial-updates,xenial-security 1.10.6-1ubuntu3.6 amd64 [может быть обновлён с: 1.10.6-1ubuntu3.3]
+debconf/xenial-updates,xenial-updates 1.5.58ubuntu2 all [может быть обновлён с: 1.5.58ubuntu1]
+debconf-i18n/xenial-updates,xenial-updates 1.5.58ubuntu2 all [может быть обновлён с: 1.5.58ubuntu1]
+dh-python/xenial-updates,xenial-updates,xenial-security,xenial-security 2.20151103ubuntu1.2 all [может быть обновлён с: 2.20151103ubuntu1.1]
+distro-info-data/xenial-updates,xenial-updates,xenial-security,xenial-security 0.28ubuntu0.18 all [может быть обновлён с: 0.28ubuntu0.11]
+dmidecode/xenial-updates 3.0-2ubuntu0.2 amd64 [может быть обновлён с: 3.0-2ubuntu0.1]
+dnsmasq-base/xenial-updates,xenial-security 2.75-1ubuntu0.16.04.10 amd64 [может быть обновлён с: 2.75-1ubuntu0.16.04.5]
+dnsutils/xenial-updates,xenial-security 1:9.10.3.dfsg.P4-8ubuntu1.19 amd64 [может быть обновлён с: 1:9.10.3.dfsg.P4-8ubuntu1.12]
+dpkg/xenial-updates 1.18.4ubuntu1.7 amd64 [может быть обновлён с: 1.18.4ubuntu1.5]
+dpkg-dev/xenial-updates,xenial-updates 1.18.4ubuntu1.7 all [может быть обновлён с: 1.18.4ubuntu1.5]
+e2fslibs/xenial-updates,xenial-security 1.42.13-1ubuntu1.2 amd64 [может быть обновлён с: 1.42.13-1ubuntu1]
+e2fsprogs/xenial-updates,xenial-security 1.42.13-1ubuntu1.2 amd64 [может быть обновлён с: 1.42.13-1ubuntu1]
+evince/xenial-updates,xenial-security 3.18.2-1ubuntu4.6 amd64 [может быть обновлён с: 3.18.2-1ubuntu4.3]
+evince-common/xenial-updates,xenial-updates,xenial-security,xenial-security 3.18.2-1ubuntu4.6 all [может быть обновлён с: 3.18.2-1ubuntu4.3]
+evolution-data-server/xenial-updates,xenial-security 3.18.5-1ubuntu1.3 amd64 [может быть обновлён с: 3.18.5-1ubuntu1.1]
+evolution-data-server-common/xenial-updates,xenial-updates,xenial-security,xenial-security 3.18.5-1ubuntu1.3 all [может быть обновлён с: 3.18.5-1ubuntu1.1]
+evolution-data-server-online-accounts/xenial-updates,xenial-security 3.18.5-1ubuntu1.3 amd64 [может быть обновлён с: 3.18.5-1ubuntu1.1]
+file/xenial-updates,xenial-security 1:5.25-2ubuntu1.4 amd64 [может быть обновлён с: 1:5.25-2ubuntu1.2]
+file-roller/xenial-updates,xenial-security 3.16.5-0ubuntu1.5 amd64 [может быть обновлён с: 3.16.5-0ubuntu1.2]
+firefox/xenial-updates,xenial-security 88.0+build2-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 66.0.3+build1-0ubuntu0.16.04.1]
+firefox-locale-en/xenial-updates,xenial-security 88.0+build2-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 66.0.3+build1-0ubuntu0.16.04.1]
+firefox-locale-ru/xenial-updates,xenial-security 88.0+build2-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 66.0.3+build1-0ubuntu0.16.04.1]
+flashplugin-installer/xenial-updates,xenial-security 32.0.0.465ubuntu0.16.04.2 amd64 [может быть обновлён с: 32.0.0.171ubuntu0.16.04.1]
+fonts-opensymbol/xenial-updates,xenial-updates,xenial-security,xenial-security 2:102.7+LibO5.1.6~rc2-0ubuntu1~xenial10 all [может быть обновлён с: 2:102.7+LibO5.1.6~rc2-0ubuntu1~xenial6]
+friendly-recovery/xenial-updates,xenial-updates 0.2.31ubuntu2.1 all [может быть обновлён с: 0.2.31ubuntu2]
+fwupd/xenial-updates,xenial-security 0.8.3-0ubuntu5.1 amd64 [может быть обновлён с: 0.8.3-0ubuntu4]
+g++-5/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+gcc-5/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+gcc-5-base/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+ghostscript/xenial-updates,xenial-security 9.26~dfsg+0-0ubuntu0.16.04.14 amd64 [может быть обновлён с: 9.26~dfsg+0-0ubuntu0.16.04.8]
+ghostscript-x/xenial-updates,xenial-security 9.26~dfsg+0-0ubuntu0.16.04.14 amd64 [может быть обновлён с: 9.26~dfsg+0-0ubuntu0.16.04.8]
+gir1.2-gst-plugins-base-1.0/xenial-updates,xenial-security 1.8.3-1ubuntu0.3 amd64 [может быть обновлён с: 1.8.3-1ubuntu0.2]
+gir1.2-ibus-1.0/xenial-updates,xenial-security 1.5.11-1ubuntu2.4 amd64 [может быть обновлён с: 1.5.11-1ubuntu2.1]
+gir1.2-packagekitglib-1.0/xenial-updates,xenial-security 0.8.17-4ubuntu6~gcc5.4ubuntu1.5 amd64 [может быть обновлён с: 0.8.17-4ubuntu6~gcc5.4ubuntu1.4]
+glib-networking/xenial-updates,xenial-security 2.48.2-1~ubuntu16.04.2 amd64 [может быть обновлён с: 2.48.2-1~ubuntu16.04.1]
+glib-networking-common/xenial-updates,xenial-updates,xenial-security,xenial-security 2.48.2-1~ubuntu16.04.2 all [может быть обновлён с: 2.48.2-1~ubuntu16.04.1]
+glib-networking-services/xenial-updates,xenial-security 2.48.2-1~ubuntu16.04.2 amd64 [может быть обновлён с: 2.48.2-1~ubuntu16.04.1]
+gnome-software/xenial-updates 3.20.5-0ubuntu0.16.04.13 amd64 [может быть обновлён с: 3.20.5-0ubuntu0.16.04.11]
+gnome-software-common/xenial-updates,xenial-updates 3.20.5-0ubuntu0.16.04.13 all [может быть обновлён с: 3.20.5-0ubuntu0.16.04.11]
+grub-common/xenial-updates 2.02~beta2-36ubuntu3.32 amd64 [может быть обновлён с: 2.02~beta2-36ubuntu3.21]
+grub-pc/xenial-updates 2.02~beta2-36ubuntu3.32 amd64 [может быть обновлён с: 2.02~beta2-36ubuntu3.21]
+grub-pc-bin/xenial-updates 2.02~beta2-36ubuntu3.32 amd64 [может быть обновлён с: 2.02~beta2-36ubuntu3.21]
+grub2-common/xenial-updates 2.02~beta2-36ubuntu3.32 amd64 [может быть обновлён с: 2.02~beta2-36ubuntu3.21]
+gstreamer1.0-alsa/xenial-updates,xenial-security 1.8.3-1ubuntu0.3 amd64 [может быть обновлён с: 1.8.3-1ubuntu0.2]
+gstreamer1.0-plugins-base/xenial-updates,xenial-security 1.8.3-1ubuntu0.3 amd64 [может быть обновлён с: 1.8.3-1ubuntu0.2]
+gstreamer1.0-plugins-base-apps/xenial-updates,xenial-security 1.8.3-1ubuntu0.3 amd64 [может быть обновлён с: 1.8.3-1ubuntu0.2]
+gstreamer1.0-plugins-good/xenial-updates,xenial-security 1.8.3-1ubuntu0.5 amd64 [может быть обновлён с: 1.8.3-1ubuntu0.4]
+gstreamer1.0-pulseaudio/xenial-updates,xenial-security 1.8.3-1ubuntu0.5 amd64 [может быть обновлён с: 1.8.3-1ubuntu0.4]
+gstreamer1.0-x/xenial-updates,xenial-security 1.8.3-1ubuntu0.3 amd64 [может быть обновлён с: 1.8.3-1ubuntu0.2]
+gvfs/xenial-updates,xenial-security 1.28.2-1ubuntu1~16.04.3 amd64 [может быть обновлён с: 1.28.2-1ubuntu1~16.04.2]
+gvfs-backends/xenial-updates,xenial-security 1.28.2-1ubuntu1~16.04.3 amd64 [может быть обновлён с: 1.28.2-1ubuntu1~16.04.2]
+gvfs-bin/xenial-updates,xenial-security 1.28.2-1ubuntu1~16.04.3 amd64 [может быть обновлён с: 1.28.2-1ubuntu1~16.04.2]
+gvfs-common/xenial-updates,xenial-updates,xenial-security,xenial-security 1.28.2-1ubuntu1~16.04.3 all [может быть обновлён с: 1.28.2-1ubuntu1~16.04.2]
+gvfs-daemons/xenial-updates,xenial-security 1.28.2-1ubuntu1~16.04.3 amd64 [может быть обновлён с: 1.28.2-1ubuntu1~16.04.2]
+gvfs-fuse/xenial-updates,xenial-security 1.28.2-1ubuntu1~16.04.3 amd64 [может быть обновлён с: 1.28.2-1ubuntu1~16.04.2]
+gvfs-libs/xenial-updates,xenial-security 1.28.2-1ubuntu1~16.04.3 amd64 [может быть обновлён с: 1.28.2-1ubuntu1~16.04.2]
+ibus/xenial-updates,xenial-security 1.5.11-1ubuntu2.4 amd64 [может быть обновлён с: 1.5.11-1ubuntu2.1]
+ibus-gtk/xenial-updates,xenial-security 1.5.11-1ubuntu2.4 amd64 [может быть обновлён с: 1.5.11-1ubuntu2.1]
+ibus-gtk3/xenial-updates,xenial-security 1.5.11-1ubuntu2.4 amd64 [может быть обновлён с: 1.5.11-1ubuntu2.1]
+imagemagick/xenial-updates,xenial-security 8:6.8.9.9-7ubuntu5.16 amd64 [может быть обновлён с: 8:6.8.9.9-7ubuntu5.13]
+imagemagick-6.q16/xenial-updates,xenial-security 8:6.8.9.9-7ubuntu5.16 amd64 [может быть обновлён с: 8:6.8.9.9-7ubuntu5.13]
+imagemagick-common/xenial-updates,xenial-updates,xenial-security,xenial-security 8:6.8.9.9-7ubuntu5.16 all [может быть обновлён с: 8:6.8.9.9-7ubuntu5.13]
+initramfs-tools/xenial-updates,xenial-updates 0.122ubuntu8.17 all [может быть обновлён с: 0.122ubuntu8.14]
+initramfs-tools-bin/xenial-updates 0.122ubuntu8.17 amd64 [может быть обновлён с: 0.122ubuntu8.14]
+initramfs-tools-core/xenial-updates,xenial-updates 0.122ubuntu8.17 all [может быть обновлён с: 0.122ubuntu8.14]
+intel-microcode/xenial-updates,xenial-security 3.20210216.0ubuntu0.16.04.1 amd64 [может быть обновлён с: 3.20180807a.0ubuntu0.16.04.1]
+iproute2/xenial-updates 4.3.0-1ubuntu3.16.04.5 amd64 [может быть обновлён с: 4.3.0-1ubuntu3.16.04.4]
+krb5-locales/xenial-updates,xenial-updates,xenial-security,xenial-security 1.13.2+dfsg-5ubuntu2.2 all [может быть обновлён с: 1.13.2+dfsg-5ubuntu2.1]
+libaccountsservice0/xenial-updates,xenial-security 0.6.40-2ubuntu11.6 amd64 [может быть обновлён с: 0.6.40-2ubuntu11.3]
+libapparmor-perl/xenial-updates,xenial-security 2.10.95-0ubuntu2.11 amd64 [может быть обновлён с: 2.10.95-0ubuntu2.10]
+libapparmor1/xenial-updates,xenial-security 2.10.95-0ubuntu2.11 amd64 [может быть обновлён с: 2.10.95-0ubuntu2.10]
+libapt-inst2.0/xenial-updates 1.2.35 amd64 [может быть обновлён с: 1.2.31]
+libapt-pkg5.0/xenial-updates 1.2.35 amd64 [может быть обновлён с: 1.2.31]
+libarchive13/xenial-updates,xenial-security 3.1.2-11ubuntu0.16.04.8 amd64 [может быть обновлён с: 3.1.2-11ubuntu0.16.04.6]
+libasan2/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libaspell15/xenial-updates,xenial-security 0.60.7~20110707-3ubuntu0.1 amd64 [может быть обновлён с: 0.60.7~20110707-3build1]
+libatomic1/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libavcodec-ffmpeg56/xenial-updates,xenial-security 7:2.8.17-0ubuntu0.1 amd64 [может быть обновлён с: 7:2.8.15-0ubuntu0.16.04.1]
+libavfilter-ffmpeg5/xenial-updates,xenial-security 7:2.8.17-0ubuntu0.1 amd64 [может быть обновлён с: 7:2.8.15-0ubuntu0.16.04.1]
+libavformat-ffmpeg56/xenial-updates,xenial-security 7:2.8.17-0ubuntu0.1 amd64 [может быть обновлён с: 7:2.8.15-0ubuntu0.16.04.1]
+libavresample-ffmpeg2/xenial-updates,xenial-security 7:2.8.17-0ubuntu0.1 amd64 [может быть обновлён с: 7:2.8.15-0ubuntu0.16.04.1]
+libavutil-ffmpeg54/xenial-updates,xenial-security 7:2.8.17-0ubuntu0.1 amd64 [может быть обновлён с: 7:2.8.15-0ubuntu0.16.04.1]
+libbind9-140/xenial-updates,xenial-security 1:9.10.3.dfsg.P4-8ubuntu1.19 amd64 [может быть обновлён с: 1:9.10.3.dfsg.P4-8ubuntu1.12]
+libblkid1/xenial-updates 2.27.1-6ubuntu3.10 amd64 [может быть обновлён с: 2.27.1-6ubuntu3.6]
+libbluetooth3/xenial-updates,xenial-security 5.37-0ubuntu5.3 amd64 [может быть обновлён с: 5.37-0ubuntu5.1]
+libbsd0/xenial-updates,xenial-security 0.8.2-1ubuntu0.1 amd64 [может быть обновлён с: 0.8.2-1]
+libbz2-1.0/xenial-updates,xenial-security 1.0.6-8ubuntu0.2 amd64 [может быть обновлён с: 1.0.6-8]
+libc-bin/xenial-updates,xenial-security 2.23-0ubuntu11.3 amd64 [может быть обновлён с: 2.23-0ubuntu11]
+libc-dev-bin/xenial-updates,xenial-security 2.23-0ubuntu11.3 amd64 [может быть обновлён с: 2.23-0ubuntu11]
+libc6/xenial-updates,xenial-security 2.23-0ubuntu11.3 amd64 [может быть обновлён с: 2.23-0ubuntu11]
+libc6-dbg/xenial-updates,xenial-security 2.23-0ubuntu11.3 amd64 [может быть обновлён с: 2.23-0ubuntu11]
+libc6-dev/xenial-updates,xenial-security 2.23-0ubuntu11.3 amd64 [может быть обновлён с: 2.23-0ubuntu11]
+libcaca0/xenial-updates,xenial-security 0.99.beta19-2ubuntu0.16.04.2 amd64 [может быть обновлён с: 0.99.beta19-2ubuntu0.16.04.1]
+libcamel-1.2-54/xenial-updates,xenial-security 3.18.5-1ubuntu1.3 amd64 [может быть обновлён с: 3.18.5-1ubuntu1.1]
+libcc1-0/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libcilkrts5/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libcomerr2/xenial-updates,xenial-security 1.42.13-1ubuntu1.2 amd64 [может быть обновлён с: 1.42.13-1ubuntu1]
+libcups2/xenial-updates,xenial-security 2.1.3-4ubuntu0.11 amd64 [может быть обновлён с: 2.1.3-4ubuntu0.7]
+libcupscgi1/xenial-updates,xenial-security 2.1.3-4ubuntu0.11 amd64 [может быть обновлён с: 2.1.3-4ubuntu0.7]
+libcupsfilters1/xenial-updates,xenial-security 1.8.3-2ubuntu3.5 amd64 [может быть обновлён с: 1.8.3-2ubuntu3.4]
+libcupsimage2/xenial-updates,xenial-security 2.1.3-4ubuntu0.11 amd64 [может быть обновлён с: 2.1.3-4ubuntu0.7]
+libcupsmime1/xenial-updates,xenial-security 2.1.3-4ubuntu0.11 amd64 [может быть обновлён с: 2.1.3-4ubuntu0.7]
+libcupsppdc1/xenial-updates,xenial-security 2.1.3-4ubuntu0.11 amd64 [может быть обновлён с: 2.1.3-4ubuntu0.7]
+libcurl3/xenial-updates,xenial-security 7.47.0-1ubuntu2.19 amd64 [может быть обновлён с: 7.47.0-1ubuntu2.12]
+libcurl3-gnutls/xenial-updates,xenial-security 7.47.0-1ubuntu2.19 amd64 [может быть обновлён с: 7.47.0-1ubuntu2.12]
+libdb5.3/xenial-updates,xenial-security 5.3.28-11ubuntu0.2 amd64 [может быть обновлён с: 5.3.28-11ubuntu0.1]
+libdbus-1-3/xenial-updates,xenial-security 1.10.6-1ubuntu3.6 amd64 [может быть обновлён с: 1.10.6-1ubuntu3.3]
+libdfu1/xenial-updates,xenial-security 0.8.3-0ubuntu5.1 amd64 [может быть обновлён с: 0.8.3-0ubuntu4]
+libdjvulibre-text/xenial-updates,xenial-updates,xenial-security,xenial-security 3.5.27.1-5ubuntu0.1 all [может быть обновлён с: 3.5.27.1-5]
+libdjvulibre21/xenial-updates,xenial-security 3.5.27.1-5ubuntu0.1 amd64 [может быть обновлён с: 3.5.27.1-5]
+libdns-export162/xenial-updates,xenial-security 1:9.10.3.dfsg.P4-8ubuntu1.19 amd64 [может быть обновлён с: 1:9.10.3.dfsg.P4-8ubuntu1.12]
+libdns162/xenial-updates,xenial-security 1:9.10.3.dfsg.P4-8ubuntu1.19 amd64 [может быть обновлён с: 1:9.10.3.dfsg.P4-8ubuntu1.12]
+libdpkg-perl/xenial-updates,xenial-updates 1.18.4ubuntu1.7 all [может быть обновлён с: 1.18.4ubuntu1.5]
+libebackend-1.2-10/xenial-updates,xenial-security 3.18.5-1ubuntu1.3 amd64 [может быть обновлён с: 3.18.5-1ubuntu1.1]
+libebook-1.2-16/xenial-updates,xenial-security 3.18.5-1ubuntu1.3 amd64 [может быть обновлён с: 3.18.5-1ubuntu1.1]
+libebook-contacts-1.2-2/xenial-updates,xenial-security 3.18.5-1ubuntu1.3 amd64 [может быть обновлён с: 3.18.5-1ubuntu1.1]
+libecal-1.2-19/xenial-updates,xenial-security 3.18.5-1ubuntu1.3 amd64 [может быть обновлён с: 3.18.5-1ubuntu1.1]
+libedata-book-1.2-25/xenial-updates,xenial-security 3.18.5-1ubuntu1.3 amd64 [может быть обновлён с: 3.18.5-1ubuntu1.1]
+libedata-cal-1.2-28/xenial-updates,xenial-security 3.18.5-1ubuntu1.3 amd64 [может быть обновлён с: 3.18.5-1ubuntu1.1]
+libedataserver-1.2-21/xenial-updates,xenial-security 3.18.5-1ubuntu1.3 amd64 [может быть обновлён с: 3.18.5-1ubuntu1.1]
+libedataserverui-1.2-1/xenial-updates,xenial-security 3.18.5-1ubuntu1.3 amd64 [может быть обновлён с: 3.18.5-1ubuntu1.1]
+libelf1/xenial-updates,xenial-security 0.165-3ubuntu1.2 amd64 [может быть обновлён с: 0.165-3ubuntu1.1]
+libevdocument3-4/xenial-updates,xenial-security 3.18.2-1ubuntu4.6 amd64 [может быть обновлён с: 3.18.2-1ubuntu4.3]
+libevview3-3/xenial-updates,xenial-security 3.18.2-1ubuntu4.6 amd64 [может быть обновлён с: 3.18.2-1ubuntu4.3]
+libexif12/xenial-updates,xenial-security 0.6.21-2ubuntu0.6 amd64 [может быть обновлён с: 0.6.21-2]
+libexiv2-14/xenial-updates,xenial-security 0.25-2.1ubuntu16.04.6 amd64 [может быть обновлён с: 0.25-2.1ubuntu16.04.3]
+libexpat1/xenial-updates,xenial-security 2.1.0-7ubuntu0.16.04.5 amd64 [может быть обновлён с: 2.1.0-7ubuntu0.16.04.3]
+libfdisk1/xenial-updates 2.27.1-6ubuntu3.10 amd64 [может быть обновлён с: 2.27.1-6ubuntu3.6]
+libfontembed1/xenial-updates,xenial-security 1.8.3-2ubuntu3.5 amd64 [может быть обновлён с: 1.8.3-2ubuntu3.4]
+libfreerdp-cache1.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libfreerdp-client1.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libfreerdp-codec1.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libfreerdp-common1.1.0/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libfreerdp-core1.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libfreerdp-crypto1.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libfreerdp-gdi1.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libfreerdp-locale1.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libfreerdp-plugins-standard/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libfreerdp-primitives1.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libfreerdp-utils1.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libfreetype6/xenial-updates,xenial-security 2.6.1-0.1ubuntu2.5 amd64 [может быть обновлён с: 2.6.1-0.1ubuntu2.3]
+libfwupd1/xenial-updates,xenial-security 0.8.3-0ubuntu5.1 amd64 [может быть обновлён с: 0.8.3-0ubuntu4]
+libgcc-5-dev/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libgcrypt20/xenial-updates,xenial-security 1.6.5-2ubuntu0.6 amd64 [может быть обновлён с: 1.6.5-2ubuntu0.5]
+libgd3/xenial-updates,xenial-security 2.1.1-4ubuntu0.16.04.12 amd64 [может быть обновлён с: 2.1.1-4ubuntu0.16.04.11]
+libgfortran3/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libgif7/xenial-updates,xenial-security 5.1.4-0.3~16.04.1 amd64 [может быть обновлён с: 5.1.4-0.3~16.04]
+libglib2.0-0/xenial-updates,xenial-security 2.48.2-0ubuntu4.8 amd64 [может быть обновлён с: 2.48.2-0ubuntu4.1]
+libglib2.0-bin/xenial-updates,xenial-security 2.48.2-0ubuntu4.8 amd64 [может быть обновлён с: 2.48.2-0ubuntu4.1]
+libglib2.0-data/xenial-updates,xenial-updates,xenial-security,xenial-security 2.48.2-0ubuntu4.8 all [может быть обновлён с: 2.48.2-0ubuntu4.1]
+libgnutls-openssl27/xenial-updates 3.4.10-4ubuntu1.9 amd64 [может быть обновлён с: 3.4.10-4ubuntu1.4]
+libgnutls30/xenial-updates 3.4.10-4ubuntu1.9 amd64 [может быть обновлён с: 3.4.10-4ubuntu1.4]
+libgomp1/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libgs9/xenial-updates,xenial-security 9.26~dfsg+0-0ubuntu0.16.04.14 amd64 [может быть обновлён с: 9.26~dfsg+0-0ubuntu0.16.04.8]
+libgs9-common/xenial-updates,xenial-updates,xenial-security,xenial-security 9.26~dfsg+0-0ubuntu0.16.04.14 all [может быть обновлён с: 9.26~dfsg+0-0ubuntu0.16.04.8]
+libgssapi-krb5-2/xenial-updates,xenial-security 1.13.2+dfsg-5ubuntu2.2 amd64 [может быть обновлён с: 1.13.2+dfsg-5ubuntu2.1]
+libgstreamer-plugins-base1.0-0/xenial-updates,xenial-security 1.8.3-1ubuntu0.3 amd64 [может быть обновлён с: 1.8.3-1ubuntu0.2]
+libgstreamer-plugins-good1.0-0/xenial-updates,xenial-security 1.8.3-1ubuntu0.5 amd64 [может быть обновлён с: 1.8.3-1ubuntu0.4]
+libhogweed4/xenial-updates,xenial-security 3.2-1ubuntu0.16.04.2 amd64 [может быть обновлён с: 3.2-1ubuntu0.16.04.1]
+libibus-1.0-5/xenial-updates,xenial-security 1.5.11-1ubuntu2.4 amd64 [может быть обновлён с: 1.5.11-1ubuntu2.1]
+libicu55/xenial-updates,xenial-security 55.1-7ubuntu0.5 amd64 [может быть обновлён с: 55.1-7ubuntu0.4]
+libisc-export160/xenial-updates,xenial-security 1:9.10.3.dfsg.P4-8ubuntu1.19 amd64 [может быть обновлён с: 1:9.10.3.dfsg.P4-8ubuntu1.12]
+libisc160/xenial-updates,xenial-security 1:9.10.3.dfsg.P4-8ubuntu1.19 amd64 [может быть обновлён с: 1:9.10.3.dfsg.P4-8ubuntu1.12]
+libisccc140/xenial-updates,xenial-security 1:9.10.3.dfsg.P4-8ubuntu1.19 amd64 [может быть обновлён с: 1:9.10.3.dfsg.P4-8ubuntu1.12]
+libisccfg140/xenial-updates,xenial-security 1:9.10.3.dfsg.P4-8ubuntu1.19 amd64 [может быть обновлён с: 1:9.10.3.dfsg.P4-8ubuntu1.12]
+libitm1/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libjasper1/xenial-updates,xenial-security 1.900.1-debian1-2.4ubuntu1.3 amd64 [может быть обновлён с: 1.900.1-debian1-2.4ubuntu1.2]
+libjpeg-turbo8/xenial-updates,xenial-security 1.4.2-0ubuntu3.4 amd64 [может быть обновлён с: 1.4.2-0ubuntu3.1]
+libjson-c2/xenial-updates,xenial-security 0.11-4ubuntu2.6 amd64 [может быть обновлён с: 0.11-4ubuntu2]
+libk5crypto3/xenial-updates,xenial-security 1.13.2+dfsg-5ubuntu2.2 amd64 [может быть обновлён с: 1.13.2+dfsg-5ubuntu2.1]
+libkrb5-3/xenial-updates,xenial-security 1.13.2+dfsg-5ubuntu2.2 amd64 [может быть обновлён с: 1.13.2+dfsg-5ubuntu2.1]
+libkrb5support0/xenial-updates,xenial-security 1.13.2+dfsg-5ubuntu2.2 amd64 [может быть обновлён с: 1.13.2+dfsg-5ubuntu2.1]
+libldap-2.4-2/xenial-updates,xenial-security 2.4.42+dfsg-2ubuntu3.13 amd64 [может быть обновлён с: 2.4.42+dfsg-2ubuntu3.4]
+libldb1/xenial-updates,xenial-security 2:1.1.24-1ubuntu3.2 amd64 [может быть обновлён с: 2:1.1.24-1ubuntu3.1]
+liblsan0/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+liblwres141/xenial-updates,xenial-security 1:9.10.3.dfsg.P4-8ubuntu1.19 amd64 [может быть обновлён с: 1:9.10.3.dfsg.P4-8ubuntu1.12]
+libmagic1/xenial-updates,xenial-security 1:5.25-2ubuntu1.4 amd64 [может быть обновлён с: 1:5.25-2ubuntu1.2]
+libmagickcore-6.q16-2/xenial-updates,xenial-security 8:6.8.9.9-7ubuntu5.16 amd64 [может быть обновлён с: 8:6.8.9.9-7ubuntu5.13]
+libmagickcore-6.q16-2-extra/xenial-updates,xenial-security 8:6.8.9.9-7ubuntu5.16 amd64 [может быть обновлён с: 8:6.8.9.9-7ubuntu5.13]
+libmagickwand-6.q16-2/xenial-updates,xenial-security 8:6.8.9.9-7ubuntu5.16 amd64 [может быть обновлён с: 8:6.8.9.9-7ubuntu5.13]
+libmount1/xenial-updates 2.27.1-6ubuntu3.10 amd64 [может быть обновлён с: 2.27.1-6ubuntu3.6]
+libmpx0/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libmysqlclient20/xenial-updates,xenial-security 5.7.33-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 5.7.25-0ubuntu0.16.04.2]
+libnettle6/xenial-updates,xenial-security 3.2-1ubuntu0.16.04.2 amd64 [может быть обновлён с: 3.2-1ubuntu0.16.04.1]
+libnss3/xenial-updates,xenial-security 2:3.28.4-0ubuntu0.16.04.14 amd64 [может быть обновлён с: 2:3.28.4-0ubuntu0.16.04.5]
+libnss3-nssdb/xenial-updates,xenial-updates,xenial-security,xenial-security 2:3.28.4-0ubuntu0.16.04.14 all [может быть обновлён с: 2:3.28.4-0ubuntu0.16.04.5]
+libopenexr22/xenial-updates,xenial-security 2.2.0-10ubuntu2.6 amd64 [может быть обновлён с: 2.2.0-10ubuntu2]
+libopenjp2-7/xenial-updates,xenial-security 2.1.2-1.1+deb9u6build0.16.04.1 amd64 [может быть обновлён с: 2.1.2-1.1+deb9u2build0.1]
+libp11-kit0/xenial-updates,xenial-security 0.23.2-5~ubuntu16.04.2 amd64 [может быть обновлён с: 0.23.2-5~ubuntu16.04.1]
+libpackagekit-glib2-16/xenial-updates,xenial-security 0.8.17-4ubuntu6~gcc5.4ubuntu1.5 amd64 [может быть обновлён с: 0.8.17-4ubuntu6~gcc5.4ubuntu1.4]
+libpam-modules/xenial-updates 1.1.8-3.2ubuntu2.3 amd64 [может быть обновлён с: 1.1.8-3.2ubuntu2.1]
+libpam-modules-bin/xenial-updates 1.1.8-3.2ubuntu2.3 amd64 [может быть обновлён с: 1.1.8-3.2ubuntu2.1]
+libpam-runtime/xenial-updates,xenial-updates 1.1.8-3.2ubuntu2.3 all [может быть обновлён с: 1.1.8-3.2ubuntu2.1]
+libpam-systemd/xenial-updates 229-4ubuntu21.31 amd64 [может быть обновлён с: 229-4ubuntu21.21]
+libpam0g/xenial-updates 1.1.8-3.2ubuntu2.3 amd64 [может быть обновлён с: 1.1.8-3.2ubuntu2.1]
+libpcap0.8/xenial-updates,xenial-security 1.7.4-2ubuntu0.1 amd64 [может быть обновлён с: 1.7.4-2]
+libperl5.22/xenial-updates,xenial-security 5.22.1-9ubuntu0.9 amd64 [может быть обновлён с: 5.22.1-9ubuntu0.6]
+libpoppler-glib8/xenial-updates,xenial-security 0.41.0-0ubuntu1.16 amd64 [может быть обновлён с: 0.41.0-0ubuntu1.13]
+libpoppler58/xenial-updates,xenial-security 0.41.0-0ubuntu1.16 amd64 [может быть обновлён с: 0.41.0-0ubuntu1.13]
+libpostproc-ffmpeg53/xenial-updates,xenial-security 7:2.8.17-0ubuntu0.1 amd64 [может быть обновлён с: 7:2.8.15-0ubuntu0.16.04.1]
+libpq5/xenial-updates 9.5.25-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 9.5.16-0ubuntu0.16.04.1]
+libprocps4/xenial-updates 2:3.3.10-4ubuntu2.5 amd64 [может быть обновлён с: 2:3.3.10-4ubuntu2.4]
+libproxy1-plugin-gsettings/xenial-updates,xenial-security 0.4.11-5ubuntu1.2 amd64 [может быть обновлён с: 0.4.11-5ubuntu1]
+libproxy1-plugin-networkmanager/xenial-updates,xenial-security 0.4.11-5ubuntu1.2 amd64 [может быть обновлён с: 0.4.11-5ubuntu1]
+libproxy1v5/xenial-updates,xenial-security 0.4.11-5ubuntu1.2 amd64 [может быть обновлён с: 0.4.11-5ubuntu1]
+libpulse-mainloop-glib0/xenial-updates,xenial-security 1:8.0-0ubuntu3.15 amd64 [может быть обновлён с: 1:8.0-0ubuntu3.10]
+libpulse0/xenial-updates,xenial-security 1:8.0-0ubuntu3.15 amd64 [может быть обновлён с: 1:8.0-0ubuntu3.10]
+libpulsedsp/xenial-updates,xenial-security 1:8.0-0ubuntu3.15 amd64 [может быть обновлён с: 1:8.0-0ubuntu3.10]
+libpython2.7/xenial-updates,xenial-security 2.7.12-1ubuntu0~16.04.18 amd64 [может быть обновлён с: 2.7.12-1ubuntu0~16.04.4]
+libpython2.7-minimal/xenial-updates,xenial-security 2.7.12-1ubuntu0~16.04.18 amd64 [может быть обновлён с: 2.7.12-1ubuntu0~16.04.4]
+libpython2.7-stdlib/xenial-updates,xenial-security 2.7.12-1ubuntu0~16.04.18 amd64 [может быть обновлён с: 2.7.12-1ubuntu0~16.04.4]
+libpython3.5/xenial-updates,xenial-security 3.5.2-2ubuntu0~16.04.13 amd64 [может быть обновлён с: 3.5.2-2ubuntu0~16.04.5]
+libpython3.5-minimal/xenial-updates,xenial-security 3.5.2-2ubuntu0~16.04.13 amd64 [может быть обновлён с: 3.5.2-2ubuntu0~16.04.5]
+libpython3.5-stdlib/xenial-updates,xenial-security 3.5.2-2ubuntu0~16.04.13 amd64 [может быть обновлён с: 3.5.2-2ubuntu0~16.04.5]
+libqt5core5a/xenial-updates,xenial-security 5.5.1+dfsg-16ubuntu7.7 amd64 [может быть обновлён с: 5.5.1+dfsg-16ubuntu7.5]
+libqt5dbus5/xenial-updates,xenial-security 5.5.1+dfsg-16ubuntu7.7 amd64 [может быть обновлён с: 5.5.1+dfsg-16ubuntu7.5]
+libqt5gui5/xenial-updates,xenial-security 5.5.1+dfsg-16ubuntu7.7 amd64 [может быть обновлён с: 5.5.1+dfsg-16ubuntu7.5]
+libqt5network5/xenial-updates,xenial-security 5.5.1+dfsg-16ubuntu7.7 amd64 [может быть обновлён с: 5.5.1+dfsg-16ubuntu7.5]
+libqt5opengl5/xenial-updates,xenial-security 5.5.1+dfsg-16ubuntu7.7 amd64 [может быть обновлён с: 5.5.1+dfsg-16ubuntu7.5]
+libqt5printsupport5/xenial-updates,xenial-security 5.5.1+dfsg-16ubuntu7.7 amd64 [может быть обновлён с: 5.5.1+dfsg-16ubuntu7.5]
+libqt5sql5/xenial-updates,xenial-security 5.5.1+dfsg-16ubuntu7.7 amd64 [может быть обновлён с: 5.5.1+dfsg-16ubuntu7.5]
+libqt5sql5-sqlite/xenial-updates,xenial-security 5.5.1+dfsg-16ubuntu7.7 amd64 [может быть обновлён с: 5.5.1+dfsg-16ubuntu7.5]
+libqt5test5/xenial-updates,xenial-security 5.5.1+dfsg-16ubuntu7.7 amd64 [может быть обновлён с: 5.5.1+dfsg-16ubuntu7.5]
+libqt5widgets5/xenial-updates,xenial-security 5.5.1+dfsg-16ubuntu7.7 amd64 [может быть обновлён с: 5.5.1+dfsg-16ubuntu7.5]
+libqt5xml5/xenial-updates,xenial-security 5.5.1+dfsg-16ubuntu7.7 amd64 [может быть обновлён с: 5.5.1+dfsg-16ubuntu7.5]
+libquadmath0/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libraptor2-0/xenial-updates,xenial-security 2.0.14-1ubuntu0.16.04.1 amd64 [может быть обновлён с: 2.0.14-1]
+libraw15/xenial-updates,xenial-security 0.17.1-1ubuntu0.5 amd64 [может быть обновлён с: 0.17.1-1ubuntu0.4]
+libreoffice-avmedia-backend-gstreamer/xenial-updates,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-base-core/xenial-updates,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-calc/xenial-updates,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-common/xenial-updates,xenial-updates,xenial-security,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 all [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-core/xenial-updates,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-draw/xenial-updates,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-gnome/xenial-updates,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-gtk/xenial-updates,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-impress/xenial-updates,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-math/xenial-updates,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-ogltrans/xenial-updates,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-pdfimport/xenial-updates,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-style-breeze/xenial-updates,xenial-updates,xenial-security,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 all [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-style-galaxy/xenial-updates,xenial-updates,xenial-security,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 all [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-writer/xenial-updates,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+librsvg2-2/xenial-updates,xenial-security 2.40.13-3ubuntu0.2 amd64 [может быть обновлён с: 2.40.13-3]
+librsvg2-common/xenial-updates,xenial-security 2.40.13-3ubuntu0.2 amd64 [может быть обновлён с: 2.40.13-3]
+libsane/xenial-updates,xenial-security 1.0.25+git20150528-1ubuntu2.16.04.3 amd64 [может быть обновлён с: 1.0.25+git20150528-1ubuntu2.16.04.1]
+libsane-common/xenial-updates,xenial-updates,xenial-security,xenial-security 1.0.25+git20150528-1ubuntu2.16.04.3 all [может быть обновлён с: 1.0.25+git20150528-1ubuntu2.16.04.1]
+libsasl2-2/xenial-updates,xenial-security 2.1.26.dfsg1-14ubuntu0.2 amd64 [может быть обновлён с: 2.1.26.dfsg1-14ubuntu0.1]
+libsasl2-modules/xenial-updates,xenial-security 2.1.26.dfsg1-14ubuntu0.2 amd64 [может быть обновлён с: 2.1.26.dfsg1-14ubuntu0.1]
+libsasl2-modules-db/xenial-updates,xenial-security 2.1.26.dfsg1-14ubuntu0.2 amd64 [может быть обновлён с: 2.1.26.dfsg1-14ubuntu0.1]
+libseccomp2/xenial-updates 2.5.1-1ubuntu1~16.04.1 amd64 [может быть обновлён с: 2.3.1-2.1ubuntu2~16.04.1]
+libsmartcols1/xenial-updates 2.27.1-6ubuntu3.10 amd64 [может быть обновлён с: 2.27.1-6ubuntu3.6]
+libsmbclient/xenial-updates,xenial-security 2:4.3.11+dfsg-0ubuntu0.16.04.34 amd64 [может быть обновлён с: 2:4.3.11+dfsg-0ubuntu0.16.04.19]
+libsnapd-glib1/xenial-updates,xenial-security 1.49-0ubuntu0.16.04.2 amd64 [может быть обновлён с: 1.47-0ubuntu0.16.04.0]
+libsndfile1/xenial-updates,xenial-security 1.0.25-10ubuntu0.16.04.3 amd64 [может быть обновлён с: 1.0.25-10ubuntu0.16.04.1]
+libsnmp-base/xenial-updates,xenial-updates,xenial-security,xenial-security 5.7.3+dfsg-1ubuntu4.6 all [может быть обновлён с: 5.7.3+dfsg-1ubuntu4.2]
+libsnmp30/xenial-updates,xenial-security 5.7.3+dfsg-1ubuntu4.6 amd64 [может быть обновлён с: 5.7.3+dfsg-1ubuntu4.2]
+libsqlite3-0/xenial-updates,xenial-security 3.11.0-1ubuntu1.5 amd64 [может быть обновлён с: 3.11.0-1ubuntu1.1]
+libss2/xenial-updates,xenial-security 1.42.13-1ubuntu1.2 amd64 [может быть обновлён с: 1.42.13-1ubuntu1]
+libssh-4/xenial-updates,xenial-security 0.6.3-4.3ubuntu0.6 amd64 [может быть обновлён с: 0.6.3-4.3ubuntu0.2]
+libssh-gcrypt-4/xenial-updates,xenial-security 0.6.3-4.3ubuntu0.6 amd64 [может быть обновлён с: 0.6.3-4.3ubuntu0.2]
+libssl1.0.0/xenial-updates,xenial-security 1.0.2g-1ubuntu4.20 amd64 [может быть обновлён с: 1.0.2g-1ubuntu4.15]
+libstdc++-5-dev/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libstdc++6/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libswresample-ffmpeg1/xenial-updates,xenial-security 7:2.8.17-0ubuntu0.1 amd64 [может быть обновлён с: 7:2.8.15-0ubuntu0.16.04.1]
+libswscale-ffmpeg3/xenial-updates,xenial-security 7:2.8.17-0ubuntu0.1 amd64 [может быть обновлён с: 7:2.8.15-0ubuntu0.16.04.1]
+libsystemd0/xenial-updates 229-4ubuntu21.31 amd64 [может быть обновлён с: 229-4ubuntu21.21]
+libtiff5/xenial-updates,xenial-security 4.0.6-1ubuntu0.8 amd64 [может быть обновлён с: 4.0.6-1ubuntu0.6]
+libtsan0/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libubsan0/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libudev1/xenial-updates 229-4ubuntu21.31 amd64 [может быть обновлён с: 229-4ubuntu21.21]
+libunity-core-6.0-9/xenial-updates 7.4.5+16.04.20190312-0ubuntu1 amd64 [может быть обновлён с: 7.4.5+16.04.20180221-0ubuntu1]
+libuuid1/xenial-updates 2.27.1-6ubuntu3.10 amd64 [может быть обновлён с: 2.27.1-6ubuntu3.6]
+libvncclient1/xenial-updates,xenial-security 0.9.10+dfsg-3ubuntu0.16.04.6 amd64 [может быть обновлён с: 0.9.10+dfsg-3ubuntu0.16.04.3]
+libvpx3/xenial-updates,xenial-security 1.5.0-2ubuntu1.1 amd64 [может быть обновлён с: 1.5.0-2ubuntu1]
+libwbclient0/xenial-updates,xenial-security 2:4.3.11+dfsg-0ubuntu0.16.04.34 amd64 [может быть обновлён с: 2:4.3.11+dfsg-0ubuntu0.16.04.19]
+libwhoopsie0/xenial-updates,xenial-security 0.2.52.5ubuntu0.5 amd64 [может быть обновлён с: 0.2.52.5]
+libwinpr-crt0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-dsparse0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-environment0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-file0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-handle0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-heap0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-input0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-interlocked0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-library0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-path0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-pool0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-registry0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-rpc0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-sspi0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-synch0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-sysinfo0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-thread0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-utils0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libx11-6/xenial-updates,xenial-security 2:1.6.3-1ubuntu2.2 amd64 [может быть обновлён с: 2:1.6.3-1ubuntu2.1]
+libx11-data/xenial-updates,xenial-updates,xenial-security,xenial-security 2:1.6.3-1ubuntu2.2 all [может быть обновлён с: 2:1.6.3-1ubuntu2.1]
+libx11-xcb1/xenial-updates,xenial-security 2:1.6.3-1ubuntu2.2 amd64 [может быть обновлён с: 2:1.6.3-1ubuntu2.1]
+libxml2/xenial-updates,xenial-security 2.9.3+dfsg1-1ubuntu0.7 amd64 [может быть обновлён с: 2.9.3+dfsg1-1ubuntu0.6]
+libxslt1.1/xenial-updates,xenial-security 1.1.28-2.1ubuntu0.3 amd64 [может быть обновлён с: 1.1.28-2.1ubuntu0.2]
+libzmq5/xenial-updates,xenial-security 4.1.4-7ubuntu0.1 amd64 [может быть обновлён с: 4.1.4-7]
+linux-base/xenial-updates,xenial-updates,xenial-security,xenial-security 4.5ubuntu1.2~16.04.1 all [может быть обновлён с: 4.5ubuntu1~16.04.1]
+linux-firmware/xenial-updates,xenial-updates,xenial-security,xenial-security 1.157.23 all [может быть обновлён с: 1.157.21]
+linux-generic-hwe-16.04/xenial-updates,xenial-security 4.15.0.142.137 amd64 [может быть обновлён с: 4.15.0.47.68]
+linux-headers-generic-hwe-16.04/xenial-updates,xenial-security 4.15.0.142.137 amd64 [может быть обновлён с: 4.15.0.47.68]
+linux-image-generic-hwe-16.04/xenial-updates,xenial-security 4.15.0.142.137 amd64 [может быть обновлён с: 4.15.0.47.68]
+linux-libc-dev/xenial-updates,xenial-security 4.4.0-210.242 amd64 [может быть обновлён с: 4.4.0-145.171]
+locales/xenial-updates,xenial-updates,xenial-security,xenial-security 2.23-0ubuntu11.3 all [может быть обновлён с: 2.23-0ubuntu11]
+login/xenial-updates 1:4.2-3.1ubuntu5.4 amd64 [может быть обновлён с: 1:4.2-3.1ubuntu5.3]
+lshw/xenial-updates 02.17-1.1ubuntu3.6 amd64 [может быть обновлён с: 02.17-1.1ubuntu3.5]
+mount/xenial-updates 2.27.1-6ubuntu3.10 amd64 [может быть обновлён с: 2.27.1-6ubuntu3.6]
+multiarch-support/xenial-updates,xenial-security 2.23-0ubuntu11.3 amd64 [может быть обновлён с: 2.23-0ubuntu11]
+mysql-client-5.7/xenial-updates,xenial-security 5.7.33-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 5.7.25-0ubuntu0.16.04.2]
+mysql-client-core-5.7/xenial-updates,xenial-security 5.7.33-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 5.7.25-0ubuntu0.16.04.2]
+mysql-common/xenial-updates,xenial-updates,xenial-security,xenial-security 5.7.33-0ubuntu0.16.04.1 all [может быть обновлён с: 5.7.25-0ubuntu0.16.04.2]
+mysql-server-5.7/xenial-updates,xenial-security 5.7.33-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 5.7.25-0ubuntu0.16.04.2]
+mysql-server-core-5.7/xenial-updates,xenial-security 5.7.33-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 5.7.25-0ubuntu0.16.04.2]
+openssh-client/xenial-updates 1:7.2p2-4ubuntu2.10 amd64 [может быть обновлён с: 1:7.2p2-4ubuntu2.8]
+openssh-server/xenial-updates 1:7.2p2-4ubuntu2.10 amd64 [может быть обновлён с: 1:7.2p2-4ubuntu2.8]
+openssh-sftp-server/xenial-updates 1:7.2p2-4ubuntu2.10 amd64 [может быть обновлён с: 1:7.2p2-4ubuntu2.8]
+openssl/xenial-updates,xenial-security 1.0.2g-1ubuntu4.20 amd64 [может быть обновлён с: 1.0.2g-1ubuntu4.15]
+p11-kit/xenial-updates,xenial-security 0.23.2-5~ubuntu16.04.2 amd64 [может быть обновлён с: 0.23.2-5~ubuntu16.04.1]
+p11-kit-modules/xenial-updates,xenial-security 0.23.2-5~ubuntu16.04.2 amd64 [может быть обновлён с: 0.23.2-5~ubuntu16.04.1]
+passwd/xenial-updates 1:4.2-3.1ubuntu5.4 amd64 [может быть обновлён с: 1:4.2-3.1ubuntu5.3]
+patch/xenial-updates,xenial-security 2.7.5-1ubuntu0.16.04.2 amd64 [может быть обновлён с: 2.7.5-1ubuntu0.16.04.1]
+perl/xenial-updates,xenial-security 5.22.1-9ubuntu0.9 amd64 [может быть обновлён с: 5.22.1-9ubuntu0.6]
+perl-base/xenial-updates,xenial-security 5.22.1-9ubuntu0.9 amd64 [может быть обновлён с: 5.22.1-9ubuntu0.6]
+perl-modules-5.22/xenial-updates,xenial-updates,xenial-security,xenial-security 5.22.1-9ubuntu0.9 all [может быть обновлён с: 5.22.1-9ubuntu0.6]
+policykit-desktop-privileges/xenial-updates,xenial-updates,xenial-security,xenial-security 0.20ubuntu16.04.1 all [может быть обновлён с: 0.20]
+poppler-utils/xenial-updates,xenial-security 0.41.0-0ubuntu1.16 amd64 [может быть обновлён с: 0.41.0-0ubuntu1.13]
+ppp/xenial-updates,xenial-security 2.4.7-1+2ubuntu1.16.04.3 amd64 [может быть обновлён с: 2.4.7-1+2ubuntu1.16.04.1]
+procps/xenial-updates 2:3.3.10-4ubuntu2.5 amd64 [может быть обновлён с: 2:3.3.10-4ubuntu2.4]
+psmisc/xenial-updates 22.21-2.1ubuntu0.1 amd64 [может быть обновлён с: 22.21-2.1build1]
+pulseaudio/xenial-updates,xenial-security 1:8.0-0ubuntu3.15 amd64 [может быть обновлён с: 1:8.0-0ubuntu3.10]
+pulseaudio-module-bluetooth/xenial-updates,xenial-security 1:8.0-0ubuntu3.15 amd64 [может быть обновлён с: 1:8.0-0ubuntu3.10]
+pulseaudio-module-x11/xenial-updates,xenial-security 1:8.0-0ubuntu3.15 amd64 [может быть обновлён с: 1:8.0-0ubuntu3.10]
+pulseaudio-utils/xenial-updates,xenial-security 1:8.0-0ubuntu3.15 amd64 [может быть обновлён с: 1:8.0-0ubuntu3.10]
+python-apt-common/xenial-updates,xenial-updates 1.1.0~beta1ubuntu0.16.04.12 all [может быть обновлён с: 1.1.0~beta1ubuntu0.16.04.2]
+python-ecdsa/xenial-updates,xenial-updates,xenial-security,xenial-security 0.13-2ubuntu0.16.04.1 all [может быть обновлён с: 0.13-2]
+python2.7/xenial-updates,xenial-security 2.7.12-1ubuntu0~16.04.18 amd64 [может быть обновлён с: 2.7.12-1ubuntu0~16.04.4]
+python2.7-minimal/xenial-updates,xenial-security 2.7.12-1ubuntu0~16.04.18 amd64 [может быть обновлён с: 2.7.12-1ubuntu0~16.04.4]
+python3-apport/xenial-updates,xenial-updates,xenial-security,xenial-security 2.20.1-0ubuntu2.30 all [может быть обновлён с: 2.20.1-0ubuntu2.18]
+python3-apt/xenial-updates 1.1.0~beta1ubuntu0.16.04.12 amd64 [может быть обновлён с: 1.1.0~beta1ubuntu0.16.04.2]
+python3-aptdaemon/xenial-updates,xenial-updates,xenial-security,xenial-security 1.1.1+bzr982-0ubuntu14.5 all [может быть обновлён с: 1.1.1+bzr982-0ubuntu14]
+python3-aptdaemon.gtk3widgets/xenial-updates,xenial-updates,xenial-security,xenial-security 1.1.1+bzr982-0ubuntu14.5 all [может быть обновлён с: 1.1.1+bzr982-0ubuntu14]
+python3-aptdaemon.pkcompat/xenial-updates,xenial-updates,xenial-security,xenial-security 1.1.1+bzr982-0ubuntu14.5 all [может быть обновлён с: 1.1.1+bzr982-0ubuntu14]
+python3-cryptography/xenial-updates,xenial-security 1.2.3-1ubuntu0.3 amd64 [может быть обновлён с: 1.2.3-1ubuntu0.2]
+python3-distupgrade/xenial-updates,xenial-updates 1:16.04.32 all [может быть обновлён с: 1:16.04.26]
+python3-jinja2/xenial-updates,xenial-updates,xenial-security,xenial-security 2.8-1ubuntu0.1 all [может быть обновлён с: 2.8-1]
+python3-lxml/xenial-updates,xenial-security 3.5.0-1ubuntu0.4 amd64 [может быть обновлён с: 3.5.0-1ubuntu0.1]
+python3-pil/xenial-updates,xenial-security 3.1.2-0ubuntu1.6 amd64 [может быть обновлён с: 3.1.2-0ubuntu1.1]
+python3-problem-report/xenial-updates,xenial-updates,xenial-security,xenial-security 2.20.1-0ubuntu2.30 all [может быть обновлён с: 2.20.1-0ubuntu2.18]
+python3-pyparsing/xenial-updates,xenial-updates,xenial-security,xenial-security 2.0.3+dfsg1-1ubuntu0.2 all [может быть обновлён с: 2.0.3+dfsg1-1ubuntu0.1]
+python3-renderpm/xenial-updates,xenial-security 3.3.0-1ubuntu0.1 amd64 [может быть обновлён с: 3.3.0-1]
+python3-reportlab/xenial-updates,xenial-updates,xenial-security,xenial-security 3.3.0-1ubuntu0.1 all [может быть обновлён с: 3.3.0-1]
+python3-reportlab-accel/xenial-updates,xenial-security 3.3.0-1ubuntu0.1 amd64 [может быть обновлён с: 3.3.0-1]
+python3-software-properties/xenial-updates,xenial-updates,xenial-security,xenial-security 0.96.20.10 all [может быть обновлён с: 0.96.20.8]
+python3-uno/xenial-updates,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+python3-update-manager/xenial-updates,xenial-updates 1:16.04.17 all [может быть обновлён с: 1:16.04.15]
+python3-urllib3/xenial-updates,xenial-updates,xenial-security,xenial-security 1.13.1-2ubuntu0.16.04.4 all [может быть обновлён с: 1.13.1-2ubuntu0.16.04.2]
+python3-xdg/xenial-updates,xenial-updates,xenial-security,xenial-security 0.25-4ubuntu0.16.04.1 all [может быть обновлён с: 0.25-4]
+python3.5/xenial-updates,xenial-security 3.5.2-2ubuntu0~16.04.13 amd64 [может быть обновлён с: 3.5.2-2ubuntu0~16.04.5]
+python3.5-minimal/xenial-updates,xenial-security 3.5.2-2ubuntu0~16.04.13 amd64 [может быть обновлён с: 3.5.2-2ubuntu0~16.04.5]
+resolvconf/xenial-updates,xenial-updates 1.78ubuntu7 all [может быть обновлён с: 1.78ubuntu6]
+rsync/xenial-updates,xenial-security 3.1.1-3ubuntu1.3 amd64 [может быть обновлён с: 3.1.1-3ubuntu1.2]
+samba-libs/xenial-updates,xenial-security 2:4.3.11+dfsg-0ubuntu0.16.04.34 amd64 [может быть обновлён с: 2:4.3.11+dfsg-0ubuntu0.16.04.19]
+sane-utils/xenial-updates,xenial-security 1.0.25+git20150528-1ubuntu2.16.04.3 amd64 [может быть обновлён с: 1.0.25+git20150528-1ubuntu2.16.04.1]
+sbsigntool/xenial-updates,xenial-security 0.6-0ubuntu10.2 amd64 [может быть обновлён с: 0.6-0ubuntu10.1]
+snapd/xenial-updates,xenial-security 2.48.3 amd64 [может быть обновлён с: 2.38]
+software-properties-common/xenial-updates,xenial-updates,xenial-security,xenial-security 0.96.20.10 all [может быть обновлён с: 0.96.20.8]
+software-properties-gtk/xenial-updates,xenial-updates,xenial-security,xenial-security 0.96.20.10 all [может быть обновлён с: 0.96.20.8]
+sudo/xenial-updates,xenial-security 1.8.16-0ubuntu1.10 amd64 [может быть обновлён с: 1.8.16-0ubuntu1.5]
+systemd/xenial-updates 229-4ubuntu21.31 amd64 [может быть обновлён с: 229-4ubuntu21.21]
+systemd-sysv/xenial-updates 229-4ubuntu21.31 amd64 [может быть обновлён с: 229-4ubuntu21.21]
+tar/xenial-updates,xenial-security 1.28-2.1ubuntu0.2 amd64 [может быть обновлён с: 1.28-2.1ubuntu0.1]
+tcpdump/xenial-updates,xenial-security 4.9.3-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 4.9.2-0ubuntu0.16.04.1]
+thunderbird/xenial-updates,xenial-security 1:68.10.0+build1-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 1:60.6.1+build2-0ubuntu0.16.04.1]
+thunderbird-gnome-support/xenial-updates,xenial-security 1:68.10.0+build1-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 1:60.6.1+build2-0ubuntu0.16.04.1]
+thunderbird-locale-en/xenial-updates,xenial-security 1:68.10.0+build1-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 1:60.6.1+build2-0ubuntu0.16.04.1]
+thunderbird-locale-en-us/xenial-updates,xenial-updates,xenial-security,xenial-security 1:68.10.0+build1-0ubuntu0.16.04.1 all [может быть обновлён с: 1:60.6.1+build2-0ubuntu0.16.04.1]
+thunderbird-locale-ru/xenial-updates,xenial-security 1:68.10.0+build1-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 1:60.6.1+build2-0ubuntu0.16.04.1]
+tzdata/xenial-updates,xenial-updates,xenial-security,xenial-security 2021a-0ubuntu0.16.04 all [может быть обновлён с: 2018i-0ubuntu0.16.04]
+ubuntu-advantage-tools/xenial-updates 27.5~16.04.1 all [может быть обновлён с: 10ubuntu0.16.04.1]
+ubuntu-core-launcher/xenial-updates,xenial-security 2.48.3 amd64 [может быть обновлён с: 2.38]
+ubuntu-desktop/xenial-updates 1.361.6 amd64 [может быть обновлён с: 1.361.3]
+ubuntu-keyring/xenial-updates,xenial-updates 2012.05.19.1 all [может быть обновлён с: 2012.05.19]
+ubuntu-minimal/xenial-updates 1.361.6 amd64 [может быть обновлён с: 1.361.3]
+ubuntu-release-upgrader-core/xenial-updates,xenial-updates 1:16.04.32 all [может быть обновлён с: 1:16.04.26]
+ubuntu-release-upgrader-gtk/xenial-updates,xenial-updates 1:16.04.32 all [может быть обновлён с: 1:16.04.26]
+ubuntu-software/xenial-updates 3.20.5-0ubuntu0.16.04.13 amd64 [может быть обновлён с: 3.20.5-0ubuntu0.16.04.11]
+ubuntu-standard/xenial-updates 1.361.6 amd64 [может быть обновлён с: 1.361.3]
+udev/xenial-updates 229-4ubuntu21.31 amd64 [может быть обновлён с: 229-4ubuntu21.21]
+unattended-upgrades/xenial-updates,xenial-updates 1.1ubuntu1.18.04.7~16.04.7 all [может быть обновлён с: 0.90ubuntu0.10]
+unity/xenial-updates 7.4.5+16.04.20190312-0ubuntu1 amd64 [может быть обновлён с: 7.4.5+16.04.20180221-0ubuntu1]
+unity-schemas/xenial-updates,xenial-updates 7.4.5+16.04.20190312-0ubuntu1 all [может быть обновлён с: 7.4.5+16.04.20180221-0ubuntu1]
+unity-services/xenial-updates 7.4.5+16.04.20190312-0ubuntu1 amd64 [может быть обновлён с: 7.4.5+16.04.20180221-0ubuntu1]
+uno-libs3/xenial-updates,xenial-security 5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 5.1.6~rc2-0ubuntu1~xenial6]
+unzip/xenial-updates,xenial-security 6.0-20ubuntu1.1 amd64 [может быть обновлён с: 6.0-20ubuntu1]
+update-manager/xenial-updates,xenial-updates 1:16.04.17 all [может быть обновлён с: 1:16.04.15]
+update-manager-core/xenial-updates,xenial-updates 1:16.04.17 all [может быть обновлён с: 1:16.04.15]
+update-notifier/xenial-updates 3.168.15 amd64 [может быть обновлён с: 3.168.10]
+update-notifier-common/xenial-updates,xenial-updates 3.168.15 all [может быть обновлён с: 3.168.10]
+ure/xenial-updates,xenial-security 5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 5.1.6~rc2-0ubuntu1~xenial6]
+ureadahead/xenial-updates 0.100.0-19.1 amd64 [может быть обновлён с: 0.100.0-19]
+usb-creator-common/xenial-updates 0.3.2ubuntu16.04.2 amd64 [может быть обновлён с: 0.3.2]
+usb-creator-gtk/xenial-updates 0.3.2ubuntu16.04.2 amd64 [может быть обновлён с: 0.3.2]
+util-linux/xenial-updates 2.27.1-6ubuntu3.10 amd64 [может быть обновлён с: 2.27.1-6ubuntu3.6]
+uuid-runtime/xenial-updates 2.27.1-6ubuntu3.10 amd64 [может быть обновлён с: 2.27.1-6ubuntu3.6]
+vim-common/xenial-updates,xenial-security 2:7.4.1689-3ubuntu1.5 amd64 [может быть обновлён с: 2:7.4.1689-3ubuntu1.2]
+vim-tiny/xenial-updates,xenial-security 2:7.4.1689-3ubuntu1.5 amd64 [может быть обновлён с: 2:7.4.1689-3ubuntu1.2]
+vino/xenial-updates,xenial-security 3.8.1-0ubuntu9.4 amd64 [может быть обновлён с: 3.8.1-0ubuntu9.2]
+whoopsie/xenial-updates,xenial-security 0.2.52.5ubuntu0.5 amd64 [может быть обновлён с: 0.2.52.5]
+wireless-regdb/xenial-updates,xenial-updates,xenial-security,xenial-security 2020.11.20-0ubuntu1~16.04.2 all [может быть обновлён с: 2018.05.09-0ubuntu1~16.04.1]
+wpasupplicant/xenial-updates,xenial-security 2.4-0ubuntu6.8 amd64 [может быть обновлён с: 2.4-0ubuntu6.4]
+xdg-utils/xenial-updates,xenial-updates,xenial-security,xenial-security 1.1.1-1ubuntu1.16.04.5 all [может быть обновлён с: 1.1.1-1ubuntu1.16.04.3]
+xserver-common/xenial-updates,xenial-updates,xenial-security,xenial-security 2:1.18.4-0ubuntu0.12 all [может быть обновлён с: 2:1.18.4-0ubuntu0.8]
+xserver-xorg-core-hwe-16.04/xenial-updates,xenial-security 2:1.19.6-1ubuntu4.1~16.04.6 amd64 [может быть обновлён с: 2:1.19.6-1ubuntu4.1~16.04.2]
+xserver-xorg-legacy-hwe-16.04/xenial-updates,xenial-security 2:1.19.6-1ubuntu4.1~16.04.6 amd64 [может быть обновлён с: 2:1.19.6-1ubuntu4.1~16.04.2]
+xterm/xenial-updates,xenial-security 322-1ubuntu1.2 amd64 [может быть обновлён с: 322-1ubuntu1]
+zlib1g/xenial-updates,xenial-security 1:1.2.8.dfsg-2ubuntu4.3 amd64 [может быть обновлён с: 1:1.2.8.dfsg-2ubuntu4.1]
+student@Ubuntu-MySQL-VirtualBox:~$ sudo apt update
+Сущ:1 http://ru.archive.ubuntu.com/ubuntu xenial InRelease                     
+Сущ:2 http://ppa.launchpad.net/linuxuprising/java/ubuntu xenial InRelease      
+Сущ:3 http://ru.archive.ubuntu.com/ubuntu xenial-updates InRelease             
+Сущ:4 http://ru.archive.ubuntu.com/ubuntu xenial-backports InRelease           
+Пол:5 http://security.ubuntu.com/ubuntu xenial-security InRelease [109 kB]     
+Сущ:6 http://ppa.launchpad.net/webupd8team/java/ubuntu xenial InRelease        
+Сущ:7 https://dbeaver.io/debs/dbeaver-ce  InRelease                            
+Пол:8 http://security.ubuntu.com/ubuntu xenial-security/main amd64 DEP-11 Metadata [93,7 kB]
+Пол:9 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 DEP-11 Metadata [130 kB]
+Пол:10 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 DEP-11 Metadata [2 464 B]
+Получено 335 kB за 7с (42,4 kB/s)                                              
+Чтение списков пакетов… Готово
+Построение дерева зависимостей       
+Чтение информации о состоянии… Готово
+Может быть обновлено 456 пакетов. Запустите «apt list --upgradable» для их показа.
+student@Ubuntu-MySQL-VirtualBox:~$ sudo apt install openssh-server -y
+Чтение списков пакетов… Готово
+Построение дерева зависимостей       
+Чтение информации о состоянии… Готово
+Следующий пакет устанавливался автоматически и больше не требуется:
+  snapd-login-service
+Для его удаления используйте «sudo apt autoremove».
+Будут установлены следующие дополнительные пакеты:
+  openssh-client openssh-sftp-server
+Предлагаемые пакеты:
+  ssh-askpass libpam-ssh keychain monkeysphere rssh molly-guard
+Следующие пакеты будут обновлены:
+  openssh-client openssh-server openssh-sftp-server
+Обновлено 3 пакетов, установлено 0 новых пакетов, для удаления отмечено 0 пакетов, и 453 пакетов не обновлено.
+Необходимо скачать 963 kB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 1 024 B.
+Пол:1 http://ru.archive.ubuntu.com/ubuntu xenial-updates/main amd64 openssh-sftp-server amd64 1:7.2p2-4ubuntu2.10 [38,8 kB]
+Пол:2 http://ru.archive.ubuntu.com/ubuntu xenial-updates/main amd64 openssh-server amd64 1:7.2p2-4ubuntu2.10 [335 kB]
+Пол:3 http://ru.archive.ubuntu.com/ubuntu xenial-updates/main amd64 openssh-client amd64 1:7.2p2-4ubuntu2.10 [590 kB]
+Получено 963 kB за 2с (347 kB/s)           
+Предварительная настройка пакетов ...
+(Чтение базы данных … на данный момент установлено 222153 файла и каталога.)
+Подготовка к распаковке …/openssh-sftp-server_1%3a7.2p2-4ubuntu2.10_amd64.deb …
+Распаковывается openssh-sftp-server (1:7.2p2-4ubuntu2.10) на замену (1:7.2p2-4ubuntu2.8) …
+Подготовка к распаковке …/openssh-server_1%3a7.2p2-4ubuntu2.10_amd64.deb …
+Распаковывается openssh-server (1:7.2p2-4ubuntu2.10) на замену (1:7.2p2-4ubuntu2.8) …
+Подготовка к распаковке …/openssh-client_1%3a7.2p2-4ubuntu2.10_amd64.deb …
+Распаковывается openssh-client (1:7.2p2-4ubuntu2.10) на замену (1:7.2p2-4ubuntu2.8) …
+Обрабатываются триггеры для man-db (2.7.5-1) …
+Обрабатываются триггеры для systemd (229-4ubuntu21.21) …
+Обрабатываются триггеры для ureadahead (0.100.0-19) …
+Обрабатываются триггеры для ufw (0.35-0ubuntu2) …
+Настраивается пакет openssh-client (1:7.2p2-4ubuntu2.10) …
+Настраивается пакет openssh-sftp-server (1:7.2p2-4ubuntu2.10) …
+Настраивается пакет openssh-server (1:7.2p2-4ubuntu2.10) …
+student@Ubuntu-MySQL-VirtualBox:~$ sudo systemctl start ssh
+student@Ubuntu-MySQL-VirtualBox:~$ ^C
+student@Ubuntu-MySQL-VirtualBox:~$ sudo systemctl status ssh
+● ssh.service - OpenBSD Secure Shell server
+   Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enab
+   Active: active (running) since Чт 2022-01-20 14:36:34 MSK; 4min 18s ago
+  Process: 3999 ExecStartPre=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)
+ Main PID: 4002 (sshd)
+   CGroup: /system.slice/ssh.service
+           └─4002 /usr/sbin/sshd -D
+
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox systemd[1]: Starting OpenBSD Secure Shel
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox sshd[4002]: Server listening on 0.0.0.0 
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox sshd[4002]: Server listening on :: port 
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox systemd[1]: Started OpenBSD Secure Shell
+янв 20 14:40:23 Ubuntu-MySQL-VirtualBox systemd[1]: Started OpenBSD Secure Shell
+...skipping...
+● ssh.service - OpenBSD Secure Shell server
+   Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enab
+   Active: active (running) since Чт 2022-01-20 14:36:34 MSK; 4min 18s ago
+  Process: 3999 ExecStartPre=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)
+ Main PID: 4002 (sshd)
+   CGroup: /system.slice/ssh.service
+           └─4002 /usr/sbin/sshd -D
+
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox systemd[1]: Starting OpenBSD Secure Shel
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox sshd[4002]: Server listening on 0.0.0.0 
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox sshd[4002]: Server listening on :: port 
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox systemd[1]: Started OpenBSD Secure Shell
+янв 20 14:40:23 Ubuntu-MySQL-VirtualBox systemd[1]: Started OpenBSD Secure Shell
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+ ESCOC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ver
+sh.service; enabled; vendor preset: enabled)
+2-01-20 14:36:34 MSK; 4min 18s ago
+shd -t (code=exited, status=0/SUCCESS)
+
+
+
+
+systemd[1]: Starting OpenBSD Secure Shell server...
+sshd[4002]: Server listening on 0.0.0.0 port 22.
+sshd[4002]: Server listening on :: port 22.
+systemd[1]: Started OpenBSD Secure Shell server.
+systemd[1]: Started OpenBSD Secure Shell server.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+ ESCOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+● ssh.service - OpenBSD Secure Shell server
+   Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enab
+   Active: active (running) since Чт 2022-01-20 14:36:34 MSK; 4min 18s ago
+  Process: 3999 ExecStartPre=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)
+ Main PID: 4002 (sshd)
+   CGroup: /system.slice/ssh.service
+           └─4002 /usr/sbin/sshd -D
+
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox systemd[1]: Starting OpenBSD Secure Shel
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox sshd[4002]: Server listening on 0.0.0.0 
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox sshd[4002]: Server listening on :: port 
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox systemd[1]: Started OpenBSD Secure Shell
+янв 20 14:40:23 Ubuntu-MySQL-VirtualBox systemd[1]: Started OpenBSD Secure Shell
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+...skipping...
+
+                   SUMMARY OF LESS COMMANDS
+
+      Commands marked with * may be preceded by a number, N.
+      Notes in parentheses indicate the behavior if N is given.
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+ ---------------------------------------------------------------------------
+
+                           MOVING
+
+  e  ^E  j  ^N  CR  *  Forward  one line   (or N lines).
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or N lines).
+  f  ^F  ^V  SPACE  *  Forward  one window (or N lines).
+  b  ^B  ESC-v      *  Backward one window (or N lines).
+  z                 *  Forward  one window (and set window to N).
+  w                 *  Backward one window (and set window to N).
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.
+  d  ^D             *  Forward  one half-window (and set half-window to N).
+  u  ^U             *  Backward one half-window (and set half-window to N).
+  ESC-)  RightArrow *  Left  one half screen width (or N positions).
+HELP -- Press RETURN for more, or q when done...skipping...
+● ssh.service - OpenBSD Secure Shell server
+   Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enab
+   Active: active (running) since Чт 2022-01-20 14:36:34 MSK; 4min 18s ago
+  Process: 3999 ExecStartPre=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)
+ Main PID: 4002 (sshd)
+   CGroup: /system.slice/ssh.service
+           └─4002 /usr/sbin/sshd -D
+
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox systemd[1]: Starting OpenBSD Secure Shel
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox sshd[4002]: Server listening on 0.0.0.0 
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox sshd[4002]: Server listening on :: port 
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox systemd[1]: Started OpenBSD Secure Shell
+янв 20 14:40:23 Ubuntu-MySQL-VirtualBox systemd[1]: Started OpenBSD Secure Shell
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+student@Ubuntu-MySQL-VirtualBox:~$ sudo systemctl enable ssh
+Synchronizing state of ssh.service with SysV init with /lib/systemd/systemd-sysv-install...
+Executing /lib/systemd/systemd-sysv-install enable ssh
+student@Ubuntu-MySQL-VirtualBox:~$ ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:73:27:a8 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic enp0s3
+       valid_lft 85392sec preferred_lft 85392sec
+    inet6 fe80::6f3b:940f:2721:eb9b/64 scope link 
+       valid_lft forever preferred_lft forever
+student@Ubuntu-MySQL-VirtualBox:~$ hostname -I
+10.0.2.15 
+student@Ubuntu-MySQL-VirtualBox:~$ hostname -I
+192.168.0.88 
+student@Ubuntu-MySQL-VirtualBox:~$ ^C
+student@Ubuntu-MySQL-VirtualBox:~$ echo Hello world
+Hello world
+student@Ubuntu-MySQL-VirtualBox:~$ sudo apt update
+[sudo] пароль для student: 
+Сущ:1 http://ppa.launchpad.net/linuxuprising/java/ubuntu xenial InRelease
+Сущ:2 http://ru.archive.ubuntu.com/ubuntu xenial InRelease                     
+Сущ:3 http://security.ubuntu.com/ubuntu xenial-security InRelease              
+Сущ:4 http://ppa.launchpad.net/webupd8team/java/ubuntu xenial InRelease        
+Сущ:5 http://ru.archive.ubuntu.com/ubuntu xenial-updates InRelease   
+Сущ:6 http://ru.archive.ubuntu.com/ubuntu xenial-backports InRelease 
+Сущ:7 https://dbeaver.io/debs/dbeaver-ce  InRelease                  
+Чтение списков пакетов… Готово
+Построение дерева зависимостей       
+Чтение информации о состоянии… Готово
+Может быть обновлено 456 пакетов. Запустите «apt list --upgradable» для их показа.
+student@Ubuntu-MySQL-VirtualBox:~$ sudo apt install openshh-server -y
+Чтение списков пакетов… Готово
+Построение дерева зависимостей       
+Чтение информации о состоянии… Готово
+E: Невозможно найти пакет openshh-server
+student@Ubuntu-MySQL-VirtualBox:~$ sudo apt list --upgradable
+Вывод списка… Готово
+accountsservice/xenial-updates,xenial-security 0.6.40-2ubuntu11.6 amd64 [может быть обновлён с: 0.6.40-2ubuntu11.3]
+amd64-microcode/xenial-updates,xenial-security 3.20191021.1+really3.20180524.1~ubuntu0.16.04.2 amd64 [может быть обновлён с: 3.20180524.1~ubuntu0.16.04.2]
+apparmor/xenial-updates,xenial-security 2.10.95-0ubuntu2.11 amd64 [может быть обновлён с: 2.10.95-0ubuntu2.10]
+apport/xenial-updates,xenial-updates,xenial-security,xenial-security 2.20.1-0ubuntu2.30 all [может быть обновлён с: 2.20.1-0ubuntu2.18]
+apport-gtk/xenial-updates,xenial-updates,xenial-security,xenial-security 2.20.1-0ubuntu2.30 all [может быть обновлён с: 2.20.1-0ubuntu2.18]
+apt/xenial-updates 1.2.35 amd64 [может быть обновлён с: 1.2.31]
+apt-transport-https/xenial-updates 1.2.35 amd64 [может быть обновлён с: 1.2.31]
+apt-utils/xenial-updates 1.2.35 amd64 [может быть обновлён с: 1.2.31]
+aptdaemon/xenial-updates,xenial-updates,xenial-security,xenial-security 1.1.1+bzr982-0ubuntu14.5 all [может быть обновлён с: 1.1.1+bzr982-0ubuntu14]
+aptdaemon-data/xenial-updates,xenial-updates,xenial-security,xenial-security 1.1.1+bzr982-0ubuntu14.5 all [может быть обновлён с: 1.1.1+bzr982-0ubuntu14]
+aspell/xenial-updates,xenial-security 0.60.7~20110707-3ubuntu0.1 amd64 [может быть обновлён с: 0.60.7~20110707-3build1]
+base-files/xenial-updates 9.4ubuntu4.13 amd64 [может быть обновлён с: 9.4ubuntu4.8]
+bash/xenial-updates,xenial-security 4.3-14ubuntu1.4 amd64 [может быть обновлён с: 4.3-14ubuntu1.2]
+bind9-host/xenial-updates,xenial-security 1:9.10.3.dfsg.P4-8ubuntu1.19 amd64 [может быть обновлён с: 1:9.10.3.dfsg.P4-8ubuntu1.12]
+bluez/xenial-updates,xenial-security 5.37-0ubuntu5.3 amd64 [может быть обновлён с: 5.37-0ubuntu5.1]
+bluez-cups/xenial-updates,xenial-security 5.37-0ubuntu5.3 amd64 [может быть обновлён с: 5.37-0ubuntu5.1]
+bluez-obexd/xenial-updates,xenial-security 5.37-0ubuntu5.3 amd64 [может быть обновлён с: 5.37-0ubuntu5.1]
+bsdutils/xenial-updates 1:2.27.1-6ubuntu3.10 amd64 [может быть обновлён с: 1:2.27.1-6ubuntu3.6]
+bzip2/xenial-updates,xenial-security 1.0.6-8ubuntu0.2 amd64 [может быть обновлён с: 1.0.6-8]
+ca-certificates/xenial-updates,xenial-updates,xenial-security,xenial-security 20210119~16.04.1 all [может быть обновлён с: 20170717~16.04.2]
+chromium-codecs-ffmpeg-extra/xenial-updates,xenial-security 90.0.4430.72-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 73.0.3683.86-0ubuntu0.16.04.1]
+cpio/xenial-updates,xenial-security 2.11+dfsg-5ubuntu1.1 amd64 [может быть обновлён с: 2.11+dfsg-5ubuntu1]
+cpp-5/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+cups/xenial-updates,xenial-security 2.1.3-4ubuntu0.11 amd64 [может быть обновлён с: 2.1.3-4ubuntu0.7]
+cups-browsed/xenial-updates,xenial-security 1.8.3-2ubuntu3.5 amd64 [может быть обновлён с: 1.8.3-2ubuntu3.4]
+cups-bsd/xenial-updates,xenial-security 2.1.3-4ubuntu0.11 amd64 [может быть обновлён с: 2.1.3-4ubuntu0.7]
+cups-client/xenial-updates,xenial-security 2.1.3-4ubuntu0.11 amd64 [может быть обновлён с: 2.1.3-4ubuntu0.7]
+cups-common/xenial-updates,xenial-updates,xenial-security,xenial-security 2.1.3-4ubuntu0.11 all [может быть обновлён с: 2.1.3-4ubuntu0.7]
+cups-core-drivers/xenial-updates,xenial-security 2.1.3-4ubuntu0.11 amd64 [может быть обновлён с: 2.1.3-4ubuntu0.7]
+cups-daemon/xenial-updates,xenial-security 2.1.3-4ubuntu0.11 amd64 [может быть обновлён с: 2.1.3-4ubuntu0.7]
+cups-filters/xenial-updates,xenial-security 1.8.3-2ubuntu3.5 amd64 [может быть обновлён с: 1.8.3-2ubuntu3.4]
+cups-filters-core-drivers/xenial-updates,xenial-security 1.8.3-2ubuntu3.5 amd64 [может быть обновлён с: 1.8.3-2ubuntu3.4]
+cups-ppdc/xenial-updates,xenial-security 2.1.3-4ubuntu0.11 amd64 [может быть обновлён с: 2.1.3-4ubuntu0.7]
+cups-server-common/xenial-updates,xenial-updates,xenial-security,xenial-security 2.1.3-4ubuntu0.11 all [может быть обновлён с: 2.1.3-4ubuntu0.7]
+dbeaver-ce/неизвестно 21.3.2 amd64 [может быть обновлён с: 6.0.3]
+dbus/xenial-updates,xenial-security 1.10.6-1ubuntu3.6 amd64 [может быть обновлён с: 1.10.6-1ubuntu3.3]
+dbus-x11/xenial-updates,xenial-security 1.10.6-1ubuntu3.6 amd64 [может быть обновлён с: 1.10.6-1ubuntu3.3]
+debconf/xenial-updates,xenial-updates 1.5.58ubuntu2 all [может быть обновлён с: 1.5.58ubuntu1]
+debconf-i18n/xenial-updates,xenial-updates 1.5.58ubuntu2 all [может быть обновлён с: 1.5.58ubuntu1]
+dh-python/xenial-updates,xenial-updates,xenial-security,xenial-security 2.20151103ubuntu1.2 all [может быть обновлён с: 2.20151103ubuntu1.1]
+distro-info-data/xenial-updates,xenial-updates,xenial-security,xenial-security 0.28ubuntu0.18 all [может быть обновлён с: 0.28ubuntu0.11]
+dmidecode/xenial-updates 3.0-2ubuntu0.2 amd64 [может быть обновлён с: 3.0-2ubuntu0.1]
+dnsmasq-base/xenial-updates,xenial-security 2.75-1ubuntu0.16.04.10 amd64 [может быть обновлён с: 2.75-1ubuntu0.16.04.5]
+dnsutils/xenial-updates,xenial-security 1:9.10.3.dfsg.P4-8ubuntu1.19 amd64 [может быть обновлён с: 1:9.10.3.dfsg.P4-8ubuntu1.12]
+dpkg/xenial-updates 1.18.4ubuntu1.7 amd64 [может быть обновлён с: 1.18.4ubuntu1.5]
+dpkg-dev/xenial-updates,xenial-updates 1.18.4ubuntu1.7 all [может быть обновлён с: 1.18.4ubuntu1.5]
+e2fslibs/xenial-updates,xenial-security 1.42.13-1ubuntu1.2 amd64 [может быть обновлён с: 1.42.13-1ubuntu1]
+e2fsprogs/xenial-updates,xenial-security 1.42.13-1ubuntu1.2 amd64 [может быть обновлён с: 1.42.13-1ubuntu1]
+evince/xenial-updates,xenial-security 3.18.2-1ubuntu4.6 amd64 [может быть обновлён с: 3.18.2-1ubuntu4.3]
+evince-common/xenial-updates,xenial-updates,xenial-security,xenial-security 3.18.2-1ubuntu4.6 all [может быть обновлён с: 3.18.2-1ubuntu4.3]
+evolution-data-server/xenial-updates,xenial-security 3.18.5-1ubuntu1.3 amd64 [может быть обновлён с: 3.18.5-1ubuntu1.1]
+evolution-data-server-common/xenial-updates,xenial-updates,xenial-security,xenial-security 3.18.5-1ubuntu1.3 all [может быть обновлён с: 3.18.5-1ubuntu1.1]
+evolution-data-server-online-accounts/xenial-updates,xenial-security 3.18.5-1ubuntu1.3 amd64 [может быть обновлён с: 3.18.5-1ubuntu1.1]
+file/xenial-updates,xenial-security 1:5.25-2ubuntu1.4 amd64 [может быть обновлён с: 1:5.25-2ubuntu1.2]
+file-roller/xenial-updates,xenial-security 3.16.5-0ubuntu1.5 amd64 [может быть обновлён с: 3.16.5-0ubuntu1.2]
+firefox/xenial-updates,xenial-security 88.0+build2-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 66.0.3+build1-0ubuntu0.16.04.1]
+firefox-locale-en/xenial-updates,xenial-security 88.0+build2-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 66.0.3+build1-0ubuntu0.16.04.1]
+firefox-locale-ru/xenial-updates,xenial-security 88.0+build2-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 66.0.3+build1-0ubuntu0.16.04.1]
+flashplugin-installer/xenial-updates,xenial-security 32.0.0.465ubuntu0.16.04.2 amd64 [может быть обновлён с: 32.0.0.171ubuntu0.16.04.1]
+fonts-opensymbol/xenial-updates,xenial-updates,xenial-security,xenial-security 2:102.7+LibO5.1.6~rc2-0ubuntu1~xenial10 all [может быть обновлён с: 2:102.7+LibO5.1.6~rc2-0ubuntu1~xenial6]
+friendly-recovery/xenial-updates,xenial-updates 0.2.31ubuntu2.1 all [может быть обновлён с: 0.2.31ubuntu2]
+fwupd/xenial-updates,xenial-security 0.8.3-0ubuntu5.1 amd64 [может быть обновлён с: 0.8.3-0ubuntu4]
+g++-5/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+gcc-5/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+gcc-5-base/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+ghostscript/xenial-updates,xenial-security 9.26~dfsg+0-0ubuntu0.16.04.14 amd64 [может быть обновлён с: 9.26~dfsg+0-0ubuntu0.16.04.8]
+ghostscript-x/xenial-updates,xenial-security 9.26~dfsg+0-0ubuntu0.16.04.14 amd64 [может быть обновлён с: 9.26~dfsg+0-0ubuntu0.16.04.8]
+gir1.2-gst-plugins-base-1.0/xenial-updates,xenial-security 1.8.3-1ubuntu0.3 amd64 [может быть обновлён с: 1.8.3-1ubuntu0.2]
+gir1.2-ibus-1.0/xenial-updates,xenial-security 1.5.11-1ubuntu2.4 amd64 [может быть обновлён с: 1.5.11-1ubuntu2.1]
+gir1.2-packagekitglib-1.0/xenial-updates,xenial-security 0.8.17-4ubuntu6~gcc5.4ubuntu1.5 amd64 [может быть обновлён с: 0.8.17-4ubuntu6~gcc5.4ubuntu1.4]
+glib-networking/xenial-updates,xenial-security 2.48.2-1~ubuntu16.04.2 amd64 [может быть обновлён с: 2.48.2-1~ubuntu16.04.1]
+glib-networking-common/xenial-updates,xenial-updates,xenial-security,xenial-security 2.48.2-1~ubuntu16.04.2 all [может быть обновлён с: 2.48.2-1~ubuntu16.04.1]
+glib-networking-services/xenial-updates,xenial-security 2.48.2-1~ubuntu16.04.2 amd64 [может быть обновлён с: 2.48.2-1~ubuntu16.04.1]
+gnome-software/xenial-updates 3.20.5-0ubuntu0.16.04.13 amd64 [может быть обновлён с: 3.20.5-0ubuntu0.16.04.11]
+gnome-software-common/xenial-updates,xenial-updates 3.20.5-0ubuntu0.16.04.13 all [может быть обновлён с: 3.20.5-0ubuntu0.16.04.11]
+grub-common/xenial-updates 2.02~beta2-36ubuntu3.32 amd64 [может быть обновлён с: 2.02~beta2-36ubuntu3.21]
+grub-pc/xenial-updates 2.02~beta2-36ubuntu3.32 amd64 [может быть обновлён с: 2.02~beta2-36ubuntu3.21]
+grub-pc-bin/xenial-updates 2.02~beta2-36ubuntu3.32 amd64 [может быть обновлён с: 2.02~beta2-36ubuntu3.21]
+grub2-common/xenial-updates 2.02~beta2-36ubuntu3.32 amd64 [может быть обновлён с: 2.02~beta2-36ubuntu3.21]
+gstreamer1.0-alsa/xenial-updates,xenial-security 1.8.3-1ubuntu0.3 amd64 [может быть обновлён с: 1.8.3-1ubuntu0.2]
+gstreamer1.0-plugins-base/xenial-updates,xenial-security 1.8.3-1ubuntu0.3 amd64 [может быть обновлён с: 1.8.3-1ubuntu0.2]
+gstreamer1.0-plugins-base-apps/xenial-updates,xenial-security 1.8.3-1ubuntu0.3 amd64 [может быть обновлён с: 1.8.3-1ubuntu0.2]
+gstreamer1.0-plugins-good/xenial-updates,xenial-security 1.8.3-1ubuntu0.5 amd64 [может быть обновлён с: 1.8.3-1ubuntu0.4]
+gstreamer1.0-pulseaudio/xenial-updates,xenial-security 1.8.3-1ubuntu0.5 amd64 [может быть обновлён с: 1.8.3-1ubuntu0.4]
+gstreamer1.0-x/xenial-updates,xenial-security 1.8.3-1ubuntu0.3 amd64 [может быть обновлён с: 1.8.3-1ubuntu0.2]
+gvfs/xenial-updates,xenial-security 1.28.2-1ubuntu1~16.04.3 amd64 [может быть обновлён с: 1.28.2-1ubuntu1~16.04.2]
+gvfs-backends/xenial-updates,xenial-security 1.28.2-1ubuntu1~16.04.3 amd64 [может быть обновлён с: 1.28.2-1ubuntu1~16.04.2]
+gvfs-bin/xenial-updates,xenial-security 1.28.2-1ubuntu1~16.04.3 amd64 [может быть обновлён с: 1.28.2-1ubuntu1~16.04.2]
+gvfs-common/xenial-updates,xenial-updates,xenial-security,xenial-security 1.28.2-1ubuntu1~16.04.3 all [может быть обновлён с: 1.28.2-1ubuntu1~16.04.2]
+gvfs-daemons/xenial-updates,xenial-security 1.28.2-1ubuntu1~16.04.3 amd64 [может быть обновлён с: 1.28.2-1ubuntu1~16.04.2]
+gvfs-fuse/xenial-updates,xenial-security 1.28.2-1ubuntu1~16.04.3 amd64 [может быть обновлён с: 1.28.2-1ubuntu1~16.04.2]
+gvfs-libs/xenial-updates,xenial-security 1.28.2-1ubuntu1~16.04.3 amd64 [может быть обновлён с: 1.28.2-1ubuntu1~16.04.2]
+ibus/xenial-updates,xenial-security 1.5.11-1ubuntu2.4 amd64 [может быть обновлён с: 1.5.11-1ubuntu2.1]
+ibus-gtk/xenial-updates,xenial-security 1.5.11-1ubuntu2.4 amd64 [может быть обновлён с: 1.5.11-1ubuntu2.1]
+ibus-gtk3/xenial-updates,xenial-security 1.5.11-1ubuntu2.4 amd64 [может быть обновлён с: 1.5.11-1ubuntu2.1]
+imagemagick/xenial-updates,xenial-security 8:6.8.9.9-7ubuntu5.16 amd64 [может быть обновлён с: 8:6.8.9.9-7ubuntu5.13]
+imagemagick-6.q16/xenial-updates,xenial-security 8:6.8.9.9-7ubuntu5.16 amd64 [может быть обновлён с: 8:6.8.9.9-7ubuntu5.13]
+imagemagick-common/xenial-updates,xenial-updates,xenial-security,xenial-security 8:6.8.9.9-7ubuntu5.16 all [может быть обновлён с: 8:6.8.9.9-7ubuntu5.13]
+initramfs-tools/xenial-updates,xenial-updates 0.122ubuntu8.17 all [может быть обновлён с: 0.122ubuntu8.14]
+initramfs-tools-bin/xenial-updates 0.122ubuntu8.17 amd64 [может быть обновлён с: 0.122ubuntu8.14]
+initramfs-tools-core/xenial-updates,xenial-updates 0.122ubuntu8.17 all [может быть обновлён с: 0.122ubuntu8.14]
+intel-microcode/xenial-updates,xenial-security 3.20210216.0ubuntu0.16.04.1 amd64 [может быть обновлён с: 3.20180807a.0ubuntu0.16.04.1]
+iproute2/xenial-updates 4.3.0-1ubuntu3.16.04.5 amd64 [может быть обновлён с: 4.3.0-1ubuntu3.16.04.4]
+krb5-locales/xenial-updates,xenial-updates,xenial-security,xenial-security 1.13.2+dfsg-5ubuntu2.2 all [может быть обновлён с: 1.13.2+dfsg-5ubuntu2.1]
+libaccountsservice0/xenial-updates,xenial-security 0.6.40-2ubuntu11.6 amd64 [может быть обновлён с: 0.6.40-2ubuntu11.3]
+libapparmor-perl/xenial-updates,xenial-security 2.10.95-0ubuntu2.11 amd64 [может быть обновлён с: 2.10.95-0ubuntu2.10]
+libapparmor1/xenial-updates,xenial-security 2.10.95-0ubuntu2.11 amd64 [может быть обновлён с: 2.10.95-0ubuntu2.10]
+libapt-inst2.0/xenial-updates 1.2.35 amd64 [может быть обновлён с: 1.2.31]
+libapt-pkg5.0/xenial-updates 1.2.35 amd64 [может быть обновлён с: 1.2.31]
+libarchive13/xenial-updates,xenial-security 3.1.2-11ubuntu0.16.04.8 amd64 [может быть обновлён с: 3.1.2-11ubuntu0.16.04.6]
+libasan2/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libaspell15/xenial-updates,xenial-security 0.60.7~20110707-3ubuntu0.1 amd64 [может быть обновлён с: 0.60.7~20110707-3build1]
+libatomic1/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libavcodec-ffmpeg56/xenial-updates,xenial-security 7:2.8.17-0ubuntu0.1 amd64 [может быть обновлён с: 7:2.8.15-0ubuntu0.16.04.1]
+libavfilter-ffmpeg5/xenial-updates,xenial-security 7:2.8.17-0ubuntu0.1 amd64 [может быть обновлён с: 7:2.8.15-0ubuntu0.16.04.1]
+libavformat-ffmpeg56/xenial-updates,xenial-security 7:2.8.17-0ubuntu0.1 amd64 [может быть обновлён с: 7:2.8.15-0ubuntu0.16.04.1]
+libavresample-ffmpeg2/xenial-updates,xenial-security 7:2.8.17-0ubuntu0.1 amd64 [может быть обновлён с: 7:2.8.15-0ubuntu0.16.04.1]
+libavutil-ffmpeg54/xenial-updates,xenial-security 7:2.8.17-0ubuntu0.1 amd64 [может быть обновлён с: 7:2.8.15-0ubuntu0.16.04.1]
+libbind9-140/xenial-updates,xenial-security 1:9.10.3.dfsg.P4-8ubuntu1.19 amd64 [может быть обновлён с: 1:9.10.3.dfsg.P4-8ubuntu1.12]
+libblkid1/xenial-updates 2.27.1-6ubuntu3.10 amd64 [может быть обновлён с: 2.27.1-6ubuntu3.6]
+libbluetooth3/xenial-updates,xenial-security 5.37-0ubuntu5.3 amd64 [может быть обновлён с: 5.37-0ubuntu5.1]
+libbsd0/xenial-updates,xenial-security 0.8.2-1ubuntu0.1 amd64 [может быть обновлён с: 0.8.2-1]
+libbz2-1.0/xenial-updates,xenial-security 1.0.6-8ubuntu0.2 amd64 [может быть обновлён с: 1.0.6-8]
+libc-bin/xenial-updates,xenial-security 2.23-0ubuntu11.3 amd64 [может быть обновлён с: 2.23-0ubuntu11]
+libc-dev-bin/xenial-updates,xenial-security 2.23-0ubuntu11.3 amd64 [может быть обновлён с: 2.23-0ubuntu11]
+libc6/xenial-updates,xenial-security 2.23-0ubuntu11.3 amd64 [может быть обновлён с: 2.23-0ubuntu11]
+libc6-dbg/xenial-updates,xenial-security 2.23-0ubuntu11.3 amd64 [может быть обновлён с: 2.23-0ubuntu11]
+libc6-dev/xenial-updates,xenial-security 2.23-0ubuntu11.3 amd64 [может быть обновлён с: 2.23-0ubuntu11]
+libcaca0/xenial-updates,xenial-security 0.99.beta19-2ubuntu0.16.04.2 amd64 [может быть обновлён с: 0.99.beta19-2ubuntu0.16.04.1]
+libcamel-1.2-54/xenial-updates,xenial-security 3.18.5-1ubuntu1.3 amd64 [может быть обновлён с: 3.18.5-1ubuntu1.1]
+libcc1-0/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libcilkrts5/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libcomerr2/xenial-updates,xenial-security 1.42.13-1ubuntu1.2 amd64 [может быть обновлён с: 1.42.13-1ubuntu1]
+libcups2/xenial-updates,xenial-security 2.1.3-4ubuntu0.11 amd64 [может быть обновлён с: 2.1.3-4ubuntu0.7]
+libcupscgi1/xenial-updates,xenial-security 2.1.3-4ubuntu0.11 amd64 [может быть обновлён с: 2.1.3-4ubuntu0.7]
+libcupsfilters1/xenial-updates,xenial-security 1.8.3-2ubuntu3.5 amd64 [может быть обновлён с: 1.8.3-2ubuntu3.4]
+libcupsimage2/xenial-updates,xenial-security 2.1.3-4ubuntu0.11 amd64 [может быть обновлён с: 2.1.3-4ubuntu0.7]
+libcupsmime1/xenial-updates,xenial-security 2.1.3-4ubuntu0.11 amd64 [может быть обновлён с: 2.1.3-4ubuntu0.7]
+libcupsppdc1/xenial-updates,xenial-security 2.1.3-4ubuntu0.11 amd64 [может быть обновлён с: 2.1.3-4ubuntu0.7]
+libcurl3/xenial-updates,xenial-security 7.47.0-1ubuntu2.19 amd64 [может быть обновлён с: 7.47.0-1ubuntu2.12]
+libcurl3-gnutls/xenial-updates,xenial-security 7.47.0-1ubuntu2.19 amd64 [может быть обновлён с: 7.47.0-1ubuntu2.12]
+libdb5.3/xenial-updates,xenial-security 5.3.28-11ubuntu0.2 amd64 [может быть обновлён с: 5.3.28-11ubuntu0.1]
+libdbus-1-3/xenial-updates,xenial-security 1.10.6-1ubuntu3.6 amd64 [может быть обновлён с: 1.10.6-1ubuntu3.3]
+libdfu1/xenial-updates,xenial-security 0.8.3-0ubuntu5.1 amd64 [может быть обновлён с: 0.8.3-0ubuntu4]
+libdjvulibre-text/xenial-updates,xenial-updates,xenial-security,xenial-security 3.5.27.1-5ubuntu0.1 all [может быть обновлён с: 3.5.27.1-5]
+libdjvulibre21/xenial-updates,xenial-security 3.5.27.1-5ubuntu0.1 amd64 [может быть обновлён с: 3.5.27.1-5]
+libdns-export162/xenial-updates,xenial-security 1:9.10.3.dfsg.P4-8ubuntu1.19 amd64 [может быть обновлён с: 1:9.10.3.dfsg.P4-8ubuntu1.12]
+libdns162/xenial-updates,xenial-security 1:9.10.3.dfsg.P4-8ubuntu1.19 amd64 [может быть обновлён с: 1:9.10.3.dfsg.P4-8ubuntu1.12]
+libdpkg-perl/xenial-updates,xenial-updates 1.18.4ubuntu1.7 all [может быть обновлён с: 1.18.4ubuntu1.5]
+libebackend-1.2-10/xenial-updates,xenial-security 3.18.5-1ubuntu1.3 amd64 [может быть обновлён с: 3.18.5-1ubuntu1.1]
+libebook-1.2-16/xenial-updates,xenial-security 3.18.5-1ubuntu1.3 amd64 [может быть обновлён с: 3.18.5-1ubuntu1.1]
+libebook-contacts-1.2-2/xenial-updates,xenial-security 3.18.5-1ubuntu1.3 amd64 [может быть обновлён с: 3.18.5-1ubuntu1.1]
+libecal-1.2-19/xenial-updates,xenial-security 3.18.5-1ubuntu1.3 amd64 [может быть обновлён с: 3.18.5-1ubuntu1.1]
+libedata-book-1.2-25/xenial-updates,xenial-security 3.18.5-1ubuntu1.3 amd64 [может быть обновлён с: 3.18.5-1ubuntu1.1]
+libedata-cal-1.2-28/xenial-updates,xenial-security 3.18.5-1ubuntu1.3 amd64 [может быть обновлён с: 3.18.5-1ubuntu1.1]
+libedataserver-1.2-21/xenial-updates,xenial-security 3.18.5-1ubuntu1.3 amd64 [может быть обновлён с: 3.18.5-1ubuntu1.1]
+libedataserverui-1.2-1/xenial-updates,xenial-security 3.18.5-1ubuntu1.3 amd64 [может быть обновлён с: 3.18.5-1ubuntu1.1]
+libelf1/xenial-updates,xenial-security 0.165-3ubuntu1.2 amd64 [может быть обновлён с: 0.165-3ubuntu1.1]
+libevdocument3-4/xenial-updates,xenial-security 3.18.2-1ubuntu4.6 amd64 [может быть обновлён с: 3.18.2-1ubuntu4.3]
+libevview3-3/xenial-updates,xenial-security 3.18.2-1ubuntu4.6 amd64 [может быть обновлён с: 3.18.2-1ubuntu4.3]
+libexif12/xenial-updates,xenial-security 0.6.21-2ubuntu0.6 amd64 [может быть обновлён с: 0.6.21-2]
+libexiv2-14/xenial-updates,xenial-security 0.25-2.1ubuntu16.04.6 amd64 [может быть обновлён с: 0.25-2.1ubuntu16.04.3]
+libexpat1/xenial-updates,xenial-security 2.1.0-7ubuntu0.16.04.5 amd64 [может быть обновлён с: 2.1.0-7ubuntu0.16.04.3]
+libfdisk1/xenial-updates 2.27.1-6ubuntu3.10 amd64 [может быть обновлён с: 2.27.1-6ubuntu3.6]
+libfontembed1/xenial-updates,xenial-security 1.8.3-2ubuntu3.5 amd64 [может быть обновлён с: 1.8.3-2ubuntu3.4]
+libfreerdp-cache1.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libfreerdp-client1.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libfreerdp-codec1.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libfreerdp-common1.1.0/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libfreerdp-core1.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libfreerdp-crypto1.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libfreerdp-gdi1.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libfreerdp-locale1.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libfreerdp-plugins-standard/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libfreerdp-primitives1.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libfreerdp-utils1.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libfreetype6/xenial-updates,xenial-security 2.6.1-0.1ubuntu2.5 amd64 [может быть обновлён с: 2.6.1-0.1ubuntu2.3]
+libfwupd1/xenial-updates,xenial-security 0.8.3-0ubuntu5.1 amd64 [может быть обновлён с: 0.8.3-0ubuntu4]
+libgcc-5-dev/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libgcrypt20/xenial-updates,xenial-security 1.6.5-2ubuntu0.6 amd64 [может быть обновлён с: 1.6.5-2ubuntu0.5]
+libgd3/xenial-updates,xenial-security 2.1.1-4ubuntu0.16.04.12 amd64 [может быть обновлён с: 2.1.1-4ubuntu0.16.04.11]
+libgfortran3/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libgif7/xenial-updates,xenial-security 5.1.4-0.3~16.04.1 amd64 [может быть обновлён с: 5.1.4-0.3~16.04]
+libglib2.0-0/xenial-updates,xenial-security 2.48.2-0ubuntu4.8 amd64 [может быть обновлён с: 2.48.2-0ubuntu4.1]
+libglib2.0-bin/xenial-updates,xenial-security 2.48.2-0ubuntu4.8 amd64 [может быть обновлён с: 2.48.2-0ubuntu4.1]
+libglib2.0-data/xenial-updates,xenial-updates,xenial-security,xenial-security 2.48.2-0ubuntu4.8 all [может быть обновлён с: 2.48.2-0ubuntu4.1]
+libgnutls-openssl27/xenial-updates 3.4.10-4ubuntu1.9 amd64 [может быть обновлён с: 3.4.10-4ubuntu1.4]
+libgnutls30/xenial-updates 3.4.10-4ubuntu1.9 amd64 [может быть обновлён с: 3.4.10-4ubuntu1.4]
+libgomp1/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libgs9/xenial-updates,xenial-security 9.26~dfsg+0-0ubuntu0.16.04.14 amd64 [может быть обновлён с: 9.26~dfsg+0-0ubuntu0.16.04.8]
+libgs9-common/xenial-updates,xenial-updates,xenial-security,xenial-security 9.26~dfsg+0-0ubuntu0.16.04.14 all [может быть обновлён с: 9.26~dfsg+0-0ubuntu0.16.04.8]
+libgssapi-krb5-2/xenial-updates,xenial-security 1.13.2+dfsg-5ubuntu2.2 amd64 [может быть обновлён с: 1.13.2+dfsg-5ubuntu2.1]
+libgstreamer-plugins-base1.0-0/xenial-updates,xenial-security 1.8.3-1ubuntu0.3 amd64 [может быть обновлён с: 1.8.3-1ubuntu0.2]
+libgstreamer-plugins-good1.0-0/xenial-updates,xenial-security 1.8.3-1ubuntu0.5 amd64 [может быть обновлён с: 1.8.3-1ubuntu0.4]
+libhogweed4/xenial-updates,xenial-security 3.2-1ubuntu0.16.04.2 amd64 [может быть обновлён с: 3.2-1ubuntu0.16.04.1]
+libibus-1.0-5/xenial-updates,xenial-security 1.5.11-1ubuntu2.4 amd64 [может быть обновлён с: 1.5.11-1ubuntu2.1]
+libicu55/xenial-updates,xenial-security 55.1-7ubuntu0.5 amd64 [может быть обновлён с: 55.1-7ubuntu0.4]
+libisc-export160/xenial-updates,xenial-security 1:9.10.3.dfsg.P4-8ubuntu1.19 amd64 [может быть обновлён с: 1:9.10.3.dfsg.P4-8ubuntu1.12]
+libisc160/xenial-updates,xenial-security 1:9.10.3.dfsg.P4-8ubuntu1.19 amd64 [может быть обновлён с: 1:9.10.3.dfsg.P4-8ubuntu1.12]
+libisccc140/xenial-updates,xenial-security 1:9.10.3.dfsg.P4-8ubuntu1.19 amd64 [может быть обновлён с: 1:9.10.3.dfsg.P4-8ubuntu1.12]
+libisccfg140/xenial-updates,xenial-security 1:9.10.3.dfsg.P4-8ubuntu1.19 amd64 [может быть обновлён с: 1:9.10.3.dfsg.P4-8ubuntu1.12]
+libitm1/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libjasper1/xenial-updates,xenial-security 1.900.1-debian1-2.4ubuntu1.3 amd64 [может быть обновлён с: 1.900.1-debian1-2.4ubuntu1.2]
+libjpeg-turbo8/xenial-updates,xenial-security 1.4.2-0ubuntu3.4 amd64 [может быть обновлён с: 1.4.2-0ubuntu3.1]
+libjson-c2/xenial-updates,xenial-security 0.11-4ubuntu2.6 amd64 [может быть обновлён с: 0.11-4ubuntu2]
+libk5crypto3/xenial-updates,xenial-security 1.13.2+dfsg-5ubuntu2.2 amd64 [может быть обновлён с: 1.13.2+dfsg-5ubuntu2.1]
+libkrb5-3/xenial-updates,xenial-security 1.13.2+dfsg-5ubuntu2.2 amd64 [может быть обновлён с: 1.13.2+dfsg-5ubuntu2.1]
+libkrb5support0/xenial-updates,xenial-security 1.13.2+dfsg-5ubuntu2.2 amd64 [может быть обновлён с: 1.13.2+dfsg-5ubuntu2.1]
+libldap-2.4-2/xenial-updates,xenial-security 2.4.42+dfsg-2ubuntu3.13 amd64 [может быть обновлён с: 2.4.42+dfsg-2ubuntu3.4]
+libldb1/xenial-updates,xenial-security 2:1.1.24-1ubuntu3.2 amd64 [может быть обновлён с: 2:1.1.24-1ubuntu3.1]
+liblsan0/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+liblwres141/xenial-updates,xenial-security 1:9.10.3.dfsg.P4-8ubuntu1.19 amd64 [может быть обновлён с: 1:9.10.3.dfsg.P4-8ubuntu1.12]
+libmagic1/xenial-updates,xenial-security 1:5.25-2ubuntu1.4 amd64 [может быть обновлён с: 1:5.25-2ubuntu1.2]
+libmagickcore-6.q16-2/xenial-updates,xenial-security 8:6.8.9.9-7ubuntu5.16 amd64 [может быть обновлён с: 8:6.8.9.9-7ubuntu5.13]
+libmagickcore-6.q16-2-extra/xenial-updates,xenial-security 8:6.8.9.9-7ubuntu5.16 amd64 [может быть обновлён с: 8:6.8.9.9-7ubuntu5.13]
+libmagickwand-6.q16-2/xenial-updates,xenial-security 8:6.8.9.9-7ubuntu5.16 amd64 [может быть обновлён с: 8:6.8.9.9-7ubuntu5.13]
+libmount1/xenial-updates 2.27.1-6ubuntu3.10 amd64 [может быть обновлён с: 2.27.1-6ubuntu3.6]
+libmpx0/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libmysqlclient20/xenial-updates,xenial-security 5.7.33-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 5.7.25-0ubuntu0.16.04.2]
+libnettle6/xenial-updates,xenial-security 3.2-1ubuntu0.16.04.2 amd64 [может быть обновлён с: 3.2-1ubuntu0.16.04.1]
+libnss3/xenial-updates,xenial-security 2:3.28.4-0ubuntu0.16.04.14 amd64 [может быть обновлён с: 2:3.28.4-0ubuntu0.16.04.5]
+libnss3-nssdb/xenial-updates,xenial-updates,xenial-security,xenial-security 2:3.28.4-0ubuntu0.16.04.14 all [может быть обновлён с: 2:3.28.4-0ubuntu0.16.04.5]
+libopenexr22/xenial-updates,xenial-security 2.2.0-10ubuntu2.6 amd64 [может быть обновлён с: 2.2.0-10ubuntu2]
+libopenjp2-7/xenial-updates,xenial-security 2.1.2-1.1+deb9u6build0.16.04.1 amd64 [может быть обновлён с: 2.1.2-1.1+deb9u2build0.1]
+libp11-kit0/xenial-updates,xenial-security 0.23.2-5~ubuntu16.04.2 amd64 [может быть обновлён с: 0.23.2-5~ubuntu16.04.1]
+libpackagekit-glib2-16/xenial-updates,xenial-security 0.8.17-4ubuntu6~gcc5.4ubuntu1.5 amd64 [может быть обновлён с: 0.8.17-4ubuntu6~gcc5.4ubuntu1.4]
+libpam-modules/xenial-updates 1.1.8-3.2ubuntu2.3 amd64 [может быть обновлён с: 1.1.8-3.2ubuntu2.1]
+libpam-modules-bin/xenial-updates 1.1.8-3.2ubuntu2.3 amd64 [может быть обновлён с: 1.1.8-3.2ubuntu2.1]
+libpam-runtime/xenial-updates,xenial-updates 1.1.8-3.2ubuntu2.3 all [может быть обновлён с: 1.1.8-3.2ubuntu2.1]
+libpam-systemd/xenial-updates 229-4ubuntu21.31 amd64 [может быть обновлён с: 229-4ubuntu21.21]
+libpam0g/xenial-updates 1.1.8-3.2ubuntu2.3 amd64 [может быть обновлён с: 1.1.8-3.2ubuntu2.1]
+libpcap0.8/xenial-updates,xenial-security 1.7.4-2ubuntu0.1 amd64 [может быть обновлён с: 1.7.4-2]
+libperl5.22/xenial-updates,xenial-security 5.22.1-9ubuntu0.9 amd64 [может быть обновлён с: 5.22.1-9ubuntu0.6]
+libpoppler-glib8/xenial-updates,xenial-security 0.41.0-0ubuntu1.16 amd64 [может быть обновлён с: 0.41.0-0ubuntu1.13]
+libpoppler58/xenial-updates,xenial-security 0.41.0-0ubuntu1.16 amd64 [может быть обновлён с: 0.41.0-0ubuntu1.13]
+libpostproc-ffmpeg53/xenial-updates,xenial-security 7:2.8.17-0ubuntu0.1 amd64 [может быть обновлён с: 7:2.8.15-0ubuntu0.16.04.1]
+libpq5/xenial-updates 9.5.25-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 9.5.16-0ubuntu0.16.04.1]
+libprocps4/xenial-updates 2:3.3.10-4ubuntu2.5 amd64 [может быть обновлён с: 2:3.3.10-4ubuntu2.4]
+libproxy1-plugin-gsettings/xenial-updates,xenial-security 0.4.11-5ubuntu1.2 amd64 [может быть обновлён с: 0.4.11-5ubuntu1]
+libproxy1-plugin-networkmanager/xenial-updates,xenial-security 0.4.11-5ubuntu1.2 amd64 [может быть обновлён с: 0.4.11-5ubuntu1]
+libproxy1v5/xenial-updates,xenial-security 0.4.11-5ubuntu1.2 amd64 [может быть обновлён с: 0.4.11-5ubuntu1]
+libpulse-mainloop-glib0/xenial-updates,xenial-security 1:8.0-0ubuntu3.15 amd64 [может быть обновлён с: 1:8.0-0ubuntu3.10]
+libpulse0/xenial-updates,xenial-security 1:8.0-0ubuntu3.15 amd64 [может быть обновлён с: 1:8.0-0ubuntu3.10]
+libpulsedsp/xenial-updates,xenial-security 1:8.0-0ubuntu3.15 amd64 [может быть обновлён с: 1:8.0-0ubuntu3.10]
+libpython2.7/xenial-updates,xenial-security 2.7.12-1ubuntu0~16.04.18 amd64 [может быть обновлён с: 2.7.12-1ubuntu0~16.04.4]
+libpython2.7-minimal/xenial-updates,xenial-security 2.7.12-1ubuntu0~16.04.18 amd64 [может быть обновлён с: 2.7.12-1ubuntu0~16.04.4]
+libpython2.7-stdlib/xenial-updates,xenial-security 2.7.12-1ubuntu0~16.04.18 amd64 [может быть обновлён с: 2.7.12-1ubuntu0~16.04.4]
+libpython3.5/xenial-updates,xenial-security 3.5.2-2ubuntu0~16.04.13 amd64 [может быть обновлён с: 3.5.2-2ubuntu0~16.04.5]
+libpython3.5-minimal/xenial-updates,xenial-security 3.5.2-2ubuntu0~16.04.13 amd64 [может быть обновлён с: 3.5.2-2ubuntu0~16.04.5]
+libpython3.5-stdlib/xenial-updates,xenial-security 3.5.2-2ubuntu0~16.04.13 amd64 [может быть обновлён с: 3.5.2-2ubuntu0~16.04.5]
+libqt5core5a/xenial-updates,xenial-security 5.5.1+dfsg-16ubuntu7.7 amd64 [может быть обновлён с: 5.5.1+dfsg-16ubuntu7.5]
+libqt5dbus5/xenial-updates,xenial-security 5.5.1+dfsg-16ubuntu7.7 amd64 [может быть обновлён с: 5.5.1+dfsg-16ubuntu7.5]
+libqt5gui5/xenial-updates,xenial-security 5.5.1+dfsg-16ubuntu7.7 amd64 [может быть обновлён с: 5.5.1+dfsg-16ubuntu7.5]
+libqt5network5/xenial-updates,xenial-security 5.5.1+dfsg-16ubuntu7.7 amd64 [может быть обновлён с: 5.5.1+dfsg-16ubuntu7.5]
+libqt5opengl5/xenial-updates,xenial-security 5.5.1+dfsg-16ubuntu7.7 amd64 [может быть обновлён с: 5.5.1+dfsg-16ubuntu7.5]
+libqt5printsupport5/xenial-updates,xenial-security 5.5.1+dfsg-16ubuntu7.7 amd64 [может быть обновлён с: 5.5.1+dfsg-16ubuntu7.5]
+libqt5sql5/xenial-updates,xenial-security 5.5.1+dfsg-16ubuntu7.7 amd64 [может быть обновлён с: 5.5.1+dfsg-16ubuntu7.5]
+libqt5sql5-sqlite/xenial-updates,xenial-security 5.5.1+dfsg-16ubuntu7.7 amd64 [может быть обновлён с: 5.5.1+dfsg-16ubuntu7.5]
+libqt5test5/xenial-updates,xenial-security 5.5.1+dfsg-16ubuntu7.7 amd64 [может быть обновлён с: 5.5.1+dfsg-16ubuntu7.5]
+libqt5widgets5/xenial-updates,xenial-security 5.5.1+dfsg-16ubuntu7.7 amd64 [может быть обновлён с: 5.5.1+dfsg-16ubuntu7.5]
+libqt5xml5/xenial-updates,xenial-security 5.5.1+dfsg-16ubuntu7.7 amd64 [может быть обновлён с: 5.5.1+dfsg-16ubuntu7.5]
+libquadmath0/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libraptor2-0/xenial-updates,xenial-security 2.0.14-1ubuntu0.16.04.1 amd64 [может быть обновлён с: 2.0.14-1]
+libraw15/xenial-updates,xenial-security 0.17.1-1ubuntu0.5 amd64 [может быть обновлён с: 0.17.1-1ubuntu0.4]
+libreoffice-avmedia-backend-gstreamer/xenial-updates,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-base-core/xenial-updates,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-calc/xenial-updates,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-common/xenial-updates,xenial-updates,xenial-security,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 all [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-core/xenial-updates,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-draw/xenial-updates,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-gnome/xenial-updates,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-gtk/xenial-updates,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-impress/xenial-updates,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-math/xenial-updates,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-ogltrans/xenial-updates,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-pdfimport/xenial-updates,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-style-breeze/xenial-updates,xenial-updates,xenial-security,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 all [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-style-galaxy/xenial-updates,xenial-updates,xenial-security,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 all [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+libreoffice-writer/xenial-updates,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+librsvg2-2/xenial-updates,xenial-security 2.40.13-3ubuntu0.2 amd64 [может быть обновлён с: 2.40.13-3]
+librsvg2-common/xenial-updates,xenial-security 2.40.13-3ubuntu0.2 amd64 [может быть обновлён с: 2.40.13-3]
+libsane/xenial-updates,xenial-security 1.0.25+git20150528-1ubuntu2.16.04.3 amd64 [может быть обновлён с: 1.0.25+git20150528-1ubuntu2.16.04.1]
+libsane-common/xenial-updates,xenial-updates,xenial-security,xenial-security 1.0.25+git20150528-1ubuntu2.16.04.3 all [может быть обновлён с: 1.0.25+git20150528-1ubuntu2.16.04.1]
+libsasl2-2/xenial-updates,xenial-security 2.1.26.dfsg1-14ubuntu0.2 amd64 [может быть обновлён с: 2.1.26.dfsg1-14ubuntu0.1]
+libsasl2-modules/xenial-updates,xenial-security 2.1.26.dfsg1-14ubuntu0.2 amd64 [может быть обновлён с: 2.1.26.dfsg1-14ubuntu0.1]
+libsasl2-modules-db/xenial-updates,xenial-security 2.1.26.dfsg1-14ubuntu0.2 amd64 [может быть обновлён с: 2.1.26.dfsg1-14ubuntu0.1]
+libseccomp2/xenial-updates 2.5.1-1ubuntu1~16.04.1 amd64 [может быть обновлён с: 2.3.1-2.1ubuntu2~16.04.1]
+libsmartcols1/xenial-updates 2.27.1-6ubuntu3.10 amd64 [может быть обновлён с: 2.27.1-6ubuntu3.6]
+libsmbclient/xenial-updates,xenial-security 2:4.3.11+dfsg-0ubuntu0.16.04.34 amd64 [может быть обновлён с: 2:4.3.11+dfsg-0ubuntu0.16.04.19]
+libsnapd-glib1/xenial-updates,xenial-security 1.49-0ubuntu0.16.04.2 amd64 [может быть обновлён с: 1.47-0ubuntu0.16.04.0]
+libsndfile1/xenial-updates,xenial-security 1.0.25-10ubuntu0.16.04.3 amd64 [может быть обновлён с: 1.0.25-10ubuntu0.16.04.1]
+libsnmp-base/xenial-updates,xenial-updates,xenial-security,xenial-security 5.7.3+dfsg-1ubuntu4.6 all [может быть обновлён с: 5.7.3+dfsg-1ubuntu4.2]
+libsnmp30/xenial-updates,xenial-security 5.7.3+dfsg-1ubuntu4.6 amd64 [может быть обновлён с: 5.7.3+dfsg-1ubuntu4.2]
+libsqlite3-0/xenial-updates,xenial-security 3.11.0-1ubuntu1.5 amd64 [может быть обновлён с: 3.11.0-1ubuntu1.1]
+libss2/xenial-updates,xenial-security 1.42.13-1ubuntu1.2 amd64 [может быть обновлён с: 1.42.13-1ubuntu1]
+libssh-4/xenial-updates,xenial-security 0.6.3-4.3ubuntu0.6 amd64 [может быть обновлён с: 0.6.3-4.3ubuntu0.2]
+libssh-gcrypt-4/xenial-updates,xenial-security 0.6.3-4.3ubuntu0.6 amd64 [может быть обновлён с: 0.6.3-4.3ubuntu0.2]
+libssl1.0.0/xenial-updates,xenial-security 1.0.2g-1ubuntu4.20 amd64 [может быть обновлён с: 1.0.2g-1ubuntu4.15]
+libstdc++-5-dev/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libstdc++6/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libswresample-ffmpeg1/xenial-updates,xenial-security 7:2.8.17-0ubuntu0.1 amd64 [может быть обновлён с: 7:2.8.15-0ubuntu0.16.04.1]
+libswscale-ffmpeg3/xenial-updates,xenial-security 7:2.8.17-0ubuntu0.1 amd64 [может быть обновлён с: 7:2.8.15-0ubuntu0.16.04.1]
+libsystemd0/xenial-updates 229-4ubuntu21.31 amd64 [может быть обновлён с: 229-4ubuntu21.21]
+libtiff5/xenial-updates,xenial-security 4.0.6-1ubuntu0.8 amd64 [может быть обновлён с: 4.0.6-1ubuntu0.6]
+libtsan0/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libubsan0/xenial-updates,xenial-security 5.4.0-6ubuntu1~16.04.12 amd64 [может быть обновлён с: 5.4.0-6ubuntu1~16.04.11]
+libudev1/xenial-updates 229-4ubuntu21.31 amd64 [может быть обновлён с: 229-4ubuntu21.21]
+libunity-core-6.0-9/xenial-updates 7.4.5+16.04.20190312-0ubuntu1 amd64 [может быть обновлён с: 7.4.5+16.04.20180221-0ubuntu1]
+libuuid1/xenial-updates 2.27.1-6ubuntu3.10 amd64 [может быть обновлён с: 2.27.1-6ubuntu3.6]
+libvncclient1/xenial-updates,xenial-security 0.9.10+dfsg-3ubuntu0.16.04.6 amd64 [может быть обновлён с: 0.9.10+dfsg-3ubuntu0.16.04.3]
+libvpx3/xenial-updates,xenial-security 1.5.0-2ubuntu1.1 amd64 [может быть обновлён с: 1.5.0-2ubuntu1]
+libwbclient0/xenial-updates,xenial-security 2:4.3.11+dfsg-0ubuntu0.16.04.34 amd64 [может быть обновлён с: 2:4.3.11+dfsg-0ubuntu0.16.04.19]
+libwhoopsie0/xenial-updates,xenial-security 0.2.52.5ubuntu0.5 amd64 [может быть обновлён с: 0.2.52.5]
+libwinpr-crt0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-dsparse0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-environment0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-file0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-handle0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-heap0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-input0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-interlocked0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-library0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-path0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-pool0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-registry0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-rpc0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-sspi0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-synch0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-sysinfo0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-thread0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libwinpr-utils0.1/xenial-updates,xenial-security 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.4 amd64 [может быть обновлён с: 1.1.0~git20140921.1.440916e+dfsg1-5ubuntu1.3]
+libx11-6/xenial-updates,xenial-security 2:1.6.3-1ubuntu2.2 amd64 [может быть обновлён с: 2:1.6.3-1ubuntu2.1]
+libx11-data/xenial-updates,xenial-updates,xenial-security,xenial-security 2:1.6.3-1ubuntu2.2 all [может быть обновлён с: 2:1.6.3-1ubuntu2.1]
+libx11-xcb1/xenial-updates,xenial-security 2:1.6.3-1ubuntu2.2 amd64 [может быть обновлён с: 2:1.6.3-1ubuntu2.1]
+libxml2/xenial-updates,xenial-security 2.9.3+dfsg1-1ubuntu0.7 amd64 [может быть обновлён с: 2.9.3+dfsg1-1ubuntu0.6]
+libxslt1.1/xenial-updates,xenial-security 1.1.28-2.1ubuntu0.3 amd64 [может быть обновлён с: 1.1.28-2.1ubuntu0.2]
+libzmq5/xenial-updates,xenial-security 4.1.4-7ubuntu0.1 amd64 [может быть обновлён с: 4.1.4-7]
+linux-base/xenial-updates,xenial-updates,xenial-security,xenial-security 4.5ubuntu1.2~16.04.1 all [может быть обновлён с: 4.5ubuntu1~16.04.1]
+linux-firmware/xenial-updates,xenial-updates,xenial-security,xenial-security 1.157.23 all [может быть обновлён с: 1.157.21]
+linux-generic-hwe-16.04/xenial-updates,xenial-security 4.15.0.142.137 amd64 [может быть обновлён с: 4.15.0.47.68]
+linux-headers-generic-hwe-16.04/xenial-updates,xenial-security 4.15.0.142.137 amd64 [может быть обновлён с: 4.15.0.47.68]
+linux-image-generic-hwe-16.04/xenial-updates,xenial-security 4.15.0.142.137 amd64 [может быть обновлён с: 4.15.0.47.68]
+linux-libc-dev/xenial-updates,xenial-security 4.4.0-210.242 amd64 [может быть обновлён с: 4.4.0-145.171]
+locales/xenial-updates,xenial-updates,xenial-security,xenial-security 2.23-0ubuntu11.3 all [может быть обновлён с: 2.23-0ubuntu11]
+login/xenial-updates 1:4.2-3.1ubuntu5.4 amd64 [может быть обновлён с: 1:4.2-3.1ubuntu5.3]
+lshw/xenial-updates 02.17-1.1ubuntu3.6 amd64 [может быть обновлён с: 02.17-1.1ubuntu3.5]
+mount/xenial-updates 2.27.1-6ubuntu3.10 amd64 [может быть обновлён с: 2.27.1-6ubuntu3.6]
+multiarch-support/xenial-updates,xenial-security 2.23-0ubuntu11.3 amd64 [может быть обновлён с: 2.23-0ubuntu11]
+mysql-client-5.7/xenial-updates,xenial-security 5.7.33-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 5.7.25-0ubuntu0.16.04.2]
+mysql-client-core-5.7/xenial-updates,xenial-security 5.7.33-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 5.7.25-0ubuntu0.16.04.2]
+mysql-common/xenial-updates,xenial-updates,xenial-security,xenial-security 5.7.33-0ubuntu0.16.04.1 all [может быть обновлён с: 5.7.25-0ubuntu0.16.04.2]
+mysql-server-5.7/xenial-updates,xenial-security 5.7.33-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 5.7.25-0ubuntu0.16.04.2]
+mysql-server-core-5.7/xenial-updates,xenial-security 5.7.33-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 5.7.25-0ubuntu0.16.04.2]
+openssh-client/xenial-updates 1:7.2p2-4ubuntu2.10 amd64 [может быть обновлён с: 1:7.2p2-4ubuntu2.8]
+openssh-server/xenial-updates 1:7.2p2-4ubuntu2.10 amd64 [может быть обновлён с: 1:7.2p2-4ubuntu2.8]
+openssh-sftp-server/xenial-updates 1:7.2p2-4ubuntu2.10 amd64 [может быть обновлён с: 1:7.2p2-4ubuntu2.8]
+openssl/xenial-updates,xenial-security 1.0.2g-1ubuntu4.20 amd64 [может быть обновлён с: 1.0.2g-1ubuntu4.15]
+p11-kit/xenial-updates,xenial-security 0.23.2-5~ubuntu16.04.2 amd64 [может быть обновлён с: 0.23.2-5~ubuntu16.04.1]
+p11-kit-modules/xenial-updates,xenial-security 0.23.2-5~ubuntu16.04.2 amd64 [может быть обновлён с: 0.23.2-5~ubuntu16.04.1]
+passwd/xenial-updates 1:4.2-3.1ubuntu5.4 amd64 [может быть обновлён с: 1:4.2-3.1ubuntu5.3]
+patch/xenial-updates,xenial-security 2.7.5-1ubuntu0.16.04.2 amd64 [может быть обновлён с: 2.7.5-1ubuntu0.16.04.1]
+perl/xenial-updates,xenial-security 5.22.1-9ubuntu0.9 amd64 [может быть обновлён с: 5.22.1-9ubuntu0.6]
+perl-base/xenial-updates,xenial-security 5.22.1-9ubuntu0.9 amd64 [может быть обновлён с: 5.22.1-9ubuntu0.6]
+perl-modules-5.22/xenial-updates,xenial-updates,xenial-security,xenial-security 5.22.1-9ubuntu0.9 all [может быть обновлён с: 5.22.1-9ubuntu0.6]
+policykit-desktop-privileges/xenial-updates,xenial-updates,xenial-security,xenial-security 0.20ubuntu16.04.1 all [может быть обновлён с: 0.20]
+poppler-utils/xenial-updates,xenial-security 0.41.0-0ubuntu1.16 amd64 [может быть обновлён с: 0.41.0-0ubuntu1.13]
+ppp/xenial-updates,xenial-security 2.4.7-1+2ubuntu1.16.04.3 amd64 [может быть обновлён с: 2.4.7-1+2ubuntu1.16.04.1]
+procps/xenial-updates 2:3.3.10-4ubuntu2.5 amd64 [может быть обновлён с: 2:3.3.10-4ubuntu2.4]
+psmisc/xenial-updates 22.21-2.1ubuntu0.1 amd64 [может быть обновлён с: 22.21-2.1build1]
+pulseaudio/xenial-updates,xenial-security 1:8.0-0ubuntu3.15 amd64 [может быть обновлён с: 1:8.0-0ubuntu3.10]
+pulseaudio-module-bluetooth/xenial-updates,xenial-security 1:8.0-0ubuntu3.15 amd64 [может быть обновлён с: 1:8.0-0ubuntu3.10]
+pulseaudio-module-x11/xenial-updates,xenial-security 1:8.0-0ubuntu3.15 amd64 [может быть обновлён с: 1:8.0-0ubuntu3.10]
+pulseaudio-utils/xenial-updates,xenial-security 1:8.0-0ubuntu3.15 amd64 [может быть обновлён с: 1:8.0-0ubuntu3.10]
+python-apt-common/xenial-updates,xenial-updates 1.1.0~beta1ubuntu0.16.04.12 all [может быть обновлён с: 1.1.0~beta1ubuntu0.16.04.2]
+python-ecdsa/xenial-updates,xenial-updates,xenial-security,xenial-security 0.13-2ubuntu0.16.04.1 all [может быть обновлён с: 0.13-2]
+python2.7/xenial-updates,xenial-security 2.7.12-1ubuntu0~16.04.18 amd64 [может быть обновлён с: 2.7.12-1ubuntu0~16.04.4]
+python2.7-minimal/xenial-updates,xenial-security 2.7.12-1ubuntu0~16.04.18 amd64 [может быть обновлён с: 2.7.12-1ubuntu0~16.04.4]
+python3-apport/xenial-updates,xenial-updates,xenial-security,xenial-security 2.20.1-0ubuntu2.30 all [может быть обновлён с: 2.20.1-0ubuntu2.18]
+python3-apt/xenial-updates 1.1.0~beta1ubuntu0.16.04.12 amd64 [может быть обновлён с: 1.1.0~beta1ubuntu0.16.04.2]
+python3-aptdaemon/xenial-updates,xenial-updates,xenial-security,xenial-security 1.1.1+bzr982-0ubuntu14.5 all [может быть обновлён с: 1.1.1+bzr982-0ubuntu14]
+python3-aptdaemon.gtk3widgets/xenial-updates,xenial-updates,xenial-security,xenial-security 1.1.1+bzr982-0ubuntu14.5 all [может быть обновлён с: 1.1.1+bzr982-0ubuntu14]
+python3-aptdaemon.pkcompat/xenial-updates,xenial-updates,xenial-security,xenial-security 1.1.1+bzr982-0ubuntu14.5 all [может быть обновлён с: 1.1.1+bzr982-0ubuntu14]
+python3-cryptography/xenial-updates,xenial-security 1.2.3-1ubuntu0.3 amd64 [может быть обновлён с: 1.2.3-1ubuntu0.2]
+python3-distupgrade/xenial-updates,xenial-updates 1:16.04.32 all [может быть обновлён с: 1:16.04.26]
+python3-jinja2/xenial-updates,xenial-updates,xenial-security,xenial-security 2.8-1ubuntu0.1 all [может быть обновлён с: 2.8-1]
+python3-lxml/xenial-updates,xenial-security 3.5.0-1ubuntu0.4 amd64 [может быть обновлён с: 3.5.0-1ubuntu0.1]
+python3-pil/xenial-updates,xenial-security 3.1.2-0ubuntu1.6 amd64 [может быть обновлён с: 3.1.2-0ubuntu1.1]
+python3-problem-report/xenial-updates,xenial-updates,xenial-security,xenial-security 2.20.1-0ubuntu2.30 all [может быть обновлён с: 2.20.1-0ubuntu2.18]
+python3-pyparsing/xenial-updates,xenial-updates,xenial-security,xenial-security 2.0.3+dfsg1-1ubuntu0.2 all [может быть обновлён с: 2.0.3+dfsg1-1ubuntu0.1]
+python3-renderpm/xenial-updates,xenial-security 3.3.0-1ubuntu0.1 amd64 [может быть обновлён с: 3.3.0-1]
+python3-reportlab/xenial-updates,xenial-updates,xenial-security,xenial-security 3.3.0-1ubuntu0.1 all [может быть обновлён с: 3.3.0-1]
+python3-reportlab-accel/xenial-updates,xenial-security 3.3.0-1ubuntu0.1 amd64 [может быть обновлён с: 3.3.0-1]
+python3-software-properties/xenial-updates,xenial-updates,xenial-security,xenial-security 0.96.20.10 all [может быть обновлён с: 0.96.20.8]
+python3-uno/xenial-updates,xenial-security 1:5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 1:5.1.6~rc2-0ubuntu1~xenial6]
+python3-update-manager/xenial-updates,xenial-updates 1:16.04.17 all [может быть обновлён с: 1:16.04.15]
+python3-urllib3/xenial-updates,xenial-updates,xenial-security,xenial-security 1.13.1-2ubuntu0.16.04.4 all [может быть обновлён с: 1.13.1-2ubuntu0.16.04.2]
+python3-xdg/xenial-updates,xenial-updates,xenial-security,xenial-security 0.25-4ubuntu0.16.04.1 all [может быть обновлён с: 0.25-4]
+python3.5/xenial-updates,xenial-security 3.5.2-2ubuntu0~16.04.13 amd64 [может быть обновлён с: 3.5.2-2ubuntu0~16.04.5]
+python3.5-minimal/xenial-updates,xenial-security 3.5.2-2ubuntu0~16.04.13 amd64 [может быть обновлён с: 3.5.2-2ubuntu0~16.04.5]
+resolvconf/xenial-updates,xenial-updates 1.78ubuntu7 all [может быть обновлён с: 1.78ubuntu6]
+rsync/xenial-updates,xenial-security 3.1.1-3ubuntu1.3 amd64 [может быть обновлён с: 3.1.1-3ubuntu1.2]
+samba-libs/xenial-updates,xenial-security 2:4.3.11+dfsg-0ubuntu0.16.04.34 amd64 [может быть обновлён с: 2:4.3.11+dfsg-0ubuntu0.16.04.19]
+sane-utils/xenial-updates,xenial-security 1.0.25+git20150528-1ubuntu2.16.04.3 amd64 [может быть обновлён с: 1.0.25+git20150528-1ubuntu2.16.04.1]
+sbsigntool/xenial-updates,xenial-security 0.6-0ubuntu10.2 amd64 [может быть обновлён с: 0.6-0ubuntu10.1]
+snapd/xenial-updates,xenial-security 2.48.3 amd64 [может быть обновлён с: 2.38]
+software-properties-common/xenial-updates,xenial-updates,xenial-security,xenial-security 0.96.20.10 all [может быть обновлён с: 0.96.20.8]
+software-properties-gtk/xenial-updates,xenial-updates,xenial-security,xenial-security 0.96.20.10 all [может быть обновлён с: 0.96.20.8]
+sudo/xenial-updates,xenial-security 1.8.16-0ubuntu1.10 amd64 [может быть обновлён с: 1.8.16-0ubuntu1.5]
+systemd/xenial-updates 229-4ubuntu21.31 amd64 [может быть обновлён с: 229-4ubuntu21.21]
+systemd-sysv/xenial-updates 229-4ubuntu21.31 amd64 [может быть обновлён с: 229-4ubuntu21.21]
+tar/xenial-updates,xenial-security 1.28-2.1ubuntu0.2 amd64 [может быть обновлён с: 1.28-2.1ubuntu0.1]
+tcpdump/xenial-updates,xenial-security 4.9.3-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 4.9.2-0ubuntu0.16.04.1]
+thunderbird/xenial-updates,xenial-security 1:68.10.0+build1-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 1:60.6.1+build2-0ubuntu0.16.04.1]
+thunderbird-gnome-support/xenial-updates,xenial-security 1:68.10.0+build1-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 1:60.6.1+build2-0ubuntu0.16.04.1]
+thunderbird-locale-en/xenial-updates,xenial-security 1:68.10.0+build1-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 1:60.6.1+build2-0ubuntu0.16.04.1]
+thunderbird-locale-en-us/xenial-updates,xenial-updates,xenial-security,xenial-security 1:68.10.0+build1-0ubuntu0.16.04.1 all [может быть обновлён с: 1:60.6.1+build2-0ubuntu0.16.04.1]
+thunderbird-locale-ru/xenial-updates,xenial-security 1:68.10.0+build1-0ubuntu0.16.04.1 amd64 [может быть обновлён с: 1:60.6.1+build2-0ubuntu0.16.04.1]
+tzdata/xenial-updates,xenial-updates,xenial-security,xenial-security 2021a-0ubuntu0.16.04 all [может быть обновлён с: 2018i-0ubuntu0.16.04]
+ubuntu-advantage-tools/xenial-updates 27.5~16.04.1 all [может быть обновлён с: 10ubuntu0.16.04.1]
+ubuntu-core-launcher/xenial-updates,xenial-security 2.48.3 amd64 [может быть обновлён с: 2.38]
+ubuntu-desktop/xenial-updates 1.361.6 amd64 [может быть обновлён с: 1.361.3]
+ubuntu-keyring/xenial-updates,xenial-updates 2012.05.19.1 all [может быть обновлён с: 2012.05.19]
+ubuntu-minimal/xenial-updates 1.361.6 amd64 [может быть обновлён с: 1.361.3]
+ubuntu-release-upgrader-core/xenial-updates,xenial-updates 1:16.04.32 all [может быть обновлён с: 1:16.04.26]
+ubuntu-release-upgrader-gtk/xenial-updates,xenial-updates 1:16.04.32 all [может быть обновлён с: 1:16.04.26]
+ubuntu-software/xenial-updates 3.20.5-0ubuntu0.16.04.13 amd64 [может быть обновлён с: 3.20.5-0ubuntu0.16.04.11]
+ubuntu-standard/xenial-updates 1.361.6 amd64 [может быть обновлён с: 1.361.3]
+udev/xenial-updates 229-4ubuntu21.31 amd64 [может быть обновлён с: 229-4ubuntu21.21]
+unattended-upgrades/xenial-updates,xenial-updates 1.1ubuntu1.18.04.7~16.04.7 all [может быть обновлён с: 0.90ubuntu0.10]
+unity/xenial-updates 7.4.5+16.04.20190312-0ubuntu1 amd64 [может быть обновлён с: 7.4.5+16.04.20180221-0ubuntu1]
+unity-schemas/xenial-updates,xenial-updates 7.4.5+16.04.20190312-0ubuntu1 all [может быть обновлён с: 7.4.5+16.04.20180221-0ubuntu1]
+unity-services/xenial-updates 7.4.5+16.04.20190312-0ubuntu1 amd64 [может быть обновлён с: 7.4.5+16.04.20180221-0ubuntu1]
+uno-libs3/xenial-updates,xenial-security 5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 5.1.6~rc2-0ubuntu1~xenial6]
+unzip/xenial-updates,xenial-security 6.0-20ubuntu1.1 amd64 [может быть обновлён с: 6.0-20ubuntu1]
+update-manager/xenial-updates,xenial-updates 1:16.04.17 all [может быть обновлён с: 1:16.04.15]
+update-manager-core/xenial-updates,xenial-updates 1:16.04.17 all [может быть обновлён с: 1:16.04.15]
+update-notifier/xenial-updates 3.168.15 amd64 [может быть обновлён с: 3.168.10]
+update-notifier-common/xenial-updates,xenial-updates 3.168.15 all [может быть обновлён с: 3.168.10]
+ure/xenial-updates,xenial-security 5.1.6~rc2-0ubuntu1~xenial10 amd64 [может быть обновлён с: 5.1.6~rc2-0ubuntu1~xenial6]
+ureadahead/xenial-updates 0.100.0-19.1 amd64 [может быть обновлён с: 0.100.0-19]
+usb-creator-common/xenial-updates 0.3.2ubuntu16.04.2 amd64 [может быть обновлён с: 0.3.2]
+usb-creator-gtk/xenial-updates 0.3.2ubuntu16.04.2 amd64 [может быть обновлён с: 0.3.2]
+util-linux/xenial-updates 2.27.1-6ubuntu3.10 amd64 [может быть обновлён с: 2.27.1-6ubuntu3.6]
+uuid-runtime/xenial-updates 2.27.1-6ubuntu3.10 amd64 [может быть обновлён с: 2.27.1-6ubuntu3.6]
+vim-common/xenial-updates,xenial-security 2:7.4.1689-3ubuntu1.5 amd64 [может быть обновлён с: 2:7.4.1689-3ubuntu1.2]
+vim-tiny/xenial-updates,xenial-security 2:7.4.1689-3ubuntu1.5 amd64 [может быть обновлён с: 2:7.4.1689-3ubuntu1.2]
+vino/xenial-updates,xenial-security 3.8.1-0ubuntu9.4 amd64 [может быть обновлён с: 3.8.1-0ubuntu9.2]
+whoopsie/xenial-updates,xenial-security 0.2.52.5ubuntu0.5 amd64 [может быть обновлён с: 0.2.52.5]
+wireless-regdb/xenial-updates,xenial-updates,xenial-security,xenial-security 2020.11.20-0ubuntu1~16.04.2 all [может быть обновлён с: 2018.05.09-0ubuntu1~16.04.1]
+wpasupplicant/xenial-updates,xenial-security 2.4-0ubuntu6.8 amd64 [может быть обновлён с: 2.4-0ubuntu6.4]
+xdg-utils/xenial-updates,xenial-updates,xenial-security,xenial-security 1.1.1-1ubuntu1.16.04.5 all [может быть обновлён с: 1.1.1-1ubuntu1.16.04.3]
+xserver-common/xenial-updates,xenial-updates,xenial-security,xenial-security 2:1.18.4-0ubuntu0.12 all [может быть обновлён с: 2:1.18.4-0ubuntu0.8]
+xserver-xorg-core-hwe-16.04/xenial-updates,xenial-security 2:1.19.6-1ubuntu4.1~16.04.6 amd64 [может быть обновлён с: 2:1.19.6-1ubuntu4.1~16.04.2]
+xserver-xorg-legacy-hwe-16.04/xenial-updates,xenial-security 2:1.19.6-1ubuntu4.1~16.04.6 amd64 [может быть обновлён с: 2:1.19.6-1ubuntu4.1~16.04.2]
+xterm/xenial-updates,xenial-security 322-1ubuntu1.2 amd64 [может быть обновлён с: 322-1ubuntu1]
+zlib1g/xenial-updates,xenial-security 1:1.2.8.dfsg-2ubuntu4.3 amd64 [может быть обновлён с: 1:1.2.8.dfsg-2ubuntu4.1]
+student@Ubuntu-MySQL-VirtualBox:~$ sudo apt update
+Сущ:1 http://ru.archive.ubuntu.com/ubuntu xenial InRelease                     
+Сущ:2 http://ppa.launchpad.net/linuxuprising/java/ubuntu xenial InRelease      
+Сущ:3 http://ru.archive.ubuntu.com/ubuntu xenial-updates InRelease             
+Сущ:4 http://ru.archive.ubuntu.com/ubuntu xenial-backports InRelease           
+Пол:5 http://security.ubuntu.com/ubuntu xenial-security InRelease [109 kB]     
+Сущ:6 http://ppa.launchpad.net/webupd8team/java/ubuntu xenial InRelease        
+Сущ:7 https://dbeaver.io/debs/dbeaver-ce  InRelease                            
+Пол:8 http://security.ubuntu.com/ubuntu xenial-security/main amd64 DEP-11 Metadata [93,7 kB]
+Пол:9 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 DEP-11 Metadata [130 kB]
+Пол:10 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 DEP-11 Metadata [2 464 B]
+Получено 335 kB за 7с (42,4 kB/s)                                              
+Чтение списков пакетов… Готово
+Построение дерева зависимостей       
+Чтение информации о состоянии… Готово
+Может быть обновлено 456 пакетов. Запустите «apt list --upgradable» для их показа.
+student@Ubuntu-MySQL-VirtualBox:~$ sudo apt install openssh-server -y
+Чтение списков пакетов… Готово
+Построение дерева зависимостей       
+Чтение информации о состоянии… Готово
+Следующий пакет устанавливался автоматически и больше не требуется:
+  snapd-login-service
+Для его удаления используйте «sudo apt autoremove».
+Будут установлены следующие дополнительные пакеты:
+  openssh-client openssh-sftp-server
+Предлагаемые пакеты:
+  ssh-askpass libpam-ssh keychain monkeysphere rssh molly-guard
+Следующие пакеты будут обновлены:
+  openssh-client openssh-server openssh-sftp-server
+Обновлено 3 пакетов, установлено 0 новых пакетов, для удаления отмечено 0 пакетов, и 453 пакетов не обновлено.
+Необходимо скачать 963 kB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 1 024 B.
+Пол:1 http://ru.archive.ubuntu.com/ubuntu xenial-updates/main amd64 openssh-sftp-server amd64 1:7.2p2-4ubuntu2.10 [38,8 kB]
+Пол:2 http://ru.archive.ubuntu.com/ubuntu xenial-updates/main amd64 openssh-server amd64 1:7.2p2-4ubuntu2.10 [335 kB]
+Пол:3 http://ru.archive.ubuntu.com/ubuntu xenial-updates/main amd64 openssh-client amd64 1:7.2p2-4ubuntu2.10 [590 kB]
+Получено 963 kB за 2с (347 kB/s)           
+Предварительная настройка пакетов ...
+(Чтение базы данных … на данный момент установлено 222153 файла и каталога.)
+Подготовка к распаковке …/openssh-sftp-server_1%3a7.2p2-4ubuntu2.10_amd64.deb …
+Распаковывается openssh-sftp-server (1:7.2p2-4ubuntu2.10) на замену (1:7.2p2-4ubuntu2.8) …
+Подготовка к распаковке …/openssh-server_1%3a7.2p2-4ubuntu2.10_amd64.deb …
+Распаковывается openssh-server (1:7.2p2-4ubuntu2.10) на замену (1:7.2p2-4ubuntu2.8) …
+Подготовка к распаковке …/openssh-client_1%3a7.2p2-4ubuntu2.10_amd64.deb …
+Распаковывается openssh-client (1:7.2p2-4ubuntu2.10) на замену (1:7.2p2-4ubuntu2.8) …
+Обрабатываются триггеры для man-db (2.7.5-1) …
+Обрабатываются триггеры для systemd (229-4ubuntu21.21) …
+Обрабатываются триггеры для ureadahead (0.100.0-19) …
+Обрабатываются триггеры для ufw (0.35-0ubuntu2) …
+Настраивается пакет openssh-client (1:7.2p2-4ubuntu2.10) …
+Настраивается пакет openssh-sftp-server (1:7.2p2-4ubuntu2.10) …
+Настраивается пакет openssh-server (1:7.2p2-4ubuntu2.10) …
+student@Ubuntu-MySQL-VirtualBox:~$ sudo systemctl start ssh
+student@Ubuntu-MySQL-VirtualBox:~$ ^C
+student@Ubuntu-MySQL-VirtualBox:~$ sudo systemctl status ssh
+● ssh.service - OpenBSD Secure Shell server
+   Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enab
+   Active: active (running) since Чт 2022-01-20 14:36:34 MSK; 4min 18s ago
+  Process: 3999 ExecStartPre=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)
+ Main PID: 4002 (sshd)
+   CGroup: /system.slice/ssh.service
+           └─4002 /usr/sbin/sshd -D
+
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox systemd[1]: Starting OpenBSD Secure Shel
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox sshd[4002]: Server listening on 0.0.0.0 
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox sshd[4002]: Server listening on :: port 
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox systemd[1]: Started OpenBSD Secure Shell
+янв 20 14:40:23 Ubuntu-MySQL-VirtualBox systemd[1]: Started OpenBSD Secure Shell
+...skipping...
+● ssh.service - OpenBSD Secure Shell server
+   Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enab
+   Active: active (running) since Чт 2022-01-20 14:36:34 MSK; 4min 18s ago
+  Process: 3999 ExecStartPre=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)
+ Main PID: 4002 (sshd)
+   CGroup: /system.slice/ssh.service
+           └─4002 /usr/sbin/sshd -D
+
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox systemd[1]: Starting OpenBSD Secure Shel
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox sshd[4002]: Server listening on 0.0.0.0 
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox sshd[4002]: Server listening on :: port 
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox systemd[1]: Started OpenBSD Secure Shell
+янв 20 14:40:23 Ubuntu-MySQL-VirtualBox systemd[1]: Started OpenBSD Secure Shell
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+ ESCOC
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ver
+sh.service; enabled; vendor preset: enabled)
+2-01-20 14:36:34 MSK; 4min 18s ago
+shd -t (code=exited, status=0/SUCCESS)
+
+
+
+
+systemd[1]: Starting OpenBSD Secure Shell server...
+sshd[4002]: Server listening on 0.0.0.0 port 22.
+sshd[4002]: Server listening on :: port 22.
+systemd[1]: Started OpenBSD Secure Shell server.
+systemd[1]: Started OpenBSD Secure Shell server.
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+ ESCOD
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+● ssh.service - OpenBSD Secure Shell server
+   Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enab
+   Active: active (running) since Чт 2022-01-20 14:36:34 MSK; 4min 18s ago
+  Process: 3999 ExecStartPre=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)
+ Main PID: 4002 (sshd)
+   CGroup: /system.slice/ssh.service
+           └─4002 /usr/sbin/sshd -D
+
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox systemd[1]: Starting OpenBSD Secure Shel
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox sshd[4002]: Server listening on 0.0.0.0 
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox sshd[4002]: Server listening on :: port 
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox systemd[1]: Started OpenBSD Secure Shell
+янв 20 14:40:23 Ubuntu-MySQL-VirtualBox systemd[1]: Started OpenBSD Secure Shell
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+...skipping...
+
+                   SUMMARY OF LESS COMMANDS
+
+      Commands marked with * may be preceded by a number, N.
+      Notes in parentheses indicate the behavior if N is given.
+      A key preceded by a caret indicates the Ctrl key; thus ^K is ctrl-K.
+
+  h  H                 Display this help.
+  q  :q  Q  :Q  ZZ     Exit.
+ ---------------------------------------------------------------------------
+
+                           MOVING
+
+  e  ^E  j  ^N  CR  *  Forward  one line   (or N lines).
+  y  ^Y  k  ^K  ^P  *  Backward one line   (or N lines).
+  f  ^F  ^V  SPACE  *  Forward  one window (or N lines).
+  b  ^B  ESC-v      *  Backward one window (or N lines).
+  z                 *  Forward  one window (and set window to N).
+  w                 *  Backward one window (and set window to N).
+  ESC-SPACE         *  Forward  one window, but don't stop at end-of-file.
+  d  ^D             *  Forward  one half-window (and set half-window to N).
+  u  ^U             *  Backward one half-window (and set half-window to N).
+  ESC-)  RightArrow *  Left  one half screen width (or N positions).
+HELP -- Press RETURN for more, or q when done...skipping...
+● ssh.service - OpenBSD Secure Shell server
+   Loaded: loaded (/lib/systemd/system/ssh.service; enabled; vendor preset: enab
+   Active: active (running) since Чт 2022-01-20 14:36:34 MSK; 4min 18s ago
+  Process: 3999 ExecStartPre=/usr/sbin/sshd -t (code=exited, status=0/SUCCESS)
+ Main PID: 4002 (sshd)
+   CGroup: /system.slice/ssh.service
+           └─4002 /usr/sbin/sshd -D
+
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox systemd[1]: Starting OpenBSD Secure Shel
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox sshd[4002]: Server listening on 0.0.0.0 
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox sshd[4002]: Server listening on :: port 
+янв 20 14:36:34 Ubuntu-MySQL-VirtualBox systemd[1]: Started OpenBSD Secure Shell
+янв 20 14:40:23 Ubuntu-MySQL-VirtualBox systemd[1]: Started OpenBSD Secure Shell
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+student@Ubuntu-MySQL-VirtualBox:~$ sudo systemctl enable ssh
+Synchronizing state of ssh.service with SysV init with /lib/systemd/systemd-sysv-install...
+Executing /lib/systemd/systemd-sysv-install enable ssh
+student@Ubuntu-MySQL-VirtualBox:~$ ip addr
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host 
+       valid_lft forever preferred_lft forever
+2: enp0s3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP group default qlen 1000
+    link/ether 08:00:27:73:27:a8 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15/24 brd 10.0.2.255 scope global dynamic enp0s3
+       valid_lft 85392sec preferred_lft 85392sec
+    inet6 fe80::6f3b:940f:2721:eb9b/64 scope link 
+       valid_lft forever preferred_lft forever
+student@Ubuntu-MySQL-VirtualBox:~$ hostname -I
+10.0.2.15 
+student@Ubuntu-MySQL-VirtualBox:~$ hostname -I
+192.168.0.88 
+student@Ubuntu-MySQL-VirtualBox:~$ ^C
+student@Ubuntu-MySQL-VirtualBox:~$ echo Hello world
+Hello world
+student@Ubuntu-MySQL-VirtualBox:~$ pwd
+/home/student
+student@Ubuntu-MySQL-VirtualBox:~$ tree
+Программа 'tree' на данный момент не установлена. Вы можете установить её, выполнив:
+sudo apt install tree
+student@Ubuntu-MySQL-VirtualBox:~$ sudo apt install tree
+[sudo] пароль для student: 
+Чтение списков пакетов… Готово
+Построение дерева зависимостей       
+Чтение информации о состоянии… Готово
+treСледующий пакет устанавливался автоматически и больше не требуется:
+  snapd-login-service
+Для его удаления используйте «sudo apt autoremove».
+Следующие НОВЫЕ пакеты будут установлены:
+  tree
+eОбновлено 0 пакетов, установлено 1 новых пакетов, для удаления отмечено 0 пакетов, и 453 пакетов не обновлено.
+Необходимо скачать 40,6 kB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 138 kB.
+Пол:1 http://ru.archive.ubuntu.com/ubuntu xenial/universe amd64 tree amd64 1.7.0-3 [40,6 kB]
+Получено 40,6 kB за 0с (153 kB/s)
+Выбор ранее не выбранного пакета tree.
+(Чтение базы данных … на данный момент установлено 222153 файла и каталога.)
+Подготовка к распаковке …/tree_1.7.0-3_amd64.deb …
+Распаковывается tree (1.7.0-3) …
+Обрабатываются триггеры для man-db (2.7.5-1) …
+Настраивается пакет tree (1.7.0-3) …
+student@Ubuntu-MySQL-VirtualBox:~$ tree
+.
+├── examples.desktop
+├── return
+├── Видео
+├── Документы
+├── Загрузки
+├── Изображения
+├── Музыка
+├── Общедоступные
+├── Рабочий стол
+└── Шаблоны
+
+8 directories, 2 files
+student@Ubuntu-MySQL-VirtualBox:~$ tree /home
+/home
+└── student
+    ├── examples.desktop
+    ├── return
+    ├── Видео
+    ├── Документы
+    ├── Загрузки
+    ├── Изображения
+    ├── Музыка
+    ├── Общедоступные
+    ├── Рабочий стол
+    └── Шаблоны
+
+9 directories, 2 files
+student@Ubuntu-MySQL-VirtualBox:~$ pwd
+/home/student
+student@Ubuntu-MySQL-VirtualBox:~$ ll
+итого 164
+drwxr-xr-x 23 student student 4096 янв 20 14:53 ./
+drwxr-xr-x  3 root    root    4096 апр 22  2019 ../
+-rw-------  1 student student  931 янв 20 14:30 .bash_history
+-rw-r--r--  1 student student  220 апр 22  2019 .bash_logout
+-rw-r--r--  1 student student 3771 апр 22  2019 .bashrc
+drwx------ 15 student student 4096 апр 22  2019 .cache/
+drwx------ 15 student student 4096 апр 22  2019 .config/
+drwxrwxr-x  4 student student 4096 апр 22  2019 .dbeaver4/
+drwxrwxr-x  3 student student 4096 апр 22  2019 .dbeaver-drivers/
+drwx------  3 student student 4096 янв 19 12:28 .dbus/
+drwxrwxr-x  4 student student 4096 апр 22  2019 .eclipse/
+-rw-r--r--  1 student student 8980 апр 22  2019 examples.desktop
+drwx------  2 student student 4096 апр 22  2019 .gconf/
+drwx------  3 student student 4096 янв 20 14:28 .gnupg/
+-rw-------  1 student student 3474 янв 20 14:27 .ICEauthority
+drwx------  3 student student 4096 апр 22  2019 .local/
+drwx------  5 student student 4096 апр 22  2019 .mozilla/
+drwx------  3 student student 4096 апр 22  2019 .mysql/
+-rw-------  1 student student   92 апр 22  2019 .mysql_history
+drwxrwxr-x  2 student student 4096 апр 22  2019 .nano/
+-rw-r--r--  1 student student  655 апр 22  2019 .profile
+-rw-r--r--  1 root    root     872 янв 20 14:41 return
+-rw-rw-r--  1 student student   66 апр 22  2019 .selected_editor
+-rw-r--r--  1 student student    0 апр 22  2019 .sudo_as_admin_successful
+drwxrwxr-x  2 student student 4096 апр 22  2019 .swt/
+-rw-r-----  1 student student    5 янв 20 14:27 .vboxclient-clipboard.pid
+-rw-r-----  1 student student    5 янв 20 14:27 .vboxclient-display.pid
+-rw-r-----  1 student student    5 янв 20 14:27 .vboxclient-draganddrop.pid
+-rw-r-----  1 student student    5 янв 20 14:27 .vboxclient-seamless.pid
+-rw-------  1 student student  137 янв 20 14:53 .Xauthority
+-rw-------  1 student student  195 янв 20 14:27 .xsession-errors
+-rw-------  1 student student  195 янв 20 14:20 .xsession-errors.old
+drwxr-xr-x  2 student student 4096 апр 22  2019 Видео/
+drwxr-xr-x  2 student student 4096 апр 22  2019 Документы/
+drwxr-xr-x  2 student student 4096 апр 22  2019 Загрузки/
+drwxr-xr-x  2 student student 4096 апр 22  2019 Изображения/
+drwxr-xr-x  2 student student 4096 апр 22  2019 Музыка/
+drwxr-xr-x  2 student student 4096 апр 22  2019 Общедоступные/
+drwxr-xr-x  2 student student 4096 апр 22  2019 Рабочий стол/
+drwxr-xr-x  2 student student 4096 апр 22  2019 Шаблоны/
+student@Ubuntu-MySQL-VirtualBox:~$ mkdir students mentors
+student@Ubuntu-MySQL-VirtualBox:~$ tree
+.
+├── examples.desktop
+├── mentors
+├── return
+├── students
+├── Видео
+├── Документы
+├── Загрузки
+├── Изображения
+├── Музыка
+├── Общедоступные
+├── Рабочий стол
+└── Шаблоны
+
+10 directories, 2 files
+student@Ubuntu-MySQL-VirtualBox:~$ cd students
+student@Ubuntu-MySQL-VirtualBox:~/students$ touch students_list.txt
+student@Ubuntu-MySQL-VirtualBox:~/students$ cd -
+/home/student
+student@Ubuntu-MySQL-VirtualBox:~$ cd mentors
+student@Ubuntu-MySQL-VirtualBox:~/mentors$ touch mentors_list.txt
+student@Ubuntu-MySQL-VirtualBox:~/mentors$ cd -
+/home/student
+student@Ubuntu-MySQL-VirtualBox:~$ cd students
+student@Ubuntu-MySQL-VirtualBox:~/students$ nano ~/students_list.txt
+student@Ubuntu-MySQL-VirtualBox:~/students$ nano ~/students_list.txt 
+student@Ubuntu-MySQL-VirtualBox:~/students$ nano ~/mentors_list.txt
+student@Ubuntu-MySQL-VirtualBox:~/students$ cd -
+/home/student
+student@Ubuntu-MySQL-VirtualBox:~$ cd mentors
+student@Ubuntu-MySQL-VirtualBox:~/mentors$ nano ~/menstors_list.txt
+student@Ubuntu-MySQL-VirtualBox:~/mentors$ tree
+.
+└── mentors_list.txt
+
+0 directories, 1 file
+student@Ubuntu-MySQL-VirtualBox:~/mentors$ cd -
+/home/student
+student@Ubuntu-MySQL-VirtualBox:~$ pwd
+/home/student
+student@Ubuntu-MySQL-VirtualBox:~$ ls
+examples.desktop   mentors  students           Видео      Загрузки     Музыка         Рабочий стол
+menstors_list.txt  return   students_list.txt  Документы  Изображения  Общедоступные  Шаблоны
+student@Ubuntu-MySQL-VirtualBox:~$ cd students
+student@Ubuntu-MySQL-VirtualBox:~/students$ ls
+students_list.txt
+student@Ubuntu-MySQL-VirtualBox:~/students$ cd -
+/home/student
+student@Ubuntu-MySQL-VirtualBox:~$ cd mentors
+student@Ubuntu-MySQL-VirtualBox:~/mentors$ ls
+mentors_list.txt
+student@Ubuntu-MySQL-VirtualBox:~/mentors$ tree
+.
+└── mentors_list.txt
+
+0 directories, 1 file
+student@Ubuntu-MySQL-VirtualBox:~/mentors$ cd -
+/home/student
+student@Ubuntu-MySQL-VirtualBox:~$ tree ls
+ls [error opening dir]
+
+0 directories, 0 files
+student@Ubuntu-MySQL-VirtualBox:~$ mv mentors_list.txt students/
+mv: не удалось выполнить stat для 'mentors_list.txt': Нет такого файла или каталога
+student@Ubuntu-MySQL-VirtualBox:~$ pwd
+/home/student
+student@Ubuntu-MySQL-VirtualBox:~$ mv mentors_list.txt students/
+mv: не удалось выполнить stat для 'mentors_list.txt': Нет такого файла или каталога
+student@Ubuntu-MySQL-VirtualBox:~$ pwd
+/home/student
+student@Ubuntu-MySQL-VirtualBox:~$ mv student_list.txt students/
+mv: не удалось выполнить stat для 'student_list.txt': Нет такого файла или каталога
+student@Ubuntu-MySQL-VirtualBox:~$ pwd /home
+/home/student
+student@Ubuntu-MySQL-VirtualBox:~$ pwd /students
+/home/student
+student@Ubuntu-MySQL-VirtualBox:~$ cd /home/student/students
+student@Ubuntu-MySQL-VirtualBox:~/students$ touch students_list.txt
+student@Ubuntu-MySQL-VirtualBox:~/students$ more
+
+Использование:
+ more [опции] <файл>...
+
+A file perusal filter for CRT viewing.
+
+Опции:
+ -d          показать справку вместо звукового сигнала
+ -f          подсчитывать логические строки, а не строки экрана
+ -l          не останавливаться после символа form feed
+ -c          не прокручивать, показывать текст и очищать остаток строки
+ -p          не прокручивать, очистить экран и показать текст
+ -s          сжать несколько пустых строк в одну
+ -u          suppress underlining
+ -<число>   количество строк в экране
+ +<номер>   отображать файл, начиная с указанного номера строки
+ +/<строка>  отображать файл, начиная с вхождения указанной строки
+ -V          показать информацию о версии и выйти
+
+Подробнее смотрите more(1).
+student@Ubuntu-MySQL-VirtualBox:~/students$ more ~/students_list.txt
+Евгений Колотовкин
+
+Вячеслав Кульдяев
+
+Марат Баилов
+
+Диана Кононович
+
+Екатерина T
+
+Артем Сергеев
+
+Дмитрий Дробышев
+
+Мария Геенко
+
+Антон Игоревич
+
+Dasha Ustinova
+
+Ольга Демина
+
+Алексей Медведев
+
+Assylzhan Khamiyev
+
+Антон Смольняков
+
+Дарья Одинокова
+
+Дарья Сергеевна
+
+Оксана Белайчук
+
+Вадим Ильин
+
+Варвара Сергеевна Плющ
+
+Дмитрий Кондратьев
+
+Фирзар Аюпов
+
+Александр Терновский
+
+Саша Татаркина
+student@Ubuntu-MySQL-VirtualBox:~/students$ 
+student@Ubuntu-MySQL-VirtualBox:~/students$ 
+student@Ubuntu-MySQL-VirtualBox:~/students$ 
+student@Ubuntu-MySQL-VirtualBox:~/students$ 
+student@Ubuntu-MySQL-VirtualBox:~/students$ 
+student@Ubuntu-MySQL-VirtualBox:~/students$ 
+student@Ubuntu-MySQL-VirtualBox:~/students$ 
+student@Ubuntu-MySQL-VirtualBox:~/students$ 
+student@Ubuntu-MySQL-VirtualBox:~/students$ 
+student@Ubuntu-MySQL-VirtualBox:~/students$ 
+student@Ubuntu-MySQL-VirtualBox:~/students$ 
+student@Ubuntu-MySQL-VirtualBox:~/students$ 
+student@Ubuntu-MySQL-VirtualBox:~/students$ 
+student@Ubuntu-MySQL-VirtualBox:~/students$ 
+student@Ubuntu-MySQL-VirtualBox:~/students$ 
+student@Ubuntu-MySQL-VirtualBox:~/students$ 
+student@Ubuntu-MySQL-VirtualBox:~/students$ cd -
+/home/student
+student@Ubuntu-MySQL-VirtualBox:~$ cd /students
+bash: cd: /students: Нет такого файла или каталога
+student@Ubuntu-MySQL-VirtualBox:~$ cd /student
+bash: cd: /student: Нет такого файла или каталога
+student@Ubuntu-MySQL-VirtualBox:~$ cd /mentors
+bash: cd: /mentors: Нет такого файла или каталога
+student@Ubuntu-MySQL-VirtualBox:~$ pwd
+/home/student
+student@Ubuntu-MySQL-VirtualBox:~$ cd /mentors
+bash: cd: /mentors: Нет такого файла или каталога
+student@Ubuntu-MySQL-VirtualBox:~$ cd /home/student/mentors
+student@Ubuntu-MySQL-VirtualBox:~/mentors$ mv mentors_list.txt /home/student/students
+student@Ubuntu-MySQL-VirtualBox:~/mentors$ -cd
+Команда '-cd' не найдена, возможно вы имели в виду:
+ Команда 'bcd' из пакета 'bsdgames' (universe)
+ Команда 'hcd' из пакета 'hfsutils' (main)
+ Команда 'mcd' из пакета 'mtools' (main)
+-cd: команда не найдена
+student@Ubuntu-MySQL-VirtualBox:~/mentors$ cd -
+/home/student
+student@Ubuntu-MySQL-VirtualBox:~$ tree
+.
+├── examples.desktop
+├── menstors_list.txt
+├── mentors
+├── return
+├── students
+│   ├── mentors_list.txt
+│   └── students_list.txt
+├── students_list.txt
+├── Видео
+├── Документы
+├── Загрузки
+├── Изображения
+├── Музыка
+├── Общедоступные
+├── Рабочий стол
+└── Шаблоны
+
+10 directories, 6 files
+student@Ubuntu-MySQL-VirtualBox:~$ rm mentors/
+rm: невозможно удалить 'mentors/': Это каталог
+student@Ubuntu-MySQL-VirtualBox:~$ cd /home/student
+student@Ubuntu-MySQL-VirtualBox:~$ rm mentors/ -r
+student@Ubuntu-MySQL-VirtualBox:~$ tree
+.
+├── examples.desktop
+├── menstors_list.txt
+├── return
+├── students
+│   ├── mentors_list.txt
+│   └── students_list.txt
+├── students_list.txt
+├── Видео
+├── Документы
+├── Загрузки
+├── Изображения
+├── Музыка
+├── Общедоступные
+├── Рабочий стол
+└── Шаблоны
+
+9 directories, 6 files
+student@Ubuntu-MySQL-VirtualBox:~$ pwd
+/home/student
+student@Ubuntu-MySQL-VirtualBox:~$ ^C
+student@Ubuntu-MySQL-VirtualBox:~$ 
+student@Ubuntu-MySQL-VirtualBox:~$ rm -rf mentors_list.txt
+student@Ubuntu-MySQL-VirtualBox:~$ rm -rf students_list.txt
+student@Ubuntu-MySQL-VirtualBox:~$ tree
+.
+├── examples.desktop
+├── menstors_list.txt
+├── return
+├── students
+│   ├── mentors_list.txt
+│   └── students_list.txt
+├── Видео
+├── Документы
+├── Загрузки
+├── Изображения
+├── Музыка
+├── Общедоступные
+├── Рабочий стол
+└── Шаблоны
+
+9 directories, 5 files
+student@Ubuntu-MySQL-VirtualBox:~$ tree
+.
+├── examples.desktop
+├── menstors_list.txt
+├── return
+├── students
+│   ├── mentors_list.txt
+│   └── students_list.txt
+├── Видео
+├── Документы
+├── Загрузки
+├── Изображения
+├── Музыка
+├── Общедоступные
+├── Рабочий стол
+└── Шаблоны
+
+9 directories, 5 files
+student@Ubuntu-MySQL-VirtualBox:~$ rm -rf mentors_list.txt
+student@Ubuntu-MySQL-VirtualBox:~$ tree
+.
+├── examples.desktop
+├── menstors_list.txt
+├── return
+├── students
+│   ├── mentors_list.txt
+│   └── students_list.txt
+├── Видео
+├── Документы
+├── Загрузки
+├── Изображения
+├── Музыка
+├── Общедоступные
+├── Рабочий стол
+└── Шаблоны
+
+9 directories, 5 files
+student@Ubuntu-MySQL-VirtualBox:~$ 
+
