@@ -1,0 +1,835 @@
+student@Ubuntu-MySQL-VirtualBox:~$ docker --help
+Программа 'docker' на данный момент не установлена. Вы можете установить её, выполнив:
+sudo apt install docker.io
+student@Ubuntu-MySQL-VirtualBox:~$ sudo apt install docker.io
+[sudo] пароль для student: 
+Чтение списков пакетов… Готово
+Построение дерева зависимостей       
+Чтение информации о состоянии… Готово
+Следующие пакеты устанавливались автоматически и больше не требуются:
+  libnginx-mod-http-auth-pam libnginx-mod-http-dav-ext libnginx-mod-http-echo
+  libnginx-mod-http-geoip libnginx-mod-http-image-filter
+  libnginx-mod-http-subs-filter libnginx-mod-http-upstream-fair
+  libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream
+  nginx-common nginx-full snapd-login-service
+Для их удаления используйте «sudo apt autoremove».
+Будут установлены следующие дополнительные пакеты:
+  bridge-utils cgroupfs-mount containerd git git-man liberror-perl pigz runc
+  ubuntu-fan
+Предлагаемые пакеты:
+  aufs-tools btrfs-tools debootstrap docker-doc rinse zfs-fuse | zfsutils
+  git-daemon-run | git-daemon-sysvinit git-doc git-el git-email git-gui gitk
+  gitweb git-arch git-cvs git-mediawiki git-svn
+Следующие НОВЫЕ пакеты будут установлены:
+  bridge-utils cgroupfs-mount containerd docker.io git git-man liberror-perl
+  pigz runc ubuntu-fan
+Обновлено 0 пакетов, установлено 10 новых пакетов, для удаления отмечено 0 пакетов, и 450 пакетов не обновлено.
+Необходимо скачать 56,4 MB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 283 MB.
+Хотите продолжить? [Д/н] д
+Пол:1 http://ru.archive.ubuntu.com/ubuntu xenial/universe amd64 pigz amd64 2.3.1-2 [61,1 kB]
+Пол:2 http://ru.archive.ubuntu.com/ubuntu xenial/main amd64 bridge-utils amd64 1.5-9ubuntu1 [28,6 kB]
+Пол:3 http://ru.archive.ubuntu.com/ubuntu xenial/universe amd64 cgroupfs-mount all 1.2 [4 970 B]
+Пол:4 http://ru.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 runc amd64 1.0.0~rc7+git20190403.029124da-0ubuntu1~16.04.4 [1 890 kB]
+Пол:5 http://ru.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 containerd amd64 1.2.6-0ubuntu1~16.04.6 [19,9 MB]
+Пол:6 http://ru.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 docker.io amd64 18.09.7-0ubuntu1~16.04.7 [30,5 MB]
+Пол:7 http://ru.archive.ubuntu.com/ubuntu xenial/main amd64 liberror-perl all 0.17-1.2 [19,6 kB]
+Пол:8 http://ru.archive.ubuntu.com/ubuntu xenial-updates/main amd64 git-man all 1:2.7.4-0ubuntu1.10 [737 kB]
+Пол:9 http://ru.archive.ubuntu.com/ubuntu xenial-updates/main amd64 git amd64 1:2.7.4-0ubuntu1.10 [3 183 kB]
+Пол:10 http://ru.archive.ubuntu.com/ubuntu xenial-updates/main amd64 ubuntu-fan all 0.12.8~16.04.3 [35,1 kB]
+Получено 56,4 MB за 32с (1 710 kB/s)                                           
+Предварительная настройка пакетов ...
+Выбор ранее не выбранного пакета pigz.
+(Чтение базы данных … на данный момент установлено 223982 файла и каталога.)
+Подготовка к распаковке …/pigz_2.3.1-2_amd64.deb …
+Распаковывается pigz (2.3.1-2) …
+Выбор ранее не выбранного пакета bridge-utils.
+Подготовка к распаковке …/bridge-utils_1.5-9ubuntu1_amd64.deb …
+Распаковывается bridge-utils (1.5-9ubuntu1) …
+Выбор ранее не выбранного пакета cgroupfs-mount.
+Подготовка к распаковке …/cgroupfs-mount_1.2_all.deb …
+Распаковывается cgroupfs-mount (1.2) …
+Выбор ранее не выбранного пакета runc.
+Подготовка к распаковке …/runc_1.0.0~rc7+git20190403.029124da-0ubuntu1~16.04.4_amd64.deb …
+Распаковывается runc (1.0.0~rc7+git20190403.029124da-0ubuntu1~16.04.4) …
+Выбор ранее не выбранного пакета containerd.
+Подготовка к распаковке …/containerd_1.2.6-0ubuntu1~16.04.6_amd64.deb …
+Распаковывается containerd (1.2.6-0ubuntu1~16.04.6) …
+Выбор ранее не выбранного пакета docker.io.
+Подготовка к распаковке …/docker.io_18.09.7-0ubuntu1~16.04.7_amd64.deb …
+Распаковывается docker.io (18.09.7-0ubuntu1~16.04.7) …
+Выбор ранее не выбранного пакета liberror-perl.
+Подготовка к распаковке …/liberror-perl_0.17-1.2_all.deb …
+Распаковывается liberror-perl (0.17-1.2) …
+Выбор ранее не выбранного пакета git-man.
+Подготовка к распаковке …/git-man_1%3a2.7.4-0ubuntu1.10_all.deb …
+Распаковывается git-man (1:2.7.4-0ubuntu1.10) …
+Выбор ранее не выбранного пакета git.
+Подготовка к распаковке …/git_1%3a2.7.4-0ubuntu1.10_amd64.deb …
+Распаковывается git (1:2.7.4-0ubuntu1.10) …
+Выбор ранее не выбранного пакета ubuntu-fan.
+Подготовка к распаковке …/ubuntu-fan_0.12.8~16.04.3_all.deb …
+Распаковывается ubuntu-fan (0.12.8~16.04.3) …
+Обрабатываются триггеры для man-db (2.7.5-1) …
+Обрабатываются триггеры для ureadahead (0.100.0-19) …
+Обрабатываются триггеры для systemd (229-4ubuntu21.21) …
+Настраивается пакет pigz (2.3.1-2) …
+Настраивается пакет bridge-utils (1.5-9ubuntu1) …
+Настраивается пакет cgroupfs-mount (1.2) …
+Настраивается пакет runc (1.0.0~rc7+git20190403.029124da-0ubuntu1~16.04.4) …
+Настраивается пакет containerd (1.2.6-0ubuntu1~16.04.6) …
+Настраивается пакет docker.io (18.09.7-0ubuntu1~16.04.7) …
+Добавляется группа «docker» (GID 130) ...
+Готово.
+Настраивается пакет liberror-perl (0.17-1.2) …
+Настраивается пакет git-man (1:2.7.4-0ubuntu1.10) …
+Настраивается пакет git (1:2.7.4-0ubuntu1.10) …
+Настраивается пакет ubuntu-fan (0.12.8~16.04.3) …
+Обрабатываются триггеры для systemd (229-4ubuntu21.21) …
+Обрабатываются триггеры для ureadahead (0.100.0-19) …
+student@Ubuntu-MySQL-VirtualBox:~$ sudo apt install docker -y
+Чтение списков пакетов… Готово
+Построение дерева зависимостей       
+Чтение информации о состоянии… Готово
+Следующие пакеты устанавливались автоматически и больше не требуются:
+  libnginx-mod-http-auth-pam libnginx-mod-http-dav-ext libnginx-mod-http-echo
+  libnginx-mod-http-geoip libnginx-mod-http-image-filter
+  libnginx-mod-http-subs-filter libnginx-mod-http-upstream-fair
+  libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream
+  nginx-common nginx-full snapd-login-service
+Для их удаления используйте «sudo apt autoremove».
+Следующие НОВЫЕ пакеты будут установлены:
+  docker
+Обновлено 0 пакетов, установлено 1 новых пакетов, для удаления отмечено 0 пакетов, и 450 пакетов не обновлено.
+Необходимо скачать 12,2 kB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 65,5 kB.
+Пол:1 http://ru.archive.ubuntu.com/ubuntu xenial/universe amd64 docker amd64 1.5-1 [12,2 kB]
+Получено 12,2 kB за 0с (83,6 kB/s)
+Выбор ранее не выбранного пакета docker.
+(Чтение базы данных … на данный момент установлено 225109 файлов и каталогов.)
+Подготовка к распаковке …/docker_1.5-1_amd64.deb …
+Распаковывается docker (1.5-1) …
+Обрабатываются триггеры для man-db (2.7.5-1) …
+Настраивается пакет docker (1.5-1) …
+student@Ubuntu-MySQL-VirtualBox:~$ 
+student@Ubuntu-MySQL-VirtualBox:~$ sudo --help
+sudo — выполнение команд от имени другого
+                              пользователя
+
+usage: sudo -h | -K | -k | -V
+usage: sudo -v [-AknS] [-g group] [-h host] [-p prompt] [-u user]
+usage: sudo -l [-AknS] [-g group] [-h host] [-p prompt] [-U user] [-u user]
+            [command]
+usage: sudo [-AbEHknPS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p
+            prompt] [-u user] [VAR=value] [-i|-s] [<command>]
+usage: sudo -e [-AknS] [-r role] [-t type] [-C num] [-g group] [-h host] [-p
+            prompt] [-u user] file ...
+
+Параметры:
+  -A, --askpass               использовать
+                              вспомогательную программу
+                              для ввода пароля
+  -b, --background            выполнить команду в
+                              фоновом режиме
+  -C, --close-from=num        закрыть все дескрипторы
+                              файлов >= num
+  -E, --preserve-env          сохранить
+                              пользовательское
+                              окружение при выполнении
+                              команды
+  -e, --edit                  редактировать файлы
+                              вместо выполнения команды
+  -g, --group=group           выполнить команду от имени
+                              или ID указанной группы
+  -H, --set-home              установить для переменной
+                              HOME домашний каталог
+                              указанного пользователя
+  -h, --help                  показать справку и выйти
+  -h, --host=host             выполнить команду на узле
+                              (если поддерживается
+                              модулем)
+  -i, --login                 запустить оболочку входа в
+                              систему от имени
+                              указанного пользователя;
+                              также можно задать команду
+  -K, --remove-timestamp      полностью удалить файл
+                              timestamp
+  -k, --reset-timestamp       объявить недействительным
+                              файл timestamp
+  -l, --list                  показать список прав
+                              пользователя или
+                              проверить заданную
+                              команду; в длинном формате
+                              используется дважды
+  -n, --non-interactive       автономный режим без не
+                              вывода запросов
+                              пользователю
+  -P, --preserve-groups       сохранить вектор группы
+                              вместо установки целевой
+                              группы
+  -p, --prompt=prompt         использовать указанный
+                              запрос пароля
+  -r, --role=role             создать контекст
+                              безопасности SELinux с
+                              указанной ролью
+  -S, --stdin                 читать пароль из
+                              стандартного ввода
+  -s, --shell                 запустить оболочку от
+                              имени указанного
+                              пользователя; также можно
+                              задать команду
+  -t, --type=type             создать контекст
+                              безопасности SELinux
+                              указанного типа
+  -U, --other-user=user       в режиме списка показывать
+                              права пользователя
+  -u, --user=user             выполнить команду (или
+                              редактировать файл) от
+                              имени или ID указанного
+                              пользователя
+  -V, --version               показать сведения о версии
+                              и выйти
+  -v, --validate              обновить временную метку
+                              пользователя без
+                              выполнения команды
+  --                          прекратить обработку
+                              аргументов командной
+                              строки
+student@Ubuntu-MySQL-VirtualBox:~$ 
+student@Ubuntu-MySQL-VirtualBox:~$ sudo docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+student@Ubuntu-MySQL-VirtualBox:~$ 
+student@Ubuntu-MySQL-VirtualBox:~$ sudo docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+student@Ubuntu-MySQL-VirtualBox:~$ 
+student@Ubuntu-MySQL-VirtualBox:~$ sudo groupadd docker
+groupadd: группа «docker» уже существует
+student@Ubuntu-MySQL-VirtualBox:~$ sudo usermod -dG docker $USER
+student@Ubuntu-MySQL-VirtualBox:~$ sudo service docker restart
+student@Ubuntu-MySQL-VirtualBox:~$ sudo newgrp docker
+root@Ubuntu-MySQL-VirtualBox:~# docker run -dp 80:80 docker/getting-started
+Unable to find image 'docker/getting-started:latest' locally
+latest: Pulling from docker/getting-started
+59bf1c3509f3: Pull complete 
+8d6ba530f648: Pull complete 
+5288d7ad7a7f: Pull complete 
+39e51c61c033: Pull complete 
+ee6f71c6f4a8: Pull complete 
+f2303c6c8865: Pull complete 
+0645fddcff40: Pull complete 
+d05ee95f5d2f: Pull complete 
+Digest: sha256:aa945bdff163395d3293834697fa91fd4c725f47093ec499f27bc032dc1bdd16
+Status: Downloaded newer image for docker/getting-started:latest
+25d75de6f1e256477bbf54b151b504fcd946b432ee1ae9fd6fdcd7708f141544
+root@Ubuntu-MySQL-VirtualBox:~# 
+root@Ubuntu-MySQL-VirtualBox:~# docker ps
+CONTAINER ID        IMAGE                    COMMAND                  CREATED             STATUS              PORTS                NAMES
+25d75de6f1e2        docker/getting-started   "/docker-entrypoint.…"   2 minutes ago       Up 2 minutes        0.0.0.0:80->80/tcp   zealous_lewin
+root@Ubuntu-MySQL-VirtualBox:~# docker images
+REPOSITORY               TAG                 IMAGE ID            CREATED             SIZE
+docker/getting-started   latest              bd9a9f733898        5 days ago          28.8MB
+root@Ubuntu-MySQL-VirtualBox:~# 
+root@Ubuntu-MySQL-VirtualBox:~# docker stop 25d75de6f1e2
+25d75de6f1e2
+root@Ubuntu-MySQL-VirtualBox:~# 
+root@Ubuntu-MySQL-VirtualBox:~# docker search nginx
+NAME                                              DESCRIPTION                                     STARS               OFFICIAL            AUTOMATED
+bitnami/nginx                                     Bitnami nginx Docker Image                      117                                     [OK]
+bitnami/wordpress-nginx                           Bitnami Docker Image for WordPress with NGINX   55                                      [OK]
+ubuntu/nginx                                      Nginx, a high-performance reverse proxy & we…   31                                      
+bitnami/nginx-ingress-controller                  Bitnami Docker Image for NGINX Ingress Contr…   15                                      [OK]
+rancher/nginx-ingress-controller                                                                  9                                       
+ibmcom/nginx-ingress-controller                   Docker Image for IBM Cloud Private-CE (Commu…   4                                       
+bitnami/nginx-ldap-auth-daemon                                                                    3                                       
+rancher/nginx-ingress-controller-defaultbackend                                                   2                                       
+circleci/nginx                                    This image is for internal use                  2                                       
+rancher/nginx                                                                                     1                                       
+bitnami/nginx-exporter                                                                            1                                       
+nginx                                             Official build of Nginx.                        0                   [OK]                
+wallarm/nginx-ingress-controller                  Kubernetes Ingress Controller with Wallarm e…   0                                       
+rancher/nginx-conf                                                                                0                                       
+rancher/nginx-ssl                                                                                 0                                       
+ibmcom/nginx-ppc64le                              Docker image for nginx-ppc64le                  0                                       
+rancher/nginx-ingress-controller-amd64                                                            0                                       
+ibmcom/nginx-ingress-controller-ppc64le           Docker Image for IBM Cloud Private-CE (Commu…   0                                       
+rancher/nginx-proxy                                                                               0                                       
+bitnami/nginx-intel                                                                               0                                       
+wallarm/nginx-ingress-controller-amd64            Kubernetes Ingress Controller with Wallarm e…   0                                       
+ibmcom/nginx-ingress-controller-amd64                                                             0                                       
+ibmcom/nginx-ingress-controller-s390x                                                             0                                       
+kasmweb/nginx                                     An Nginx image based off nginx:alpine and in…   0                                       
+wallarm/nginx-amd64 
+root@Ubuntu-MySQL-VirtualBox:~# docker pull nginx
+Using default tag: latest
+latest: Pulling from library/nginx
+5eb5b503b376: Pull complete 
+1ae07ab881bd: Pull complete 
+78091884b7be: Pull complete 
+091c283c6a66: Pull complete 
+55de5851019b: Pull complete 
+b559bad762be: Pull complete 
+Digest: sha256:2834dc507516af02784808c5f48b7cbe38b8ed5d0f4837f16e78d00deb7e7767
+Status: Downloaded newer image for nginx:latest
+root@Ubuntu-MySQL-VirtualBox:~# 
+root@Ubuntu-MySQL-VirtualBox:~# docker run -d -p 5123:80 nginx
+5c91db675af7656dcde377df4d6db6d5f3adec8ec749defdfaee2b843ef65cc5
+root@Ubuntu-MySQL-VirtualBox:~# 
+root@Ubuntu-MySQL-VirtualBox:~# docker ps
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                  NAMES
+5c91db675af7        nginx               "/docker-entrypoint.…"   23 seconds ago      Up 20 seconds       0.0.0.0:5123->80/tcp   awesome_wiles
+root@Ubuntu-MySQL-VirtualBox:~# 
+      Up 20 seconds       0.0.0.0:5123->80/tcp   awesome_wiles
+root@Ubuntu-MySQL-VirtualBox:~# docker exec -it awesome_wiles /bin/bash
+root@5c91db675af7:/# whoami
+root
+root@5c91db675af7:/# ls
+bin   docker-entrypoint.d   home   media  proc	sbin  tmp
+boot  docker-entrypoint.sh  lib    mnt	  root	srv   usr
+dev   etc		    lib64  opt	  run	sys   var
+root@5c91db675af7:/# 
+root@5c91db675af7:/# exit
+exit
+root@Ubuntu-MySQL-VirtualBox:~# 
+student@Ubuntu-MySQL-VirtualBox:~$ sudo docker stop 5c91db675af7
+[sudo] пароль для student: 
+5c91db675af7
+student@Ubuntu-MySQL-VirtualBox:~$ 
+student@Ubuntu-MySQL-VirtualBox:~$ mkdir lesson_8
+student@Ubuntu-MySQL-VirtualBox:~$ cd lesson_8/
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ 
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ ll
+итого 8
+drwxrwsr-x  2 student developer 4096 фев 16 11:30 ./
+drwxrwsr-- 33 student developer 4096 фев 16 11:30 ../
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ cat > Dockerfile
+FROM Ubuntu:latest    
+MAINTAINER GB_student
+RUN apt-get update
+RUN apt-get install nginx -y
+VOLUME "/var/www/html"
+EXPOSE 80
+CMD /usr/sbin/nginx -g "daemon off;"
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ ll
+итого 12
+drwxrwsr-x  2 student developer 4096 фев 16 11:31 ./
+drwxrwsr-- 33 student developer 4096 фев 16 11:30 ../
+-rw-rw-r--  1 student developer  159 фев 16 11:34 Dockerfile
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ 
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ sudo docker build -t alexey_nginx ./
+Sending build context to Docker daemon  2.048kB
+Step 1/7 : FROM Ubuntu:latest
+invalid reference format: repository name must be lowercase
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ cat Dockerfile
+FROM Ubuntu:latest
+MAINTAINER GB_student
+RUN apt-get update
+RUN apt-get install nginx -y
+VOLUME "/var/www/html"
+EXPOSE 80
+CMD /usr/sbin/nginx -g "daemon off;"
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ nano Dockerfile
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ cat Dockerfile
+FROM ubuntu:latest
+MAINTAINER GB_student
+RUN apt-get update
+RUN apt-get install nginx -y
+VOLUME "/var/www/html"
+EXPOSE 80
+CMD /usr/sbin/nginx -g "daemon off;"
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ sudo docker build -t myfirstechoimage ./
+Sending build context to Docker daemon  3.072kB
+Step 1/7 : FROM ubuntu:latest
+latest: Pulling from library/ubuntu
+08c01a0ec47e: Pull complete 
+Digest: sha256:669e010b58baf5beb2836b253c1fd5768333f0d1dbcb834f7c07a4dc93f474be
+Status: Downloaded newer image for ubuntu:latest
+ ---> 54c9d81cbb44
+Step 2/7 : MAINTAINER alexeystudent
+ ---> Running in 01e444f8d023
+Removing intermediate container 01e444f8d023
+ ---> f18458fd55fe
+Step 3/7 : RUN apt-get update
+ ---> Running in 8c83d3266a19
+Get:1 http://security.ubuntu.com/ubuntu focal-security InRelease [114 kB]
+Get:2 http://archive.ubuntu.com/ubuntu focal InRelease [265 kB]
+Get:3 http://archive.ubuntu.com/ubuntu focal-updates InRelease [114 kB]
+Get:4 http://archive.ubuntu.com/ubuntu focal-backports InRelease [108 kB]
+Get:5 http://security.ubuntu.com/ubuntu focal-security/restricted amd64 Packages [961 kB]
+Get:6 http://security.ubuntu.com/ubuntu focal-security/main amd64 Packages [1546 kB]
+Get:7 http://security.ubuntu.com/ubuntu focal-security/multiverse amd64 Packages [25.8 kB]
+Get:8 http://security.ubuntu.com/ubuntu focal-security/universe amd64 Packages [840 kB]
+Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 Packages [1275 kB]
+Get:10 http://archive.ubuntu.com/ubuntu focal/restricted amd64 Packages [33.4 kB]
+Get:11 http://archive.ubuntu.com/ubuntu focal/multiverse amd64 Packages [177 kB]
+Get:12 http://archive.ubuntu.com/ubuntu focal/universe amd64 Packages [11.3 MB]
+Get:13 http://archive.ubuntu.com/ubuntu focal-updates/restricted amd64 Packages [1030 kB]
+Get:14 http://archive.ubuntu.com/ubuntu focal-updates/multiverse amd64 Packages [29.4 kB]
+Get:15 http://archive.ubuntu.com/ubuntu focal-updates/universe amd64 Packages [1134 kB]
+Get:16 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 Packages [1973 kB]
+Get:17 http://archive.ubuntu.com/ubuntu focal-backports/main amd64 Packages [50.8 kB]
+Get:18 http://archive.ubuntu.com/ubuntu focal-backports/universe amd64 Packages [24.8 kB]
+Fetched 21.0 MB in 11s (1979 kB/s)
+Reading package lists...
+Removing intermediate container 8c83d3266a19
+ ---> 7a172dd808a4
+Step 4/7 : RUN apt-get install nginx -y
+ ---> Running in 463c95bcc77f
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following additional packages will be installed:
+  fontconfig-config fonts-dejavu-core iproute2 libatm1 libbsd0 libcap2
+  libcap2-bin libelf1 libexpat1 libfontconfig1 libfreetype6 libgd3 libicu66
+  libjbig0 libjpeg-turbo8 libjpeg8 libmnl0 libnginx-mod-http-image-filter
+  libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream
+  libpam-cap libpng16-16 libssl1.1 libtiff5 libwebp6 libx11-6 libx11-data
+  libxau6 libxcb1 libxdmcp6 libxml2 libxpm4 libxslt1.1 libxtables12
+  nginx-common nginx-core tzdata ucf
+Suggested packages:
+  iproute2-doc libgd-tools fcgiwrap nginx-doc ssl-cert
+The following NEW packages will be installed:
+  fontconfig-config fonts-dejavu-core iproute2 libatm1 libbsd0 libcap2
+  libcap2-bin libelf1 libexpat1 libfontconfig1 libfreetype6 libgd3 libicu66
+  libjbig0 libjpeg-turbo8 libjpeg8 libmnl0 libnginx-mod-http-image-filter
+  libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream
+  libpam-cap libpng16-16 libssl1.1 libtiff5 libwebp6 libx11-6 libx11-data
+  libxau6 libxcb1 libxdmcp6 libxml2 libxpm4 libxslt1.1 libxtables12 nginx
+  nginx-common nginx-core tzdata ucf
+0 upgraded, 40 newly installed, 0 to remove and 9 not upgraded.
+Need to get 15.8 MB of archives.
+After this operation, 60.8 MB of additional disk space will be used.
+Get:1 http://archive.ubuntu.com/ubuntu focal/main amd64 libbsd0 amd64 0.10.0-1 [45.4 kB]
+Get:2 http://archive.ubuntu.com/ubuntu focal/main amd64 libcap2 amd64 1:2.32-1 [15.9 kB]
+Get:3 http://archive.ubuntu.com/ubuntu focal/main amd64 libelf1 amd64 0.176-1.1build1 [44.0 kB]
+Get:4 http://archive.ubuntu.com/ubuntu focal/main amd64 libmnl0 amd64 1.0.4-2 [12.3 kB]
+Get:5 http://archive.ubuntu.com/ubuntu focal/main amd64 libxtables12 amd64 1.8.4-3ubuntu2 [28.4 kB]
+Get:6 http://archive.ubuntu.com/ubuntu focal/main amd64 libcap2-bin amd64 1:2.32-1 [26.2 kB]
+Get:7 http://archive.ubuntu.com/ubuntu focal/main amd64 iproute2 amd64 5.5.0-1ubuntu1 [858 kB]
+Get:8 http://archive.ubuntu.com/ubuntu focal/main amd64 libatm1 amd64 1:2.5.1-4 [21.8 kB]
+Get:9 http://archive.ubuntu.com/ubuntu focal/main amd64 libexpat1 amd64 2.2.9-1build1 [73.3 kB]
+Get:10 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 tzdata all 2021e-0ubuntu0.20.04 [295 kB]
+Get:11 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libicu66 amd64 66.1-2ubuntu2.1 [8515 kB]
+Get:12 http://archive.ubuntu.com/ubuntu focal/main amd64 libpam-cap amd64 1:2.32-1 [8352 B]
+Get:13 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libssl1.1 amd64 1.1.1f-1ubuntu2.10 [1322 kB]
+Get:14 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libxml2 amd64 2.9.10+dfsg-5ubuntu0.20.04.1 [640 kB]
+Get:15 http://archive.ubuntu.com/ubuntu focal/main amd64 ucf all 3.0038+nmu1 [51.6 kB]
+Get:16 http://archive.ubuntu.com/ubuntu focal/main amd64 libpng16-16 amd64 1.6.37-2 [179 kB]
+Get:17 http://archive.ubuntu.com/ubuntu focal/main amd64 libxau6 amd64 1:1.0.9-0ubuntu1 [7488 B]
+Get:18 http://archive.ubuntu.com/ubuntu focal/main amd64 libxdmcp6 amd64 1:1.1.3-0ubuntu1 [10.6 kB]
+Get:19 http://archive.ubuntu.com/ubuntu focal/main amd64 libxcb1 amd64 1.14-2 [44.7 kB]
+Get:20 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libx11-data all 2:1.6.9-2ubuntu1.2 [113 kB]
+Get:21 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libx11-6 amd64 2:1.6.9-2ubuntu1.2 [575 kB]
+Get:22 http://archive.ubuntu.com/ubuntu focal/main amd64 fonts-dejavu-core all 2.37-1 [1041 kB]
+Get:23 http://archive.ubuntu.com/ubuntu focal/main amd64 fontconfig-config all 2.13.1-2ubuntu3 [28.8 kB]
+Get:24 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libfreetype6 amd64 2.10.1-2ubuntu0.1 [341 kB]
+Get:25 http://archive.ubuntu.com/ubuntu focal/main amd64 libfontconfig1 amd64 2.13.1-2ubuntu3 [114 kB]
+Get:26 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libjpeg-turbo8 amd64 2.0.3-0ubuntu1.20.04.1 [117 kB]
+Get:27 http://archive.ubuntu.com/ubuntu focal/main amd64 libjpeg8 amd64 8c-2ubuntu8 [2194 B]
+Get:28 http://archive.ubuntu.com/ubuntu focal/main amd64 libjbig0 amd64 2.1-3.1build1 [26.7 kB]
+Get:29 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libwebp6 amd64 0.6.1-2ubuntu0.20.04.1 [185 kB]
+Get:30 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libtiff5 amd64 4.1.0+git191117-2ubuntu0.20.04.2 [162 kB]
+Get:31 http://archive.ubuntu.com/ubuntu focal/main amd64 libxpm4 amd64 1:3.5.12-1 [34.0 kB]
+Get:32 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libgd3 amd64 2.2.5-5.2ubuntu2.1 [118 kB]
+Get:33 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 nginx-common all 1.18.0-0ubuntu1.2 [37.5 kB]
+Get:34 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libnginx-mod-http-image-filter amd64 1.18.0-0ubuntu1.2 [14.4 kB]
+Get:35 http://archive.ubuntu.com/ubuntu focal/main amd64 libxslt1.1 amd64 1.1.34-4 [152 kB]
+Get:36 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libnginx-mod-http-xslt-filter amd64 1.18.0-0ubuntu1.2 [12.7 kB]
+Get:37 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libnginx-mod-mail amd64 1.18.0-0ubuntu1.2 [42.5 kB]
+Get:38 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 libnginx-mod-stream amd64 1.18.0-0ubuntu1.2 [67.3 kB]
+Get:39 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 nginx-core amd64 1.18.0-0ubuntu1.2 [425 kB]
+Get:40 http://archive.ubuntu.com/ubuntu focal-updates/main amd64 nginx all 1.18.0-0ubuntu1.2 [3620 B]
+debconf: delaying package configuration, since apt-utils is not installed
+Fetched 15.8 MB in 4s (4128 kB/s)
+Selecting previously unselected package libbsd0:amd64.
+(Reading database ... 4127 files and directories currently installed.)
+Preparing to unpack .../00-libbsd0_0.10.0-1_amd64.deb ...
+Unpacking libbsd0:amd64 (0.10.0-1) ...
+Selecting previously unselected package libcap2:amd64.
+Preparing to unpack .../01-libcap2_1%3a2.32-1_amd64.deb ...
+Unpacking libcap2:amd64 (1:2.32-1) ...
+Selecting previously unselected package libelf1:amd64.
+Preparing to unpack .../02-libelf1_0.176-1.1build1_amd64.deb ...
+Unpacking libelf1:amd64 (0.176-1.1build1) ...
+Selecting previously unselected package libmnl0:amd64.
+Preparing to unpack .../03-libmnl0_1.0.4-2_amd64.deb ...
+Unpacking libmnl0:amd64 (1.0.4-2) ...
+Selecting previously unselected package libxtables12:amd64.
+Preparing to unpack .../04-libxtables12_1.8.4-3ubuntu2_amd64.deb ...
+Unpacking libxtables12:amd64 (1.8.4-3ubuntu2) ...
+Selecting previously unselected package libcap2-bin.
+Preparing to unpack .../05-libcap2-bin_1%3a2.32-1_amd64.deb ...
+Unpacking libcap2-bin (1:2.32-1) ...
+Selecting previously unselected package iproute2.
+Preparing to unpack .../06-iproute2_5.5.0-1ubuntu1_amd64.deb ...
+Unpacking iproute2 (5.5.0-1ubuntu1) ...
+Selecting previously unselected package libatm1:amd64.
+Preparing to unpack .../07-libatm1_1%3a2.5.1-4_amd64.deb ...
+Unpacking libatm1:amd64 (1:2.5.1-4) ...
+Selecting previously unselected package libexpat1:amd64.
+Preparing to unpack .../08-libexpat1_2.2.9-1build1_amd64.deb ...
+Unpacking libexpat1:amd64 (2.2.9-1build1) ...
+Selecting previously unselected package tzdata.
+Preparing to unpack .../09-tzdata_2021e-0ubuntu0.20.04_all.deb ...
+Unpacking tzdata (2021e-0ubuntu0.20.04) ...
+Selecting previously unselected package libicu66:amd64.
+Preparing to unpack .../10-libicu66_66.1-2ubuntu2.1_amd64.deb ...
+Unpacking libicu66:amd64 (66.1-2ubuntu2.1) ...
+Selecting previously unselected package libpam-cap:amd64.
+Preparing to unpack .../11-libpam-cap_1%3a2.32-1_amd64.deb ...
+Unpacking libpam-cap:amd64 (1:2.32-1) ...
+Selecting previously unselected package libssl1.1:amd64.
+Preparing to unpack .../12-libssl1.1_1.1.1f-1ubuntu2.10_amd64.deb ...
+Unpacking libssl1.1:amd64 (1.1.1f-1ubuntu2.10) ...
+Selecting previously unselected package libxml2:amd64.
+Preparing to unpack .../13-libxml2_2.9.10+dfsg-5ubuntu0.20.04.1_amd64.deb ...
+Unpacking libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.1) ...
+Selecting previously unselected package ucf.
+Preparing to unpack .../14-ucf_3.0038+nmu1_all.deb ...
+Moving old data out of the way
+Unpacking ucf (3.0038+nmu1) ...
+Selecting previously unselected package libpng16-16:amd64.
+Preparing to unpack .../15-libpng16-16_1.6.37-2_amd64.deb ...
+Unpacking libpng16-16:amd64 (1.6.37-2) ...
+Selecting previously unselected package libxau6:amd64.
+Preparing to unpack .../16-libxau6_1%3a1.0.9-0ubuntu1_amd64.deb ...
+Unpacking libxau6:amd64 (1:1.0.9-0ubuntu1) ...
+Selecting previously unselected package libxdmcp6:amd64.
+Preparing to unpack .../17-libxdmcp6_1%3a1.1.3-0ubuntu1_amd64.deb ...
+Unpacking libxdmcp6:amd64 (1:1.1.3-0ubuntu1) ...
+Selecting previously unselected package libxcb1:amd64.
+Preparing to unpack .../18-libxcb1_1.14-2_amd64.deb ...
+Unpacking libxcb1:amd64 (1.14-2) ...
+Selecting previously unselected package libx11-data.
+Preparing to unpack .../19-libx11-data_2%3a1.6.9-2ubuntu1.2_all.deb ...
+Unpacking libx11-data (2:1.6.9-2ubuntu1.2) ...
+Selecting previously unselected package libx11-6:amd64.
+Preparing to unpack .../20-libx11-6_2%3a1.6.9-2ubuntu1.2_amd64.deb ...
+Unpacking libx11-6:amd64 (2:1.6.9-2ubuntu1.2) ...
+Selecting previously unselected package fonts-dejavu-core.
+Preparing to unpack .../21-fonts-dejavu-core_2.37-1_all.deb ...
+Unpacking fonts-dejavu-core (2.37-1) ...
+Selecting previously unselected package fontconfig-config.
+Preparing to unpack .../22-fontconfig-config_2.13.1-2ubuntu3_all.deb ...
+Unpacking fontconfig-config (2.13.1-2ubuntu3) ...
+Selecting previously unselected package libfreetype6:amd64.
+Preparing to unpack .../23-libfreetype6_2.10.1-2ubuntu0.1_amd64.deb ...
+Unpacking libfreetype6:amd64 (2.10.1-2ubuntu0.1) ...
+Selecting previously unselected package libfontconfig1:amd64.
+Preparing to unpack .../24-libfontconfig1_2.13.1-2ubuntu3_amd64.deb ...
+Unpacking libfontconfig1:amd64 (2.13.1-2ubuntu3) ...
+Selecting previously unselected package libjpeg-turbo8:amd64.
+Preparing to unpack .../25-libjpeg-turbo8_2.0.3-0ubuntu1.20.04.1_amd64.deb ...
+Unpacking libjpeg-turbo8:amd64 (2.0.3-0ubuntu1.20.04.1) ...
+Selecting previously unselected package libjpeg8:amd64.
+Preparing to unpack .../26-libjpeg8_8c-2ubuntu8_amd64.deb ...
+Unpacking libjpeg8:amd64 (8c-2ubuntu8) ...
+Selecting previously unselected package libjbig0:amd64.
+Preparing to unpack .../27-libjbig0_2.1-3.1build1_amd64.deb ...
+Unpacking libjbig0:amd64 (2.1-3.1build1) ...
+Selecting previously unselected package libwebp6:amd64.
+Preparing to unpack .../28-libwebp6_0.6.1-2ubuntu0.20.04.1_amd64.deb ...
+Unpacking libwebp6:amd64 (0.6.1-2ubuntu0.20.04.1) ...
+Selecting previously unselected package libtiff5:amd64.
+Preparing to unpack .../29-libtiff5_4.1.0+git191117-2ubuntu0.20.04.2_amd64.deb ...
+Unpacking libtiff5:amd64 (4.1.0+git191117-2ubuntu0.20.04.2) ...
+Selecting previously unselected package libxpm4:amd64.
+Preparing to unpack .../30-libxpm4_1%3a3.5.12-1_amd64.deb ...
+Unpacking libxpm4:amd64 (1:3.5.12-1) ...
+Selecting previously unselected package libgd3:amd64.
+Preparing to unpack .../31-libgd3_2.2.5-5.2ubuntu2.1_amd64.deb ...
+Unpacking libgd3:amd64 (2.2.5-5.2ubuntu2.1) ...
+Selecting previously unselected package nginx-common.
+Preparing to unpack .../32-nginx-common_1.18.0-0ubuntu1.2_all.deb ...
+Unpacking nginx-common (1.18.0-0ubuntu1.2) ...
+Selecting previously unselected package libnginx-mod-http-image-filter.
+Preparing to unpack .../33-libnginx-mod-http-image-filter_1.18.0-0ubuntu1.2_amd64.deb ...
+Unpacking libnginx-mod-http-image-filter (1.18.0-0ubuntu1.2) ...
+Selecting previously unselected package libxslt1.1:amd64.
+Preparing to unpack .../34-libxslt1.1_1.1.34-4_amd64.deb ...
+Unpacking libxslt1.1:amd64 (1.1.34-4) ...
+Selecting previously unselected package libnginx-mod-http-xslt-filter.
+Preparing to unpack .../35-libnginx-mod-http-xslt-filter_1.18.0-0ubuntu1.2_amd64.deb ...
+Unpacking libnginx-mod-http-xslt-filter (1.18.0-0ubuntu1.2) ...
+Selecting previously unselected package libnginx-mod-mail.
+Preparing to unpack .../36-libnginx-mod-mail_1.18.0-0ubuntu1.2_amd64.deb ...
+Unpacking libnginx-mod-mail (1.18.0-0ubuntu1.2) ...
+Selecting previously unselected package libnginx-mod-stream.
+Preparing to unpack .../37-libnginx-mod-stream_1.18.0-0ubuntu1.2_amd64.deb ...
+Unpacking libnginx-mod-stream (1.18.0-0ubuntu1.2) ...
+Selecting previously unselected package nginx-core.
+Preparing to unpack .../38-nginx-core_1.18.0-0ubuntu1.2_amd64.deb ...
+Unpacking nginx-core (1.18.0-0ubuntu1.2) ...
+Selecting previously unselected package nginx.
+Preparing to unpack .../39-nginx_1.18.0-0ubuntu1.2_all.deb ...
+Unpacking nginx (1.18.0-0ubuntu1.2) ...
+Setting up libexpat1:amd64 (2.2.9-1build1) ...
+Setting up libxau6:amd64 (1:1.0.9-0ubuntu1) ...
+Setting up libssl1.1:amd64 (1.1.1f-1ubuntu2.10) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.30.0 /usr/local/share/perl/5.30.0 /usr/lib/x86_64-linux-gnu/perl5/5.30 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.30 /usr/share/perl/5.30 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Setting up nginx-common (1.18.0-0ubuntu1.2) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.30.0 /usr/local/share/perl/5.30.0 /usr/lib/x86_64-linux-gnu/perl5/5.30 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.30 /usr/share/perl/5.30 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Setting up libatm1:amd64 (1:2.5.1-4) ...
+Setting up libjbig0:amd64 (2.1-3.1build1) ...
+Setting up libcap2:amd64 (1:2.32-1) ...
+Setting up tzdata (2021e-0ubuntu0.20.04) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.30.0 /usr/local/share/perl/5.30.0 /usr/lib/x86_64-linux-gnu/perl5/5.30 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.30 /usr/share/perl/5.30 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Configuring tzdata
+------------------
+
+Please select the geographic area in which you live. Subsequent configuration
+questions will narrow this down by presenting a list of cities, representing
+the time zones in which they are located.
+
+  1. Africa      4. Australia  7. Atlantic  10. Pacific  13. Etc
+  2. America     5. Arctic     8. Europe    11. SystemV
+  3. Antarctica  6. Asia       9. Indian    12. US
+Geographic area: 
+Use of uninitialized value $_[1] in join or string at /usr/share/perl5/Debconf/DbDriver/Stack.pm line 111.
+
+Current default time zone: '/UTC'
+Local time is now:      Wed Feb 16 08:55:05 UTC 2022.
+Universal Time is now:  Wed Feb 16 08:55:05 UTC 2022.
+Run 'dpkg-reconfigure tzdata' if you wish to change it.
+
+Use of uninitialized value $val in substitution (s///) at /usr/share/perl5/Debconf/Format/822.pm line 83, <GEN6> line 4.
+Use of uninitialized value $val in concatenation (.) or string at /usr/share/perl5/Debconf/Format/822.pm line 84, <GEN6> line 4.
+Setting up libcap2-bin (1:2.32-1) ...
+Setting up libx11-data (2:1.6.9-2ubuntu1.2) ...
+Setting up libpng16-16:amd64 (1.6.37-2) ...
+Setting up libmnl0:amd64 (1.0.4-2) ...
+Setting up libwebp6:amd64 (0.6.1-2ubuntu0.20.04.1) ...
+Setting up fonts-dejavu-core (2.37-1) ...
+Setting up ucf (3.0038+nmu1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.30.0 /usr/local/share/perl/5.30.0 /usr/lib/x86_64-linux-gnu/perl5/5.30 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.30 /usr/share/perl/5.30 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Setting up libjpeg-turbo8:amd64 (2.0.3-0ubuntu1.20.04.1) ...
+Setting up libxtables12:amd64 (1.8.4-3ubuntu2) ...
+Setting up libbsd0:amd64 (0.10.0-1) ...
+Setting up libelf1:amd64 (0.176-1.1build1) ...
+Setting up libpam-cap:amd64 (1:2.32-1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.30.0 /usr/local/share/perl/5.30.0 /usr/lib/x86_64-linux-gnu/perl5/5.30 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.30 /usr/share/perl/5.30 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Setting up libjpeg8:amd64 (8c-2ubuntu8) ...
+Setting up libnginx-mod-mail (1.18.0-0ubuntu1.2) ...
+Setting up libxdmcp6:amd64 (1:1.1.3-0ubuntu1) ...
+Setting up libxcb1:amd64 (1.14-2) ...
+Setting up fontconfig-config (2.13.1-2ubuntu3) ...
+Setting up iproute2 (5.5.0-1ubuntu1) ...
+debconf: unable to initialize frontend: Dialog
+debconf: (TERM is not set, so the dialog frontend is not usable.)
+debconf: falling back to frontend: Readline
+debconf: unable to initialize frontend: Readline
+debconf: (Can't locate Term/ReadLine.pm in @INC (you may need to install the Term::ReadLine module) (@INC contains: /etc/perl /usr/local/lib/x86_64-linux-gnu/perl/5.30.0 /usr/local/share/perl/5.30.0 /usr/lib/x86_64-linux-gnu/perl5/5.30 /usr/share/perl5 /usr/lib/x86_64-linux-gnu/perl/5.30 /usr/share/perl/5.30 /usr/local/lib/site_perl /usr/lib/x86_64-linux-gnu/perl-base) at /usr/share/perl5/Debconf/FrontEnd/Readline.pm line 7.)
+debconf: falling back to frontend: Teletype
+Setting up libicu66:amd64 (66.1-2ubuntu2.1) ...
+Setting up libnginx-mod-stream (1.18.0-0ubuntu1.2) ...
+Setting up libfreetype6:amd64 (2.10.1-2ubuntu0.1) ...
+Setting up libx11-6:amd64 (2:1.6.9-2ubuntu1.2) ...
+Setting up libtiff5:amd64 (4.1.0+git191117-2ubuntu0.20.04.2) ...
+Setting up libfontconfig1:amd64 (2.13.1-2ubuntu3) ...
+Setting up libxml2:amd64 (2.9.10+dfsg-5ubuntu0.20.04.1) ...
+Setting up libxpm4:amd64 (1:3.5.12-1) ...
+Setting up libgd3:amd64 (2.2.5-5.2ubuntu2.1) ...
+Setting up libxslt1.1:amd64 (1.1.34-4) ...
+Setting up libnginx-mod-http-image-filter (1.18.0-0ubuntu1.2) ...
+Setting up libnginx-mod-http-xslt-filter (1.18.0-0ubuntu1.2) ...
+Setting up nginx-core (1.18.0-0ubuntu1.2) ...
+invoke-rc.d: could not determine current runlevel
+invoke-rc.d: policy-rc.d denied execution of start.
+Setting up nginx (1.18.0-0ubuntu1.2) ...
+Processing triggers for libc-bin (2.31-0ubuntu9.2) ...
+Removing intermediate container 463c95bcc77f
+ ---> cca60809783b
+Step 5/7 : VOLUME "/var/www/html"
+ ---> Running in 89074d4ea755
+Removing intermediate container 89074d4ea755
+ ---> d8bf26e42acb
+Step 6/7 : EXPOSE 80
+ ---> Running in 28d24e49372b
+Removing intermediate container 28d24e49372b
+ ---> 40926962feca
+Step 7/7 : CMD /usr/sbin/nginx -g "daemon off;"
+ ---> Running in 1f353252796b
+Removing intermediate container 1f353252796b
+ ---> 94f12412dd77
+Successfully built 94f12412dd77
+Successfully tagged myfirstechoimage:latest
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ 
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ sudo docker images
+REPOSITORY               TAG                 IMAGE ID            CREATED             SIZE
+myfirstechoimage         latest              94f12412dd77        3 minutes ago       166MB
+docker/getting-started   latest              bd9a9f733898        6 days ago          28.8MB
+ubuntu                   latest              54c9d81cbb44        2 weeks ago         72.8MB
+nginx                    latest              c316d5a335a5        3 weeks ago         142MB
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ 
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ sudo docker run -d -p 2211:80 myfirstechoimage
+ede7766bf6943cae35cdd51b360d4d570ab909775e60f248dbc03ff1b5efe3d8
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ 
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ sudo docker ps -a
+CONTAINER ID        IMAGE                    COMMAND                  CREATED             STATUS                      PORTS                  NAMES
+ede7766bf694        myfirstechoimage         "/bin/sh -c '/usr/sb…"   40 seconds ago      Up 38 seconds               0.0.0.0:2211->80/tcp   admiring_bell
+5c91db675af7        nginx                    "/docker-entrypoint.…"   35 minutes ago      Exited (0) 30 minutes ago                          awesome_wiles
+25d75de6f1e2        docker/getting-started   "/docker-entrypoint.…"   44 minutes ago      Exited (0) 40 minutes ago                          zealous_lewin
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ 
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ sudo docker rm $(docker ps -aq)
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get http://%2Fvar%2Frun%2Fdocker.sock/v1.39/containers/json?all=1: dial unix /var/run/docker.sock: connect: permission denied
+"docker rm" requires at least 1 argument.
+See 'docker rm --help'.
+
+Usage:  docker rm [OPTIONS] CONTAINER [CONTAINER...]
+
+Remove one or more containers
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ sudo docker rm $(sudo docker ps -aq)
+5c91db675af7
+25d75de6f1e2
+Error response from daemon: You cannot remove a running container ede7766bf6943cae35cdd51b360d4d570ab909775e60f248dbc03ff1b5efe3d8. Stop the container before attempting removal or force remove
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ sudo docker stop ede7766bf6943cae35cdd51b360d4d570ab909775e60f248dbc03ff1b5efe3d8
+ede7766bf6943cae35cdd51b360d4d570ab909775e60f248dbc03ff1b5efe3d8
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ sudo docker ps -a
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                        PORTS               NAMES
+ede7766bf694        myfirstechoimage    "/bin/sh -c '/usr/sb…"   3 minutes ago       Exited (137) 10 seconds ago                       admiring_bell
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ sudo docker rmi $(sudo docker images -q)
+Untagged: docker/getting-started:latest
+Untagged: docker/getting-started@sha256:aa945bdff163395d3293834697fa91fd4c725f47093ec499f27bc032dc1bdd16
+Deleted: sha256:bd9a9f73389835f470cc69edf12f472c1dca7f213e05f00a1e8211007c95028f
+Deleted: sha256:c90e827a9f9ce5ee7a756491503c59c16754123da6ccf15ffee6d56a4dca4f80
+Deleted: sha256:7f45c50964261dffeb585e10d44ab3752c52435e223b940f727ed6edfd51c47d
+Deleted: sha256:af2fcce448e2e4451a5f4796a9bf9cb5c9b5f88e0d6d10029cada42fb9d268ac
+Deleted: sha256:b9e199348d7206cb55d8ab0724d68196a04635b74a0a448bee4e881e1a227d02
+Deleted: sha256:0ca7a3881c86d6b0a75111269877b29812ee3f38943c2e0940b6aa5c91a6d9f9
+Deleted: sha256:9c73bb886729dedf383ca0f3d1e19cc9d7bad261f81386201e70d99da5f03d9e
+Deleted: sha256:d92f4554946db13553972cf0f964d343e1b5525328b06548893f0143fbd1d144
+Deleted: sha256:8d3ac3489996423f53d6087c81180006263b79f206d3fdec9e66f0e27ceb8759
+Untagged: nginx:latest
+Untagged: nginx@sha256:2834dc507516af02784808c5f48b7cbe38b8ed5d0f4837f16e78d00deb7e7767
+Deleted: sha256:c316d5a335a5cf324b0dc83b3da82d7608724769f6454f6d9a621f3ec2534a5a
+Deleted: sha256:67e568696593c33b4a15c9d81dc6f67499b8d973b88eb49b53d47bf4dbf4d187
+Deleted: sha256:0f8d4e3d979c540644f248b4206cf540978166b095223bdc950628dca2e8f3f1
+Deleted: sha256:5d75bfe8a7422476a495b27c8a1598d1206137631d350b8bdee13bc88f365282
+Deleted: sha256:8284a9e28c625b2826efdd6160ea1ff7f710881a4a2afe1ef58a5eb51d3f919e
+Deleted: sha256:89a1db9e1079b7574c1a707bc8c1fe04ff723bc71d4bca8bc48653e9a32186d2
+Deleted: sha256:7d0ebbe3f5d26c1b5ec4d5dbb6fe3205d7061f9735080b0162d550530328abd6
+Error response from daemon: conflict: unable to delete 94f12412dd77 (must be forced) - image is being used by stopped container ede7766bf694
+Error response from daemon: conflict: unable to delete 54c9d81cbb44 (cannot be forced) - image has dependent child images
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ 
+student@Ubuntu-MySQL-VirtualBox:~$ sudo docker ps -a
+[sudo] пароль для student: 
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                     PORTS               NAMES
+ede7766bf694        myfirstechoimage    "/bin/sh -c '/usr/sb…"   2 hours ago         Exited (137) 2 hours ago                       admiring_bell
+student@Ubuntu-MySQL-VirtualBox:~$ sudo docker stop ede7766bf694
+ede7766bf694
+student@Ubuntu-MySQL-VirtualBox:~$ sudo docker ps -a
+CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS                     PORTS               NAMES
+ede7766bf694        myfirstechoimage    "/bin/sh -c '/usr/sb…"   2 hours ago         Exited (137) 2 hours ago                       admiring_bell
+student@Ubuntu-MySQL-VirtualBox:~$ sudo docker rm $(sudo docker ps -aq)
+ede7766bf694
+student@Ubuntu-MySQL-VirtualBox:~$ sudo docker ps -a
+CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
+student@Ubuntu-MySQL-VirtualBox:~$ 
+student@Ubuntu-MySQL-VirtualBox:~$ sudo docker rmi $(sudo docker images -q)
+Untagged: myfirstechoimage:latest
+Deleted: sha256:94f12412dd77f9ca278b88a7bdaea51f41966a5070a6786c3067ec685afceaf8
+Deleted: sha256:40926962fecaba43d0a546b55751a0633a9897bb5323afbe46cab959856d2a65
+Deleted: sha256:d8bf26e42acb2ee4c4f35e857b4e363a65254bd637a5b3f438f3889e8146d0e3
+Deleted: sha256:cca60809783bcf09efa70d8d62c949bc26ab8654bb8c2a7a85d877c5f3cefed0
+Deleted: sha256:0f4bbd4ccd41bc4a25aa9297c2c73456cc351882e425350b4c47095b88664f23
+Deleted: sha256:7a172dd808a465c330ced303c6557122f07341d43b48cde5c2bc3b9ad6f34c7b
+Deleted: sha256:9b3c3698056609d13e3b78b648e8fff0d1eca725941a539735a445acb79ce31e
+Deleted: sha256:f18458fd55fe1e4f83fcc100fa50181136bce6bea7608c9869187f2758a7bbf0
+Untagged: ubuntu:latest
+Untagged: ubuntu@sha256:669e010b58baf5beb2836b253c1fd5768333f0d1dbcb834f7c07a4dc93f474be
+Deleted: sha256:54c9d81cbb440897908abdcaa98674db83444636c300170cfd211e40a66f704f
+Deleted: sha256:36ffdceb4c77bf34325fb695e64ea447f688797f2f1e3af224c29593310578d2
+student@Ubuntu-MySQL-VirtualBox:~$ sudo docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+student@Ubuntu-MySQL-VirtualBox:~$ 
+student@Ubuntu-MySQL-VirtualBox:~$ sudo docker search php-fpm
+NAME                          DESCRIPTION                                     STARS               OFFICIAL            AUTOMATED
+bitnami/php-fpm               Bitnami PHP-FPM Docker Image                    137                                     [OK]
+laradock/php-fpm              LaraDock PHP-FPM Base Image                     32                                      [OK]
+crunchgeek/php-fpm            Fully loaded PHP-FPM backend with NewRelic &…   28                                      
+devilbox/php-fpm              Devilbox PHP-FPM (5.2 | 5.3 | 5.4 | 5.6 | 7.…   27                                      
+nanoninja/php-fpm             Docker container to install and run PHP-FPM     18                                      [OK]
+hipages/php-fpm_exporter      A prometheus exporter for PHP-FPM.              3                                       
+bakins/php-fpm-exporter       Prometheus exporter for php-fpm status          3                                       
+erdiko/php-fpm                PHP-FPM container for LAMP/LEMP development …   3                                       [OK]
+itdevgroup/php-fpm7.4         php-fpm7.4 with all extensions                  1                                       
+flant/php-fpm-exporter        From https://github.com/bakins/php-fpm-expor…   1                                       
+mpfmedical/php-fpm            php-fpm                                         1                                       [OK]
+dmiseev/php-fpm7.1            Docker image php-fpm7.1                         1                                       [OK]
+sazo/php-fpm                  Php-fpm 7 setup with custom modules             1                                       [OK]
+spritsail/php-fpm             Php-FPM                                         0                                       [OK]
+wearemobedia/php-fpm          Generic mobedia PHP-FPM runtime                 0                                       [OK]
+lendableuk/php-fpm-alpine     PHP-FPM base image (Alpine)                     0                                       
+typotalkscom/php-fpm          PHP-FPM image with all necessary extensions …   0                                       
+liquidweb/php-fpm_exporter    A prometheus exporter for PHP-FPM.              0                                       
+wearemobedia/php-fpm-sybase   PHP-FPM runtime with MSSQL support              0                                       [OK]
+thesoul/php-fpm               Image with php-fpm 7.1                          0                                       
+bricre/php-fpm                                                                0                                       
+jenkler/php-fpm               Docker PHP-fpm package                          0                                       
+twentyfifth/php-fpm           No longer maintained - please use https://hu…   0                                       
+nexcess/php-fpm                                                               0                                       
+zjybb/php-fpm                 php-fpm                                         0                                       
+student@Ubuntu-MySQL-VirtualBox:~$ 
+student@Ubuntu-MySQL-VirtualBox:~$ docker pull bitnami/php-fpm
+Using default tag: latest
+Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.39/images/create?fromImage=bitnami%2Fphp-fpm&tag=latest: dial unix /var/run/docker.sock: connect: permission denied
+student@Ubuntu-MySQL-VirtualBox:~$ sudo docker pull bitnami/php-fpm
+Using default tag: latest
+latest: Pulling from bitnami/php-fpm
+a2b89359fa38: Pull complete 
+26b0659a0ae8: Pull complete 
+943ea8024047: Pull complete 
+5427380460f9: Pull complete 
+88a545ad5bc1: Pull complete 
+66cdcbeba12f: Pull complete 
+cf025ee50deb: Pull complete 
+Digest: sha256:a6b08849c4df5663e9a81cfa6c767fb400d39c65190e18ac28b273a17e0a5632
+Status: Downloaded newer image for bitnami/php-fpm:latest
+student@Ubuntu-MySQL-VirtualBox:~$ 
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ ll
+итого 16
+drwxrwsr-x  2 student developer 4096 фев 16 11:53 ./
+drwxrwsr-- 34 student developer 4096 фев 16 13:46 ../
+-rw-rw-r--  1 student developer  162 фев 16 11:53 Dockerfile
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ sudo rm Dockerfile
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ ll
+итого 8
+drwxrwsr-x  2 student developer 4096 фев 16 14:04 ./
+drwxrwsr-- 34 student developer 4096 фев 16 13:46 ../
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ 
+student@Ubuntu-MySQL-VirtualBox:~/lesson_8$ cat > Dockerfile
+FROM ubuntu:latest
+MAINTAINER alexey_ngix_phpfpm
+RUN apt-get update
+RUN apt-get install nginx -y           
+RUN apt-get install php-fpm -y
+EXPOSE 80
+EXPOSE 443
+VOLUME "/var/www/html"
+CMD /usr/sbin/nginx -g "daemon off;"
+
+                                                                                            

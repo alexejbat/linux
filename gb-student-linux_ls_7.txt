@@ -1,0 +1,430 @@
+student@Ubuntu-MySQL-VirtualBox:~$ apt-add-repository --help
+Usage: apt-add-repository <sourceline>
+
+apt-add-repository is a script for adding apt sources.list entries.
+It can be used to add any repository and also provides a shorthand
+syntax for adding a Launchpad PPA (Personal Package Archive)
+repository.
+
+<sourceline> - The apt repository source line to add. This is one of:
+  a complete apt line in quotes,
+  a repo url and areas in quotes (areas defaults to 'main')
+  a PPA shortcut.
+  a distro component
+
+  Examples:
+    apt-add-repository 'deb http://myserver/path/to/repo stable myrepo'
+    apt-add-repository 'http://myserver/path/to/repo myrepo'
+    apt-add-repository 'https://packages.medibuntu.org free non-free'
+    apt-add-repository http://extras.ubuntu.com/ubuntu
+    apt-add-repository ppa:user/repository
+    apt-add-repository ppa:user/distro/repository
+    apt-add-repository multiverse
+
+If --remove is given the tool will remove the given sourceline from your
+sources.list
+
+
+Options:
+  -h, --help            show this help message and exit
+  -m, --massive-debug   Выводить отладочную информацию в командной строке
+  -r, --remove          удалите репозиторий из каталога sources.list.d
+  -k KEYSERVER, --keyserver=KEYSERVER
+                        Адрес сервера ключей. По умолчанию:
+                        hkp://keyserver.ubuntu.com:80/
+  -s, --enable-source   Разрешить загрузку пакетов с исходным кодом из
+                        репозитория
+  -y, --yes             Отвечать «да» на все вопросы
+  -u, --update          Обновить кэш пакетов после добавления
+student@Ubuntu-MySQL-VirtualBox:~$ sudo apt-add-repository ppa:nginx/stable
+ This PPA contains the latest Stable Release version of the nginx web server software.
+
+**Only Non-End-of-Life Ubuntu Releases are supported in this PPA**
+
+**Development releases of Ubuntu are not officially supported by this PPA, and uploads for those will not be available until actual final releases for those versions**
+ Больше информации: https://launchpad.net/~nginx/+archive/ubuntu/stable
+Нажмите [ENTER] чтобы продолжить или Ctrl-C для отмены добавления
+
+gpg: создана таблица ключей `/tmp/tmpci4jbnpv/secring.gpg'
+gpg: создана таблица ключей `/tmp/tmpci4jbnpv/pubring.gpg'
+gpg: запрашиваю ключ C300EE8C с сервера hkp keyserver.ubuntu.com
+gpg: /tmp/tmpci4jbnpv/trustdb.gpg: создана таблица доверия
+gpg: ключ C300EE8C: импортирован открытый ключ "Launchpad Stable"
+gpg: не найдено абсолютно доверенных ключей
+gpg: Всего обработано: 1
+gpg:               импортировано: 1  (RSA: 1)
+OK
+student@Ubuntu-MySQL-VirtualBox:~$ 
+student@Ubuntu-MySQL-VirtualBox:~$ sudo apt update
+Сущ:1 http://ru.archive.ubuntu.com/ubuntu xenial InRelease
+Сущ:2 http://ru.archive.ubuntu.com/ubuntu xenial-updates InRelease             
+Сущ:3 http://ru.archive.ubuntu.com/ubuntu xenial-backports InRelease           
+Сущ:4 http://ppa.launchpad.net/linuxuprising/java/ubuntu xenial InRelease      
+Пол:5 http://ppa.launchpad.net/nginx/stable/ubuntu xenial InRelease [17,5 kB]  
+Сущ:6 http://security.ubuntu.com/ubuntu xenial-security InRelease              
+Сущ:7 http://ppa.launchpad.net/webupd8team/java/ubuntu xenial InRelease        
+Сущ:8 https://dbeaver.io/debs/dbeaver-ce  InRelease                            
+Пол:9 http://ppa.launchpad.net/nginx/stable/ubuntu xenial/main amd64 Packages [4 284 B]
+Пол:10 http://ppa.launchpad.net/nginx/stable/ubuntu xenial/main i386 Packages [4 288 B]
+Пол:11 http://ppa.launchpad.net/nginx/stable/ubuntu xenial/main Translation-en [4 324 B]
+Получено 30,4 kB за 7с (4 203 B/s)                                             
+Чтение списков пакетов… Готово
+Построение дерева зависимостей       
+Чтение информации о состоянии… Готово
+Может быть обновлён 451 пакет. Запустите «apt list --upgradable» для показа.
+student@Ubuntu-MySQL-VirtualBox:~$ 
+student@Ubuntu-MySQL-VirtualBox:~$ sudo apt install -y nginx 
+E: Не удалось получить файл блокировки /var/lib/dpkg/lock-frontend - open (11: Ресурс временно недоступен)
+E: Невозможно получить блокировку внешнего интерфейса dpkg (/var/lib/dpkg/lock-frontend); она уже используется другим процессом?
+student@Ubuntu-MySQL-VirtualBox:~$ curl -fsSL https://nginx.org/keys/nginx_signing.key | sudo apt-key add -
+Программа 'curl' на данный момент не установлена. Вы можете установить её, выполнив:
+sudo apt install curl
+gpg: не найдено данных формата OpenPGP.
+student@Ubuntu-MySQL-VirtualBox:~$ sudo apt update
+Сущ:1 http://ru.archive.ubuntu.com/ubuntu xenial InRelease
+Сущ:2 http://ru.archive.ubuntu.com/ubuntu xenial-updates InRelease             
+Сущ:3 http://ru.archive.ubuntu.com/ubuntu xenial-backports InRelease           
+Сущ:4 http://ppa.launchpad.net/linuxuprising/java/ubuntu xenial InRelease      
+Сущ:5 http://security.ubuntu.com/ubuntu xenial-security InRelease              
+Сущ:6 http://ppa.launchpad.net/nginx/stable/ubuntu xenial InRelease            
+Сущ:7 http://ppa.launchpad.net/webupd8team/java/ubuntu xenial InRelease
+Сущ:8 https://dbeaver.io/debs/dbeaver-ce  InRelease
+Чтение списков пакетов… Готово
+Построение дерева зависимостей       
+Чтение информации о состоянии… Готово
+Может быть обновлён 451 пакет. Запустите «apt list --upgradable» для показа.
+student@Ubuntu-MySQL-VirtualBox:~$ sudo apt install -y nginx E: Не удалось получить файл блокировки /var/lib/dpkg/lock-frontend - open (11: Ресурс временно недоступен)
+E: Невозможно получить блокировку внешнего интерфейса dpkg (/var/lib/dpkg/lock-frontend); она уже используется другим процессом?
+student@Ubuntu-MySQL-VirtualBox:~$ echo "deb http://nginx.org/packages/ubuntu focal nginx" > nginx.list
+student@Ubuntu-MySQL-VirtualBox:~$ curl -fsSL https://nginx.org/keys/nginx_signing.key | sudo apt-key add -
+Программа 'curl' на данный момент не установлена. Вы можете установить её, выполнив:
+sudo apt install curl
+gpg: не найдено данных формата OpenPGP.
+student@Ubuntu-MySQL-VirtualBox:~$ sudo apt install curl
+E: Не удалось получить файл блокировки /var/lib/dpkg/lock-frontend - open (11: Ресурс временно недоступен)
+E: Невозможно получить блокировку внешнего интерфейса dpkg (/var/lib/dpkg/lock-frontend); она уже используется другим процессом?
+student@Ubuntu-MySQL-VirtualBox:~$ sudo apt update
+Сущ:1 http://ru.archive.ubuntu.com/ubuntu xenial InRelease
+Сущ:2 http://ru.archive.ubuntu.com/ubuntu xenial-updates InRelease             
+Сущ:3 http://ppa.launchpad.net/linuxuprising/java/ubuntu xenial InRelease      
+Сущ:4 http://ru.archive.ubuntu.com/ubuntu xenial-backports InRelease           
+Сущ:5 http://security.ubuntu.com/ubuntu xenial-security InRelease              
+Сущ:6 http://ppa.launchpad.net/nginx/stable/ubuntu xenial InRelease            
+Сущ:7 http://ppa.launchpad.net/webupd8team/java/ubuntu xenial InRelease        
+Сущ:8 https://dbeaver.io/debs/dbeaver-ce  InRelease                            
+Чтение списков пакетов… Готово
+Построение дерева зависимостей       
+Чтение информации о состоянии… Готово
+Может быть обновлён 451 пакет. Запустите «apt list --upgradable» для показа.
+student@Ubuntu-MySQL-VirtualBox:~$ sudo apt install -y nginx
+E: Не удалось получить файл блокировки /var/lib/dpkg/lock-frontend - open (11: Ресурс временно недоступен)
+E: Невозможно получить блокировку внешнего интерфейса dpkg (/var/lib/dpkg/lock-frontend); она уже используется другим процессом?
+student@Ubuntu-MySQL-VirtualBox:~$ 
+student@Ubuntu-MySQL-VirtualBox:~$ ps aux | grep -i apt
+root      1133  0.0  0.0   4504   708 ?        Ss   13:43   0:00 /bin/sh /usr/lib/apt/apt.systemd.daily update
+root      1152  0.0  0.0   4504  1688 ?        S    13:43   0:00 /bin/sh /usr/lib/apt/apt.systemd.daily lock_is_held update
+root      2465  0.1  1.6 227164 34092 ?        SNl  13:45   0:02 /usr/bin/python3 /usr/sbin/aptd
+root      4605  0.0  0.1  61940  3848 pts/1    T    14:11   0:00 sudo apt-key add -
+student   4615  0.0  0.0  21316  1024 pts/1    S+   14:13   0:00 grep --color=auto -i apt
+student@Ubuntu-MySQL-VirtualBox:~$ 
+student@Ubuntu-MySQL-VirtualBox:~$ sudo kill -9 4605
+[1]+  Убито              curl -fsSL https://nginx.org/keys/nginx_signing.key | sudo apt-key add -
+student@Ubuntu-MySQL-VirtualBox:~$ 
+student@Ubuntu-MySQL-VirtualBox:~$ sudo apt install curl
+Чтение списков пакетов… Готово
+Построение дерева зависимостей       
+Чтение информации о состоянии… Готово
+Следующий пакет устанавливался автоматически и больше не требуется:
+  snapd-login-service
+Для его удаления используйте «sudo apt autoremove».
+Будут установлены следующие дополнительные пакеты:
+  libcurl3-gnutls
+Следующие НОВЫЕ пакеты будут установлены:
+  curl
+Следующие пакеты будут обновлены:
+  libcurl3-gnutls
+Обновлено 1 пакетов, установлено 1 новых пакетов, для удаления отмечено 0 пакетов, и 450 пакетов не обновлено.
+Необходимо скачать 139 kB/328 kB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 353 kB.
+Хотите продолжить? [Д/н] Д
+Пол:1 http://ru.archive.ubuntu.com/ubuntu xenial-updates/main amd64 curl amd64 7.47.0-1ubuntu2.19 [139 kB]
+Получено 139 kB за 1с (87,6 kB/s)
+(Чтение базы данных … на данный момент установлено 223869 файлов и каталогов.)
+Подготовка к распаковке …/libcurl3-gnutls_7.47.0-1ubuntu2.19_amd64.deb …
+Распаковывается libcurl3-gnutls:amd64 (7.47.0-1ubuntu2.19) на замену (7.47.0-1ubuntu2.12) …
+Выбор ранее не выбранного пакета curl.
+Подготовка к распаковке …/curl_7.47.0-1ubuntu2.19_amd64.deb …
+Распаковывается curl (7.47.0-1ubuntu2.19) …
+Обрабатываются триггеры для libc-bin (2.23-0ubuntu11) …
+Обрабатываются триггеры для man-db (2.7.5-1) …
+Настраивается пакет libcurl3-gnutls:amd64 (7.47.0-1ubuntu2.19) …
+Настраивается пакет curl (7.47.0-1ubuntu2.19) …
+Обрабатываются триггеры для libc-bin (2.23-0ubuntu11) …
+student@Ubuntu-MySQL-VirtualBox:~$ 
+student@Ubuntu-MySQL-VirtualBox:~$ curl -fsSL https://nginx.org/keys/nginx_signing.key | sudo apt-key add -
+OK
+student@Ubuntu-MySQL-VirtualBox:~$ 
+student@Ubuntu-MySQL-VirtualBox:~$ sudo apt update
+[sudo] пароль для student: 
+Сущ:1 http://ru.archive.ubuntu.com/ubuntu xenial InRelease
+Пол:2 http://ru.archive.ubuntu.com/ubuntu xenial-updates InRelease [99,8 kB]   
+Сущ:3 http://ppa.launchpad.net/linuxuprising/java/ubuntu xenial InRelease      
+Сущ:4 http://ppa.launchpad.net/nginx/stable/ubuntu xenial InRelease            
+Пол:5 http://ru.archive.ubuntu.com/ubuntu xenial-backports InRelease [97,4 kB] 
+Пол:6 http://security.ubuntu.com/ubuntu xenial-security InRelease [99,8 kB]    
+Сущ:7 http://ppa.launchpad.net/webupd8team/java/ubuntu xenial InRelease        
+Сущ:8 https://dbeaver.io/debs/dbeaver-ce  InRelease                            
+Пол:9 http://ru.archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages [2 049 kB]
+Пол:10 http://ru.archive.ubuntu.com/ubuntu xenial-updates/main i386 Packages [1 525 kB]
+Пол:11 http://ru.archive.ubuntu.com/ubuntu xenial-updates/main amd64 DEP-11 Metadata [327 kB]
+Пол:12 http://ru.archive.ubuntu.com/ubuntu xenial-updates/universe amd64 DEP-11 Metadata [281 kB]
+Пол:13 http://ru.archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 DEP-11 Metadata [5 964 B]
+Пол:14 http://ru.archive.ubuntu.com/ubuntu xenial-backports/main amd64 DEP-11 Metadata [3 328 B]
+Пол:15 http://ru.archive.ubuntu.com/ubuntu xenial-backports/universe amd64 DEP-11 Metadata [6 596 B]
+Получено 4 494 kB за 8с (537 kB/s)                                             
+Чтение списков пакетов… Готово
+Построение дерева зависимостей        
+Чтение информации о состоянии… Готово
+Может быть обновлено 450 пакетов. Запустите «apt list --upgradable» для их показа.
+student@Ubuntu-MySQL-VirtualBox:~$ sudo apt install nginx -y
+Чтение списков пакетов… Готово
+Построение дерева зависимостей       
+Чтение информации о состоянии… Готово
+Следующий пакет устанавливался автоматически и больше не требуется:
+  snapd-login-service
+Для его удаления используйте «sudo apt autoremove».
+Будут установлены следующие дополнительные пакеты:
+  libnginx-mod-http-auth-pam libnginx-mod-http-dav-ext libnginx-mod-http-echo
+  libnginx-mod-http-geoip libnginx-mod-http-image-filter
+  libnginx-mod-http-subs-filter libnginx-mod-http-upstream-fair
+  libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream
+  nginx-common nginx-full
+Предлагаемые пакеты:
+  fcgiwrap nginx-doc
+Следующие НОВЫЕ пакеты будут установлены:
+  libnginx-mod-http-auth-pam libnginx-mod-http-dav-ext libnginx-mod-http-echo
+  libnginx-mod-http-geoip libnginx-mod-http-image-filter
+  libnginx-mod-http-subs-filter libnginx-mod-http-upstream-fair
+  libnginx-mod-http-xslt-filter libnginx-mod-mail libnginx-mod-stream nginx
+  nginx-common nginx-full
+Обновлено 0 пакетов, установлено 13 новых пакетов, для удаления отмечено 0 пакетов, и 450 пакетов не обновлено.
+Необходимо скачать 935 kB архивов.
+После данной операции объём занятого дискового пространства возрастёт на 2 454 kB.
+Пол:1 http://ppa.launchpad.net/nginx/stable/ubuntu xenial/main amd64 nginx-common all 1.16.1-0+xenial1 [57,1 kB]
+Пол:2 http://ppa.launchpad.net/nginx/stable/ubuntu xenial/main amd64 libnginx-mod-http-auth-pam amd64 1.16.1-0+xenial1 [29,6 kB]
+Пол:3 http://ppa.launchpad.net/nginx/stable/ubuntu xenial/main amd64 libnginx-mod-http-dav-ext amd64 1.16.1-0+xenial1 [31,3 kB]
+Пол:4 http://ppa.launchpad.net/nginx/stable/ubuntu xenial/main amd64 libnginx-mod-http-echo amd64 1.16.1-0+xenial1 [41,0 kB]
+Пол:5 http://ppa.launchpad.net/nginx/stable/ubuntu xenial/main amd64 libnginx-mod-http-geoip amd64 1.16.1-0+xenial1 [30,8 kB]
+Пол:6 http://ppa.launchpad.net/nginx/stable/ubuntu xenial/main amd64 libnginx-mod-http-image-filter amd64 1.16.1-0+xenial1 [34,1 kB]
+Пол:7 http://ppa.launchpad.net/nginx/stable/ubuntu xenial/main amd64 libnginx-mod-http-subs-filter amd64 1.16.1-0+xenial1 [32,6 kB]
+Пол:8 http://ppa.launchpad.net/nginx/stable/ubuntu xenial/main amd64 libnginx-mod-http-upstream-fair amd64 1.16.1-0+xenial1 [32,8 kB]
+Пол:9 http://ppa.launchpad.net/nginx/stable/ubuntu xenial/main amd64 libnginx-mod-http-xslt-filter amd64 1.16.1-0+xenial1 [32,6 kB]
+Пол:10 http://ppa.launchpad.net/nginx/stable/ubuntu xenial/main amd64 libnginx-mod-mail amd64 1.16.1-0+xenial1 [61,3 kB]
+Пол:11 http://ppa.launchpad.net/nginx/stable/ubuntu xenial/main amd64 libnginx-mod-stream amd64 1.16.1-0+xenial1 [86,1 kB]
+Пол:12 http://ppa.launchpad.net/nginx/stable/ubuntu xenial/main amd64 nginx-full amd64 1.16.1-0+xenial1 [440 kB]
+Пол:13 http://ppa.launchpad.net/nginx/stable/ubuntu xenial/main amd64 nginx all 1.16.1-0+xenial1 [25,4 kB]
+Получено 935 kB за 4с (199 kB/s)
+Предварительная настройка пакетов ...
+Выбор ранее не выбранного пакета nginx-common.
+(Чтение базы данных … на данный момент установлено 223876 файлов и каталогов.)
+Подготовка к распаковке …/nginx-common_1.16.1-0+xenial1_all.deb …
+Распаковывается nginx-common (1.16.1-0+xenial1) …
+Выбор ранее не выбранного пакета libnginx-mod-http-auth-pam.
+Подготовка к распаковке …/libnginx-mod-http-auth-pam_1.16.1-0+xenial1_amd64.deb …
+Распаковывается libnginx-mod-http-auth-pam (1.16.1-0+xenial1) …
+Выбор ранее не выбранного пакета libnginx-mod-http-dav-ext.
+Подготовка к распаковке …/libnginx-mod-http-dav-ext_1.16.1-0+xenial1_amd64.deb …
+Распаковывается libnginx-mod-http-dav-ext (1.16.1-0+xenial1) …
+Выбор ранее не выбранного пакета libnginx-mod-http-echo.
+Подготовка к распаковке …/libnginx-mod-http-echo_1.16.1-0+xenial1_amd64.deb …
+Распаковывается libnginx-mod-http-echo (1.16.1-0+xenial1) …
+Выбор ранее не выбранного пакета libnginx-mod-http-geoip.
+Подготовка к распаковке …/libnginx-mod-http-geoip_1.16.1-0+xenial1_amd64.deb …
+Распаковывается libnginx-mod-http-geoip (1.16.1-0+xenial1) …
+Выбор ранее не выбранного пакета libnginx-mod-http-image-filter.
+Подготовка к распаковке …/libnginx-mod-http-image-filter_1.16.1-0+xenial1_amd64.deb …
+Распаковывается libnginx-mod-http-image-filter (1.16.1-0+xenial1) …
+Выбор ранее не выбранного пакета libnginx-mod-http-subs-filter.
+Подготовка к распаковке …/libnginx-mod-http-subs-filter_1.16.1-0+xenial1_amd64.deb …
+Распаковывается libnginx-mod-http-subs-filter (1.16.1-0+xenial1) …
+Выбор ранее не выбранного пакета libnginx-mod-http-upstream-fair.
+Подготовка к распаковке …/libnginx-mod-http-upstream-fair_1.16.1-0+xenial1_amd64.deb …
+Распаковывается libnginx-mod-http-upstream-fair (1.16.1-0+xenial1) …
+Выбор ранее не выбранного пакета libnginx-mod-http-xslt-filter.
+Подготовка к распаковке …/libnginx-mod-http-xslt-filter_1.16.1-0+xenial1_amd64.deb …
+Распаковывается libnginx-mod-http-xslt-filter (1.16.1-0+xenial1) …
+Выбор ранее не выбранного пакета libnginx-mod-mail.
+Подготовка к распаковке …/libnginx-mod-mail_1.16.1-0+xenial1_amd64.deb …
+Распаковывается libnginx-mod-mail (1.16.1-0+xenial1) …
+Выбор ранее не выбранного пакета libnginx-mod-stream.
+Подготовка к распаковке …/libnginx-mod-stream_1.16.1-0+xenial1_amd64.deb …
+Распаковывается libnginx-mod-stream (1.16.1-0+xenial1) …
+Выбор ранее не выбранного пакета nginx-full.
+Подготовка к распаковке …/nginx-full_1.16.1-0+xenial1_amd64.deb …
+Распаковывается nginx-full (1.16.1-0+xenial1) …
+Выбор ранее не выбранного пакета nginx.
+Подготовка к распаковке …/nginx_1.16.1-0+xenial1_all.deb …
+Распаковывается nginx (1.16.1-0+xenial1) …
+Обрабатываются триггеры для ufw (0.35-0ubuntu2) …
+Обрабатываются триггеры для systemd (229-4ubuntu21.21) …
+Обрабатываются триггеры для ureadahead (0.100.0-19) …
+Обрабатываются триггеры для man-db (2.7.5-1) …
+Настраивается пакет nginx-common (1.16.1-0+xenial1) …
+Настраивается пакет libnginx-mod-http-auth-pam (1.16.1-0+xenial1) …
+Настраивается пакет libnginx-mod-http-dav-ext (1.16.1-0+xenial1) …
+Настраивается пакет libnginx-mod-http-echo (1.16.1-0+xenial1) …
+Настраивается пакет libnginx-mod-http-geoip (1.16.1-0+xenial1) …
+Настраивается пакет libnginx-mod-http-image-filter (1.16.1-0+xenial1) …
+Настраивается пакет libnginx-mod-http-subs-filter (1.16.1-0+xenial1) …
+Настраивается пакет libnginx-mod-http-upstream-fair (1.16.1-0+xenial1) …
+Настраивается пакет libnginx-mod-http-xslt-filter (1.16.1-0+xenial1) …
+Настраивается пакет libnginx-mod-mail (1.16.1-0+xenial1) …
+Настраивается пакет libnginx-mod-stream (1.16.1-0+xenial1) …
+Настраивается пакет nginx-full (1.16.1-0+xenial1) …
+Настраивается пакет nginx (1.16.1-0+xenial1) …
+Обрабатываются триггеры для systemd (229-4ubuntu21.21) …
+Обрабатываются триггеры для ureadahead (0.100.0-19) …
+Обрабатываются триггеры для ufw (0.35-0ubuntu2) …
+student@Ubuntu-MySQL-VirtualBox:~$ 
+student@Ubuntu-MySQL-VirtualBox:~$ dpkg --help
+Использование: dpkg [<параметр> …] <команда>
+
+Commands:
+  -i|--install       <.deb file name> ... | -R|--recursive <directory> ...
+  --unpack           <.deb file name> ... | -R|--recursive <directory> ...
+  -A|--record-avail  <.deb file name> ... | -R|--recursive <directory> ...
+  --configure        <package> ... | -a|--pending
+  --triggers-only    <package> ... | -a|--pending
+  -r|--remove        <package> ... | -a|--pending
+  -P|--purge         <package> ... | -a|--pending
+  -V|--verify <package> ...        Verify the integrity of package(s).
+  --get-selections [<pattern> ...] Get list of selections to stdout.
+  --set-selections                 Set package selections from stdin.
+  --clear-selections               Deselect every non-essential package.
+  --update-avail [<Packages-file>] Replace available packages info.
+  --merge-avail [<Packages-file>]  Merge with info from file.
+  --clear-avail                    Erase existing available info.
+  --forget-old-unavail             Forget uninstalled unavailable pkgs.
+  -s|--status <package> ...        Display package status details.
+  -p|--print-avail <package> ...   Display available version details.
+  -L|--listfiles <package> ...     List files 'owned' by package(s).
+  -l|--list [<pattern> ...]        List packages concisely.
+  -S|--search <pattern> ...        Find package(s) owning file(s).
+  -C|--audit [<package> ...]       Check for broken package(s).
+  --yet-to-unpack                  Print packages selected for installation.
+  --predep-package                 Print pre-dependencies to unpack.
+  --add-architecture <arch>        Add <arch> to the list of architectures.
+  --remove-architecture <arch>     Remove <arch> from the list of architectures.
+  --print-architecture             Print dpkg architecture.
+  --print-foreign-architectures    Print allowed foreign architectures.
+  --assert-<feature>               Assert support for the specified feature.
+  --compare-versions <a> <op> <b>  Compare version numbers - see below.
+  --force-help                     Show help on forcing.
+  -Dh|--debug=help                 Show help on debugging.
+
+  -?, --help                          Вывести это сообщение
+  --version                           Вывести номер версии
+
+Assertable features: support-predepends, working-epoch, long-filenames,
+  multi-conrep, multi-arch, versioned-provides.
+
+Use dpkg with -b, --build, -c, --contents, -e, --control, -I, --info,
+  -f, --field, -x, --extract, -X, --vextract, --ctrl-tarfile, --fsys-tarfile
+on archives (type dpkg-deb --help).
+
+Параметры:
+  --admindir=<каталог>             Использовать <каталог> вместо /var/lib/dpkg
+  --root=<каталог>                 Установить в другой
+                                   корневой каталог
+  --instdir=<каталог>              Изменить корневой каталог для
+                                   установки, не меняя административный
+                                   каталог
+  --path-exclude=<шабл>            Не устанавливать пути, которые совпадают
+                                   с данным шаблоном оболочки.
+  --path-include=<шабл>            Повторно включить шаблон после
+                                   предыдущего исключения.
+  -O|--selected-only               Пропустить не выбранные для
+                                   установки/обновления пакеты
+  -E|--skip-same-version           Пропустить пакеты, версия
+                                   которых совпадает с установленной
+  -G|--refuse-downgrade            Пропустить пакеты, версия
+                                   которых младше установленной
+  -B|--auto-deconfigure            Установить, даже если это может сделать
+                                   другие пакеты неработоспособными
+  --[no-]triggers                  Пропустить или принудительно выполнить
+                                   последовательную обработку триггеров
+  --verify-format=<формат>         Проверить формат вывода
+                                   (поддерживается: «rpm»).
+  --no-debsig                      Не проверять подписи пакетов
+  --no-act|--dry-run|--simulate
+                                   Показать, что должно быть сделано, но
+                                   не выполнять действия
+  -D|--debug=<восьм. знач.>        Включить отладку,
+                                   см. -Dhelp или --debug=help
+  --status-fd <n>                  Вывести информацию об изменениях
+                                   состояний пакетов в
+                                   файловый дескриптор <n>
+  --status-logger=<команда>        Посылать изменение состояния
+                                   <командному> stdin
+  --log=<имя файла>                Записывать изменения состояний
+                                   и действия в <имя файла>
+  --ignore-depends=<пакет>,…
+                                   Игнорировать зависимости от <пакета>
+  --force-…                      Игнорировать проблемы, см. --force-help
+  --no-force-…|--refuse-…
+                                   Прекратить работу при
+                                   обнаружении проблем
+  --abort-after <n>                Прекратить работу после
+                                   обнаружения <n> количества ошибок
+
+Операторы сравнения, возможные в --compare-versions:
+  lt le eq ne ge gt       (пустое значение версии считать самой ранней);
+  lt-nl le-nl ge-nl gt-nl (пустое значение версии считать самой поздней);
+  < << <= = >= >> >       (для совместимости с синтаксисом файла control).
+
+Программы «apt» или «aptitude» предоставляют дружественный интерфейс
+управления пакетами.
+student@Ubuntu-MySQL-VirtualBox:~$ sudo dpkg -r nginx
+(Чтение базы данных … на данный момент установлено 223984 файла и каталога.)
+Удаляется nginx (1.16.1-0+xenial1) …
+student@Ubuntu-MySQL-VirtualBox:~$ 
+student@Ubuntu-MySQL-VirtualBox:~$ snap find yandex
+Name                Version     Publisher  Notes  Summary
+yandex-weather-cli  1.15        msoap      -      Yandex weather cli
+rclone              1.36        fireeye    -      "rsync for cloud storage"  
+astiga              0.1.3       astiga     -      Your online cloud music player.
+plumber             1           keshavnrj  -      Media trimmer/downloader for Linux Desktop
+ddclient-snap       v3.9.1      joachimmg  -      Update dynamic DNS entries for accounts on dynamic DNS services.
+oversetter          0.4.0       fourgray   -      Oversetter
+rclone-dev          dev-latest  fireeye    -      rsync for cloud storage
+student@Ubuntu-MySQL-VirtualBox:~$ 
+student@Ubuntu-MySQL-VirtualBox:~$ sudo snap install yandex-weather-cli
+yandex-weather-cli 1.15 from Sergey Mudrik (msoap) installed
+student@Ubuntu-MySQL-VirtualBox:~$ 
+student@Ubuntu-MySQL-VirtualBox:~$ sudo iptables -L
+Chain INPUT (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+student@Ubuntu-MySQL-VirtualBox:~$ sudo iptables -P INPUT DROP
+student@Ubuntu-MySQL-VirtualBox:~$ sudo iptables -A INPUT -i eth0 -p tcp --dport 80 -j ACCEPT
+student@Ubuntu-MySQL-VirtualBox:~$ sudo iptables -A INPUT -i eth0 -p tcp --dport 22 -j ACCEPT
+student@Ubuntu-MySQL-VirtualBox:~$ sudo iptables -L
+Chain INPUT (policy DROP)
+target     prot opt source               destination         
+ACCEPT     tcp  --  anywhere             anywhere             tcp dpt:http
+ACCEPT     tcp  --  anywhere             anywhere             tcp dpt:ssh
+
+Chain FORWARD (policy ACCEPT)
+target     prot opt source               destination         
+
+Chain OUTPUT (policy ACCEPT)
+target     prot opt source               destination         
+student@Ubuntu-MySQL-VirtualBox:~$ 
+
+
+
